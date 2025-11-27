@@ -1,0 +1,127 @@
+2025-11-24 20:56:37,351 - __main__ - INFO - ================================================================================
+2025-11-24 20:56:37,351 - __main__ - INFO - Starting Video Content Generation Pipeline
+2025-11-24 20:56:37,351 - __main__ - INFO - ================================================================================
+2025-11-24 20:56:37,351 - __main__ - INFO - Step 1/8: Generating content...
+2025-11-24 20:56:37,352 - generate_content - INFO - Generating content for product: Wireless Gaming Headset
+2025-11-24 20:56:37,352 - generate_content - INFO - Using Groq API for content generation
+2025-11-24 20:56:37,842 - generate_content - INFO - Groq generated 1060 characters
+2025-11-24 20:56:37,844 - __main__ - INFO - Content generated: 1060 characters
+2025-11-24 20:56:37,845 - __main__ - INFO - Step 2/8: Generating description...
+2025-11-24 20:56:37,846 - generate_description - INFO - Generating video description
+2025-11-24 20:56:37,846 - generate_description - INFO - Description generated: 893 characters
+2025-11-24 20:56:37,846 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• Here's a 30-45 sec...
+2025-11-24 20:56:37,847 - __main__ - INFO - Step 3/8: Generating audio narration...
+2025-11-24 20:56:37,847 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-24 20:56:37,847 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-24 20:56:38,013 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-24 20:56:38,013 - generate_audio - INFO - Falling back to gTTS
+2025-11-24 20:56:42,801 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251124_205637.mp3
+2025-11-24 20:56:42,803 - generate_audio - INFO - Audio generated successfully: audios/narration_20251124_205637.mp3
+2025-11-24 20:56:42,804 - __main__ - INFO - Audio saved to: audios/narration_20251124_205637.mp3
+2025-11-24 20:56:42,804 - __main__ - INFO - Step 4/8: Generating images...
+2025-11-24 20:56:42,804 - generate_image - INFO - Generating 2 images for: Wireless Gaming Headset
+2025-11-24 20:56:42,805 - generate_image - INFO - Downloading from Unsplash: here's a 30-45
+2025-11-24 20:56:43,106 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?here's,a,30-45,technology
+2025-11-24 20:56:43,106 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?here's,a,30-45
+2025-11-24 20:56:43,108 - generate_image - INFO - Generating image with Hugging Face: Here's a 30-45 second video script for a product r...
+2025-11-24 20:56:43,374 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-24 20:56:43,375 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-24 20:56:43,377 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:56:43,683 - generate_image - INFO - Generated placeholder image: assets/image_20251124_205642_1.png
+2025-11-24 20:56:43,684 - generate_image - INFO - Generated image 1/2: assets/image_20251124_205642_1.png
+2025-11-24 20:56:43,685 - generate_image - INFO - Downloading from Unsplash: here's a 30-45
+2025-11-24 20:56:43,995 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?here's,a,30-45,technology
+2025-11-24 20:56:43,995 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?here's,a,30-45
+2025-11-24 20:56:43,996 - generate_image - INFO - Generating image with Hugging Face: Here's a 30-45 second video script for a product r...
+2025-11-24 20:56:44,152 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-24 20:56:44,152 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-24 20:56:44,154 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:56:44,279 - generate_image - INFO - Generated placeholder image: assets/image_20251124_205643_2.png
+2025-11-24 20:56:44,279 - generate_image - INFO - Generated image 2/2: assets/image_20251124_205643_2.png
+2025-11-24 20:56:44,279 - generate_image - INFO - Successfully generated 2 images
+2025-11-24 20:56:44,280 - __main__ - INFO - Generated 2 images
+2025-11-24 20:56:44,280 - __main__ - INFO - Step 5/8: Downloading stock videos...
+2025-11-24 20:56:44,280 - download_stock_video - INFO - Downloading 10 stock videos from pexels for keywords: ['audio', 'immersive', 'surround', 'wireless', 'comfort', 'gaming', 'design']
+2025-11-24 20:56:44,280 - download_stock_video - INFO - Searching Pexels with combined query: audio immersive surround
+2025-11-24 20:56:44,764 - download_stock_video - INFO - Downloading video 1/10: https://videos.pexels.com/video-files/7046907/7046907-hd_1920_1080_25fps.mp4
+2025-11-24 20:56:44,925 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205644_0.mp4 (7.08 MB)
+2025-11-24 20:56:45,428 - download_stock_video - INFO - Downloading video 2/10: https://videos.pexels.com/video-files/7047592/7047592-hd_1920_1080_25fps.mp4
+2025-11-24 20:56:46,332 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205645_1.mp4 (5.30 MB)
+2025-11-24 20:56:46,834 - download_stock_video - INFO - Downloading video 3/10: https://videos.pexels.com/video-files/8991932/8991932-uhd_3840_1608_24fps.mp4
+2025-11-24 20:56:48,473 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205646_2.mp4 (113.67 MB)
+2025-11-24 20:56:48,976 - download_stock_video - INFO - Downloading video 4/10: https://videos.pexels.com/video-files/7046909/7046909-hd_1920_1080_25fps.mp4
+2025-11-24 20:56:49,950 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205648_3.mp4 (9.88 MB)
+2025-11-24 20:56:50,453 - download_stock_video - INFO - Downloading video 5/10: https://videos.pexels.com/video-files/27771560/12220498_1920_1080_25fps.mp4
+2025-11-24 20:56:51,207 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205650_4.mp4 (4.92 MB)
+2025-11-24 20:56:51,709 - download_stock_video - INFO - Downloading video 6/10: https://videos.pexels.com/video-files/10259893/10259893-hd_1920_1080_24fps.mp4
+2025-11-24 20:56:51,868 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205651_5.mp4 (2.37 MB)
+2025-11-24 20:56:52,370 - download_stock_video - INFO - Downloading video 7/10: https://videos.pexels.com/video-files/11999586/11999586-hd_1920_1080_24fps.mp4
+2025-11-24 20:56:52,543 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205652_6.mp4 (10.29 MB)
+2025-11-24 20:56:53,045 - download_stock_video - INFO - Downloading video 8/10: https://videos.pexels.com/video-files/34645278/14683995_1920_1080_30fps.mp4
+2025-11-24 20:56:53,698 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205653_7.mp4 (4.34 MB)
+2025-11-24 20:56:54,202 - download_stock_video - INFO - Downloading video 9/10: https://videos.pexels.com/video-files/9524079/9524079-hd_1920_1080_30fps.mp4
+2025-11-24 20:56:55,523 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205654_8.mp4 (98.04 MB)
+2025-11-24 20:56:56,026 - download_stock_video - INFO - Downloading video 10/10: https://videos.pexels.com/video-files/856298/856298-hd_1920_1080_30fps.mp4
+2025-11-24 20:56:56,262 - download_stock_video - INFO - Downloaded: videos/stock_audio_immersive_surr_20251124_205656_9.mp4 (19.23 MB)
+2025-11-24 20:56:56,766 - download_stock_video - INFO - Successfully downloaded 10 videos
+2025-11-24 20:56:56,766 - __main__ - INFO - Downloaded 10 stock videos
+2025-11-24 20:56:56,766 - __main__ - INFO - Step 6/8: Generating product intro video...
+2025-11-24 20:56:56,767 - generate_product_intro_video - INFO - Generating product intro for: Wireless Gaming Headset
+2025-11-24 20:56:56,767 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-24 20:56:56,845 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1920x1080:d=5.0', '-vf', "color=c=0x1a1a2e:s=1920x1080:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Wireless Gaming Headset':fontsize=120:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-100:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we're featu':fontsize=40:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+100:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Wireless_Gaming_Headset_20251124_205656.mp4']' returned non-zero exit status 1.
+2025-11-24 20:56:56,845 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-24 20:56:58,968 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Wireless_Gaming_Headset_20251124_205656.mp4
+2025-11-24 20:56:58,968 - generate_product_intro_video - INFO - Product intro created: videos/intro_Wireless_Gaming_Headset_20251124_205656.mp4
+2025-11-24 20:56:58,968 - __main__ - INFO - Intro video created: videos/intro_Wireless_Gaming_Headset_20251124_205656.mp4
+2025-11-24 20:56:58,968 - __main__ - INFO - Step 7/8: Generating video segments...
+2025-11-24 20:56:58,968 - generate_video_single - INFO - Generating video segments: 10 stock videos, 2 images
+2025-11-24 20:56:59,062 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205658_0.mp4
+2025-11-24 20:56:59,063 - generate_video_single - INFO - Added stock video segment 1/10
+2025-11-24 20:56:59,152 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_1.mp4
+2025-11-24 20:56:59,152 - generate_video_single - INFO - Added stock video segment 2/10
+2025-11-24 20:56:59,309 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_2.mp4
+2025-11-24 20:56:59,309 - generate_video_single - INFO - Added stock video segment 3/10
+2025-11-24 20:56:59,390 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_3.mp4
+2025-11-24 20:56:59,390 - generate_video_single - INFO - Added stock video segment 4/10
+2025-11-24 20:56:59,471 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_4.mp4
+2025-11-24 20:56:59,471 - generate_video_single - INFO - Added stock video segment 5/10
+2025-11-24 20:56:59,548 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_5.mp4
+2025-11-24 20:56:59,548 - generate_video_single - INFO - Added stock video segment 6/10
+2025-11-24 20:56:59,633 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_6.mp4
+2025-11-24 20:56:59,634 - generate_video_single - INFO - Added stock video segment 7/10
+2025-11-24 20:56:59,716 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_7.mp4
+2025-11-24 20:56:59,716 - generate_video_single - INFO - Added stock video segment 8/10
+2025-11-24 20:56:59,814 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_8.mp4
+2025-11-24 20:56:59,814 - generate_video_single - INFO - Added stock video segment 9/10
+2025-11-24 20:56:59,912 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_205659_9.mp4
+2025-11-24 20:56:59,912 - generate_video_single - INFO - Added stock video segment 10/10
+2025-11-24 20:56:59,912 - generate_video_single - INFO - Creating video from image: assets/image_20251124_205642_1.png
+2025-11-24 20:57:03,390 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_205659_0.mp4
+2025-11-24 20:57:03,390 - generate_video_single - INFO - Added image segment 1/2
+2025-11-24 20:57:03,390 - generate_video_single - INFO - Creating video from image: assets/image_20251124_205643_2.png
+2025-11-24 20:57:06,626 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_205703_1.mp4
+2025-11-24 20:57:06,626 - generate_video_single - INFO - Added image segment 2/2
+2025-11-24 20:57:06,626 - generate_video_single - INFO - Generated 12 video segments (10 videos, 2 images)
+2025-11-24 20:57:06,626 - __main__ - INFO - Created 12 video segments
+2025-11-24 20:57:06,626 - __main__ - INFO - Step 8/8: Compiling final video...
+2025-11-24 20:57:06,626 - generate_video_final - INFO - Compiling final video
+2025-11-24 20:57:06,626 - generate_video_final - INFO - Total segments to compile: 13
+2025-11-24 20:57:06,626 - generate_video_final - INFO - Concatenating 13 videos
+2025-11-24 20:57:06,627 - generate_video_final - INFO - Concatenating with transitions
+2025-11-24 20:59:00,129 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251124_205706.mp4
+2025-11-24 20:59:00,129 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-24 20:59:00,869 - generate_video_final - INFO - Audio added to video: videos/final_video_20251124_205706.mp4
+2025-11-24 20:59:00,871 - generate_video_final - INFO - Final video created: videos/final_video_20251124_205706.mp4
+2025-11-24 20:59:00,871 - __main__ - INFO - Final video created: videos/final_video_20251124_205706.mp4
+2025-11-24 20:59:00,871 - __main__ - INFO - Converting video format...
+2025-11-24 20:59:00,871 - convert_video - INFO - Converting videos/final_video_20251124_205706.mp4 to mp4
+2025-11-24 20:59:00,871 - convert_video - INFO - File already in mp4 format, skipping conversion: videos/final_video_20251124_205706.mp4
+2025-11-24 20:59:00,871 - __main__ - INFO - Converted video: videos/final_video_20251124_205706.mp4
+2025-11-24 20:59:00,871 - __main__ - INFO - ================================================================================
+2025-11-24 20:59:00,871 - __main__ - INFO - Pipeline completed successfully!
+2025-11-24 20:59:00,872 - __main__ - INFO - Final output: videos/final_video_20251124_205706.mp4
+2025-11-24 20:59:00,872 - __main__ - INFO - ================================================================================

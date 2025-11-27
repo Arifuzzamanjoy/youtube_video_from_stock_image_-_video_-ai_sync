@@ -1,0 +1,196 @@
+2025-11-26 21:01:15,841 - __main__ - INFO - ================================================================================
+2025-11-26 21:01:15,842 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-26 21:01:15,842 - __main__ - INFO - ================================================================================
+2025-11-26 21:01:15,842 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-26 21:01:15,843 - scrape_product - INFO - Fetching product data for: Wireless Earbuds
+2025-11-26 21:01:15,843 - scrape_product - INFO - Searching Google Shopping for: Wireless Earbuds
+2025-11-26 21:01:21,966 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-26 21:01:22,107 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Earbuds_20251126_210121.jpg
+2025-11-26 21:01:22,110 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-26 21:01:22,111 - __main__ - INFO - Fetched data for 3 products
+2025-11-26 21:01:22,111 - __main__ - INFO - Comparison data available for alternatives
+2025-11-26 21:01:22,111 - __main__ - INFO - Step 1/10: Generating review keywords from product data...
+2025-11-26 21:01:22,111 - generate_content - INFO - Generating keywords from product data using LLM
+2025-11-26 21:01:22,431 - generate_content - INFO - Generated 21 keywords: ['connectivity', 'battery life', 'build quality', 'ergonomics', 'comfort', 'responsiveness', 'latency', 'sound quality', 'noise cancellation', 'durability', 'affordability', 'premium feel', 'intuitive controls', 'reliable connection', 'seamless pairing', 'long battery life', 'sleek design', 'value for money', 'worth the investment', 'ease of use', 'wireless range.']
+2025-11-26 21:01:22,432 - __main__ - INFO - Generated keywords: ['Wireless', 'wireless', 'battery life', 'connectivity', 'bluetooth', 'sound quality', 'reliable connection', 'durability', 'affordability', 'intuitive controls', 'seamless pairing', 'ergonomics', 'latency', 'responsiveness', 'noise cancellation']
+2025-11-26 21:01:22,433 - __main__ - INFO - Step 2/10: Generating product reviewer script...
+2025-11-26 21:01:22,433 - generate_content - INFO - Generating content for product: Wireless Earbuds
+2025-11-26 21:01:22,433 - generate_content - INFO - Using Groq API for content generation
+2025-11-26 21:01:23,069 - generate_content - INFO - Groq generated 1229 characters
+2025-11-26 21:01:23,071 - __main__ - INFO - Product reviewer script generated: 1229 characters (target: 800-1200 words for 60-90s)
+2025-11-26 21:01:23,071 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-26 21:01:23,071 - generate_description - INFO - Generating video description
+2025-11-26 21:01:23,072 - generate_description - INFO - Description generated: 721 characters
+2025-11-26 21:01:23,072 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• **Intro (0s-5s)**
+...
+2025-11-26 21:01:23,072 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-26 21:01:23,072 - generate_audio - INFO - Generating audio using gemini engine for 1229 characters
+2025-11-26 21:01:23,072 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-26 21:01:23,235 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-26 21:01:23,235 - generate_audio - INFO - Falling back to gTTS
+2025-11-26 21:01:31,523 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251126_210123.mp3
+2025-11-26 21:01:31,528 - generate_audio - INFO - Audio generated successfully: audios/narration_20251126_210123.mp3
+2025-11-26 21:01:31,529 - __main__ - INFO - Audio saved to: audios/narration_20251126_210123.mp3
+2025-11-26 21:01:31,529 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-26 21:01:31,529 - video_engagement - INFO - Creating hook segment
+2025-11-26 21:01:33,918 - video_engagement - INFO - Hook segment created: videos/hook_20251126_210131.mp4
+2025-11-26 21:01:33,919 - __main__ - INFO - Hook created: videos/hook_20251126_210131.mp4
+2025-11-26 21:01:33,919 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-26 21:01:34,036 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Earbuds_20251126_210133.jpg
+2025-11-26 21:01:34,168 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Earbuds_20251126_210134.jpg
+2025-11-26 21:01:34,260 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Earbuds_20251126_210134.jpg
+2025-11-26 21:01:34,262 - generate_image - INFO - Generating 5 images for: Wireless Earbuds
+2025-11-26 21:01:34,262 - generate_image - INFO - Searching Pexels for: **intro (0s-5s)** hey guys, today
+2025-11-26 21:01:34,784 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_210134_1.png (137.0 KB)
+2025-11-26 21:01:34,794 - generate_image - INFO - Generated image 1/5: assets/image_20251126_210134_1.png
+2025-11-26 21:01:34,795 - generate_image - INFO - Searching Pexels for: **intro (0s-5s)** hey guys, today
+2025-11-26 21:01:35,214 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_210134_2.png (137.0 KB)
+2025-11-26 21:01:35,217 - generate_image - INFO - Generated image 2/5: assets/image_20251126_210134_2.png
+2025-11-26 21:01:35,218 - generate_image - INFO - Searching Pexels for: **intro (0s-5s)** hey guys, today
+2025-11-26 21:01:35,700 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_210135_3.png (137.0 KB)
+2025-11-26 21:01:35,704 - generate_image - INFO - Generated image 3/5: assets/image_20251126_210135_3.png
+2025-11-26 21:01:35,705 - generate_image - INFO - Searching Pexels for: **intro (0s-5s)** hey guys, today
+2025-11-26 21:01:36,180 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_210135_4.png (137.0 KB)
+2025-11-26 21:01:36,184 - generate_image - INFO - Generated image 4/5: assets/image_20251126_210135_4.png
+2025-11-26 21:01:36,185 - generate_image - INFO - Searching Pexels for: **intro (0s-5s)** hey guys, today
+2025-11-26 21:01:36,617 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_210136_5.png (137.0 KB)
+2025-11-26 21:01:36,620 - generate_image - INFO - Generated image 5/5: assets/image_20251126_210136_5.png
+2025-11-26 21:01:36,621 - generate_image - INFO - Successfully generated 5 images
+2025-11-26 21:01:36,621 - __main__ - INFO - Using 5 unique product image segments
+2025-11-26 21:01:36,621 - __main__ - INFO - Step 6/10: Downloading stock videos...
+2025-11-26 21:01:36,621 - download_stock_video - INFO - Downloading 20 stock videos from pexels for keywords: ['wireless', 'bluetooth', 'design', 'quality']
+2025-11-26 21:01:36,621 - download_stock_video - INFO - Searching Pexels with combined query: wireless bluetooth design
+2025-11-26 21:01:37,015 - download_stock_video - INFO - Downloading video 1/20: https://videos.pexels.com/video-files/7055523/7055523-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:37,227 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210137_0.mp4 (6.87 MB)
+2025-11-26 21:01:37,730 - download_stock_video - INFO - Downloading video 2/20: https://videos.pexels.com/video-files/4799811/4799811-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:37,879 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210137_1.mp4 (3.93 MB)
+2025-11-26 21:01:38,382 - download_stock_video - INFO - Downloading video 3/20: https://videos.pexels.com/video-files/7710285/7710285-uhd_2160_4096_25fps.mp4
+2025-11-26 21:01:38,691 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210138_2.mp4 (26.33 MB)
+2025-11-26 21:01:39,194 - download_stock_video - INFO - Downloading video 4/20: https://videos.pexels.com/video-files/9130473/9130473-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:39,350 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210139_3.mp4 (7.80 MB)
+2025-11-26 21:01:39,852 - download_stock_video - INFO - Downloading video 5/20: https://videos.pexels.com/video-files/4884244/4884244-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:39,980 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210139_4.mp4 (1.60 MB)
+2025-11-26 21:01:40,484 - download_stock_video - INFO - Downloading video 6/20: https://videos.pexels.com/video-files/4884238/4884238-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:40,660 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210140_5.mp4 (1.31 MB)
+2025-11-26 21:01:41,163 - download_stock_video - INFO - Downloading video 7/20: https://videos.pexels.com/video-files/7213862/7213862-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:41,371 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210141_6.mp4 (6.04 MB)
+2025-11-26 21:01:41,874 - download_stock_video - INFO - Downloading video 8/20: https://videos.pexels.com/video-files/5390854/5390854-uhd_2160_4096_30fps.mp4
+2025-11-26 21:01:42,190 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210141_7.mp4 (21.23 MB)
+2025-11-26 21:01:42,693 - download_stock_video - INFO - Downloading video 9/20: https://videos.pexels.com/video-files/6612199/6612199-hd_1080_1920_25fps.mp4
+2025-11-26 21:01:42,871 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210142_8.mp4 (2.45 MB)
+2025-11-26 21:01:43,374 - download_stock_video - INFO - Downloading video 10/20: https://videos.pexels.com/video-files/6279146/6279146-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:43,525 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210143_9.mp4 (5.63 MB)
+2025-11-26 21:01:44,028 - download_stock_video - INFO - Downloading video 11/20: https://videos.pexels.com/video-files/6278821/6278821-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:44,143 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210144_10.mp4 (0.94 MB)
+2025-11-26 21:01:44,646 - download_stock_video - INFO - Downloading video 12/20: https://videos.pexels.com/video-files/6278824/6278824-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:44,841 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210144_11.mp4 (7.42 MB)
+2025-11-26 21:01:45,344 - download_stock_video - INFO - Downloading video 13/20: https://videos.pexels.com/video-files/4835063/4835063-hd_1080_1920_30fps.mp4
+2025-11-26 21:01:45,477 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210145_12.mp4 (7.15 MB)
+2025-11-26 21:01:45,980 - download_stock_video - INFO - Downloading video 14/20: https://videos.pexels.com/video-files/7605030/7605030-uhd_2160_4096_25fps.mp4
+2025-11-26 21:01:46,984 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210145_13.mp4 (41.69 MB)
+2025-11-26 21:01:47,488 - download_stock_video - INFO - Downloading video 15/20: https://videos.pexels.com/video-files/4828808/4828808-uhd_2160_4096_25fps.mp4
+2025-11-26 21:01:49,630 - download_stock_video - INFO - Downloaded: videos/stock_wireless_bluetooth_d_20251126_210147_14.mp4 (46.52 MB)
+2025-11-26 21:01:50,133 - download_stock_video - INFO - Searching Pexels for: wireless
+2025-11-26 21:01:50,480 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7579667/7579667-uhd_2160_4096_25fps.mp4
+2025-11-26 21:01:50,763 - download_stock_video - INFO - Downloaded: videos/stock_wireless_20251126_210150_15.mp4 (23.64 MB)
+2025-11-26 21:01:51,266 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/6799742/6799742-uhd_2160_3840_30fps.mp4
+2025-11-26 21:01:51,519 - download_stock_video - INFO - Downloaded: videos/stock_wireless_20251126_210151_16.mp4 (22.10 MB)
+2025-11-26 21:01:52,022 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4884244/4884244-uhd_2160_3840_30fps.mp4
+2025-11-26 21:01:52,227 - download_stock_video - INFO - Downloaded: videos/stock_wireless_20251126_210152_17.mp4 (6.83 MB)
+2025-11-26 21:01:52,731 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/8165696/8165696-uhd_2160_4096_25fps.mp4
+2025-11-26 21:01:52,924 - download_stock_video - INFO - Downloaded: videos/stock_wireless_20251126_210152_18.mp4 (10.90 MB)
+2025-11-26 21:01:53,427 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7576801/7576801-uhd_2160_3840_30fps.mp4
+2025-11-26 21:01:53,613 - download_stock_video - INFO - Downloaded: videos/stock_wireless_20251126_210153_19.mp4 (5.42 MB)
+2025-11-26 21:01:54,118 - download_stock_video - INFO - Successfully downloaded 20 videos
+2025-11-26 21:01:54,118 - __main__ - INFO - Downloaded 20 stock videos
+2025-11-26 21:01:54,119 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-26 21:01:54,119 - generate_product_intro_video - INFO - Generating product intro for: Wireless Earbuds
+2025-11-26 21:01:54,119 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-26 21:01:54,281 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1080x1920:d=5.0', '-vf', "color=c=0x1a1a2e:s=1080x1920:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Wireless Earbuds':fontsize=90:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-200:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we\\'re featu':fontsize=35:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+200:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Wireless_Earbuds_20251126_210154.mp4']' returned non-zero exit status 1.
+2025-11-26 21:01:54,282 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-26 21:01:56,830 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Wireless_Earbuds_20251126_210154.mp4
+2025-11-26 21:01:56,831 - generate_product_intro_video - INFO - Product intro created: videos/intro_Wireless_Earbuds_20251126_210154.mp4
+2025-11-26 21:01:56,832 - __main__ - INFO - Intro video created: videos/intro_Wireless_Earbuds_20251126_210154.mp4
+2025-11-26 21:01:56,832 - __main__ - INFO - Step 8/10: Generating video segments...
+2025-11-26 21:01:56,916 - generate_video_single - INFO - Audio: 96.5s -> Segment duration: 3.9s (25 segments)
+2025-11-26 21:01:56,917 - generate_video_single - INFO - Creating 25 segments: 20 videos + 5 images
+2025-11-26 21:01:56,917 - generate_video_single - INFO - Target duration: 96.5s = 25 segments x 3.9s each
+2025-11-26 21:02:05,824 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210156_0.mp4
+2025-11-26 21:02:05,824 - generate_video_single - INFO - Added stock video segment 1/20
+2025-11-26 21:02:11,984 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210205_1.mp4
+2025-11-26 21:02:11,985 - generate_video_single - INFO - Added stock video segment 2/20
+2025-11-26 21:02:21,427 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210211_2.mp4
+2025-11-26 21:02:21,428 - generate_video_single - INFO - Added stock video segment 3/20
+2025-11-26 21:02:30,512 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210221_3.mp4
+2025-11-26 21:02:30,513 - generate_video_single - INFO - Added stock video segment 4/20
+2025-11-26 21:02:30,513 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Earbuds_20251126_210133.jpg
+2025-11-26 21:02:38,353 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210230_4.mp4
+2025-11-26 21:02:38,354 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210230_4.mp4
+2025-11-26 21:02:38,354 - generate_video_single - INFO - Added image segment 1/5
+2025-11-26 21:02:45,633 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210238_5.mp4
+2025-11-26 21:02:45,633 - generate_video_single - INFO - Added stock video segment 5/20
+2025-11-26 21:02:51,980 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210245_6.mp4
+2025-11-26 21:02:51,981 - generate_video_single - INFO - Added stock video segment 6/20
+2025-11-26 21:03:01,890 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210251_7.mp4
+2025-11-26 21:03:01,890 - generate_video_single - INFO - Added stock video segment 7/20
+2025-11-26 21:03:16,880 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210301_8.mp4
+2025-11-26 21:03:16,880 - generate_video_single - INFO - Added stock video segment 8/20
+2025-11-26 21:03:16,880 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Earbuds_20251126_210134.jpg
+2025-11-26 21:03:24,232 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210316_9.mp4
+2025-11-26 21:03:24,233 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210316_9.mp4
+2025-11-26 21:03:24,233 - generate_video_single - INFO - Added image segment 2/5
+2025-11-26 21:03:30,769 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210324_10.mp4
+2025-11-26 21:03:30,769 - generate_video_single - INFO - Added stock video segment 9/20
+2025-11-26 21:03:40,315 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210330_11.mp4
+2025-11-26 21:03:40,315 - generate_video_single - INFO - Added stock video segment 10/20
+2025-11-26 21:03:47,938 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210340_12.mp4
+2025-11-26 21:03:47,938 - generate_video_single - INFO - Added stock video segment 11/20
+2025-11-26 21:03:57,885 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210347_13.mp4
+2025-11-26 21:03:57,886 - generate_video_single - INFO - Added stock video segment 12/20
+2025-11-26 21:03:57,886 - generate_video_single - INFO - Creating video from image: assets/image_20251126_210134_1.png
+2025-11-26 21:04:07,455 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210357_14.mp4
+2025-11-26 21:04:07,456 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210357_14.mp4
+2025-11-26 21:04:07,456 - generate_video_single - INFO - Added image segment 3/5
+2025-11-26 21:04:18,764 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210407_15.mp4
+2025-11-26 21:04:18,764 - generate_video_single - INFO - Added stock video segment 13/20
+2025-11-26 21:04:30,038 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210418_16.mp4
+2025-11-26 21:04:30,038 - generate_video_single - INFO - Added stock video segment 14/20
+2025-11-26 21:04:43,604 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210430_17.mp4
+2025-11-26 21:04:43,605 - generate_video_single - INFO - Added stock video segment 15/20
+2025-11-26 21:04:56,643 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210443_18.mp4
+2025-11-26 21:04:56,643 - generate_video_single - INFO - Added stock video segment 16/20
+2025-11-26 21:04:56,644 - generate_video_single - INFO - Creating video from image: assets/image_20251126_210134_2.png
+2025-11-26 21:05:07,179 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210456_19.mp4
+2025-11-26 21:05:07,180 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210456_19.mp4
+2025-11-26 21:05:07,180 - generate_video_single - INFO - Added image segment 4/5
+2025-11-26 21:05:21,158 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210507_20.mp4
+2025-11-26 21:05:21,158 - generate_video_single - INFO - Added stock video segment 17/20
+2025-11-26 21:05:30,841 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210521_21.mp4
+2025-11-26 21:05:30,841 - generate_video_single - INFO - Added stock video segment 18/20
+2025-11-26 21:05:38,324 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210530_22.mp4
+2025-11-26 21:05:38,325 - generate_video_single - INFO - Added stock video segment 19/20
+2025-11-26 21:05:46,907 - generate_video_single - INFO - Video trimmed to 3.86112s: videos/segment_stock_20251126_210538_23.mp4
+2025-11-26 21:05:46,907 - generate_video_single - INFO - Added stock video segment 20/20
+2025-11-26 21:05:46,907 - generate_video_single - INFO - Creating video from image: assets/image_20251126_210135_3.png
+2025-11-26 21:05:54,850 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210546_24.mp4
+2025-11-26 21:05:54,850 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_210546_24.mp4
+2025-11-26 21:05:54,850 - generate_video_single - INFO - Added image segment 5/5
+2025-11-26 21:05:54,850 - generate_video_single - INFO - Generated 25 video segments (20 videos, 5 images)
+2025-11-26 21:05:54,850 - __main__ - INFO - Created 25 video segments
+2025-11-26 21:05:54,850 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-26 21:05:54,909 - __main__ - INFO - Generated 5 engagement points
+2025-11-26 21:05:54,909 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-26 21:05:54,909 - generate_video_final - INFO - Compiling final video
+2025-11-26 21:05:54,909 - generate_video_final - INFO - Total segments to compile: 27
+2025-11-26 21:05:54,910 - generate_video_final - INFO - Concatenating 27 videos with transitions=True
+2025-11-26 21:09:15,543 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251126_210554.mp4
+2025-11-26 21:09:15,543 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-26 21:09:15,675 - generate_video_final - INFO - Video duration: 197.067s, Audio duration: 96.528s
+2025-11-26 21:09:15,675 - generate_video_final - INFO - Syncing video to audio (197.1s → 96.5s, speed=2.042)
+2025-11-26 21:10:57,195 - generate_video_final - INFO - Audio added to video: videos/final_video_20251126_210554.mp4
+2025-11-26 21:10:57,199 - generate_video_final - INFO - Final video created: videos/final_video_20251126_210554.mp4
+2025-11-26 21:10:57,200 - video_engagement - INFO - Adding 5 text overlays

@@ -1,0 +1,42 @@
+2025-11-25 07:57:30,391 - __main__ - INFO - ================================================================================
+2025-11-25 07:57:30,392 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-25 07:57:30,392 - __main__ - INFO - ================================================================================
+2025-11-25 07:57:30,393 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-25 07:57:30,393 - scrape_product - INFO - Fetching product data for: Wireless Mouse
+2025-11-25 07:57:30,393 - scrape_product - INFO - Searching Google Shopping for: Wireless Mouse
+2025-11-25 07:57:34,783 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-25 07:57:34,874 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Mouse_20251125_075734.jpg
+2025-11-25 07:57:34,877 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-25 07:57:34,877 - __main__ - INFO - Fetched data for 3 products
+2025-11-25 07:57:34,877 - __main__ - INFO - Comparison data available for alternatives
+2025-11-25 07:57:34,878 - __main__ - INFO - Step 1/10: Generating content with product features...
+2025-11-25 07:57:34,878 - generate_content - INFO - Generating content for product: Wireless Mouse
+2025-11-25 07:57:34,878 - generate_content - INFO - Using Groq API for content generation
+2025-11-25 07:57:35,501 - generate_content - INFO - Groq generated 1279 characters
+2025-11-25 07:57:35,504 - __main__ - INFO - Enhanced content generated: 1279 characters
+2025-11-25 07:57:35,504 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-25 07:57:35,505 - generate_description - INFO - Generating video description
+2025-11-25 07:57:35,505 - generate_description - INFO - Description generated: 1665 characters
+2025-11-25 07:57:35,505 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• Here's a 30-45 sec...
+2025-11-25 07:57:35,506 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-25 07:57:35,506 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-25 07:57:35,506 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-25 07:57:35,682 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-25 07:57:35,683 - generate_audio - INFO - Falling back to gTTS
+2025-11-25 07:57:42,781 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251125_075735.mp3
+2025-11-25 07:57:42,783 - generate_audio - INFO - Audio generated successfully: audios/narration_20251125_075735.mp3
+2025-11-25 07:57:42,783 - __main__ - INFO - Audio saved to: audios/narration_20251125_075735.mp3
+2025-11-25 07:57:42,783 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-25 07:57:42,783 - video_engagement - INFO - Creating hook segment
+2025-11-25 07:57:43,047 - video_engagement - ERROR - Failed to create hook: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0xFF6B35:s=1920x1080:d=3.0', '-vf', "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Don't Skip This!':fontsize=100:fontcolor=white:x='(w-text_w)/2':y='(h-text_h)/2':enable='between(t,0,3.0)':alpha='if(lt(t,0.3),t/0.3,if(lt(t,2.7),1,(3.0-t)/0.3))',scale='w*if(lt(t,0.5),1+0.3*t/0.5,1.15):h*if(lt(t,0.5),1+0.3*t/0.5,1.15)',setpts=PTS-STARTPTS", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '30', '-t', '3.0', '-y', 'videos/hook_20251125_075742.mp4']' returned non-zero exit status 1.
+2025-11-25 07:57:46,444 - __main__ - INFO - Hook created: videos/hook_20251125_075742.mp4
+2025-11-25 07:57:46,445 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-25 07:57:46,445 - __main__ - INFO - Using 1 product images
+2025-11-25 07:57:46,445 - __main__ - INFO - Step 6/10: Downloading stock videos...
+2025-11-25 07:57:46,446 - download_stock_video - INFO - Downloading 15 stock videos from pexels for keywords: ['gaming', 'mouse', 'ergonomic', 'wireless', 'design', 'performance', 'quality']
+2025-11-25 07:57:46,446 - download_stock_video - INFO - Searching Pexels with combined query: gaming mouse ergonomic
+2025-11-25 07:57:46,984 - download_stock_video - INFO - Downloading video 1/15: https://videos.pexels.com/video-files/31183721/13321670_4096_2160_50fps.mp4

@@ -1,0 +1,61 @@
+2025-11-24 20:04:45,777 - __main__ - INFO - ================================================================================
+2025-11-24 20:04:45,777 - __main__ - INFO - Starting Video Content Generation Pipeline
+2025-11-24 20:04:45,777 - __main__ - INFO - ================================================================================
+2025-11-24 20:04:45,778 - __main__ - INFO - Step 1/8: Generating content...
+2025-11-24 20:04:45,778 - generate_content - INFO - Generating content for product: Gaming Headset
+2025-11-24 20:04:45,901 - generate_content - ERROR - Gemini content generation failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-24 20:04:45,902 - generate_content - WARNING - Gemini content generation failed: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods., using template
+2025-11-24 20:04:45,902 - generate_content - INFO - Content generated: 520 characters
+2025-11-24 20:04:45,902 - __main__ - INFO - Content generated: 520 characters
+2025-11-24 20:04:45,902 - __main__ - INFO - Step 2/8: Generating description...
+2025-11-24 20:04:45,902 - generate_description - INFO - Generating video description
+2025-11-24 20:04:45,903 - generate_description - INFO - Description generated: 612 characters
+2025-11-24 20:04:45,903 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• Welcome to our com...
+2025-11-24 20:04:45,903 - __main__ - INFO - Step 3/8: Generating audio narration...
+2025-11-24 20:04:45,903 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-24 20:04:45,903 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-24 20:04:46,208 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-24 20:04:46,208 - generate_audio - INFO - Falling back to gTTS
+2025-11-24 20:04:48,796 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251124_200445.mp3
+2025-11-24 20:04:48,798 - generate_audio - INFO - Audio generated successfully: audios/narration_20251124_200445.mp3
+2025-11-24 20:04:48,798 - __main__ - INFO - Audio saved to: audios/narration_20251124_200445.mp3
+2025-11-24 20:04:48,799 - __main__ - INFO - Step 4/8: Generating images...
+2025-11-24 20:04:48,799 - generate_image - INFO - Generating 5 images for: Gaming Headset
+2025-11-24 20:04:48,950 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:04:48,951 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:04:48,953 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:04:49,105 - generate_image - INFO - Generated placeholder image: assets/image_20251124_200448_1.png
+2025-11-24 20:04:49,106 - generate_image - INFO - Generated image 1/5: assets/image_20251124_200448_1.png
+2025-11-24 20:04:49,268 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:04:49,268 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:04:49,271 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:04:49,408 - generate_image - INFO - Generated placeholder image: assets/image_20251124_200449_2.png
+2025-11-24 20:04:49,408 - generate_image - INFO - Generated image 2/5: assets/image_20251124_200449_2.png
+2025-11-24 20:04:49,567 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:04:49,567 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:04:49,570 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:04:49,689 - generate_image - INFO - Generated placeholder image: assets/image_20251124_200449_3.png
+2025-11-24 20:04:49,690 - generate_image - INFO - Generated image 3/5: assets/image_20251124_200449_3.png
+2025-11-24 20:04:49,839 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:04:49,839 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:04:49,841 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:04:49,979 - generate_image - INFO - Generated placeholder image: assets/image_20251124_200449_4.png
+2025-11-24 20:04:49,979 - generate_image - INFO - Generated image 4/5: assets/image_20251124_200449_4.png
+2025-11-24 20:04:50,141 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:04:50,142 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:04:50,143 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:04:50,267 - generate_image - INFO - Generated placeholder image: assets/image_20251124_200449_5.png
+2025-11-24 20:04:50,267 - generate_image - INFO - Generated image 5/5: assets/image_20251124_200449_5.png
+2025-11-24 20:04:50,267 - generate_image - INFO - Successfully generated 5 images
+2025-11-24 20:04:50,268 - __main__ - INFO - Generated 5 images
+2025-11-24 20:04:50,268 - __main__ - INFO - Step 5/8: Downloading stock videos...
+2025-11-24 20:04:50,268 - download_stock_video - INFO - Downloading 5 stock videos from pexels
+2025-11-24 20:04:50,268 - download_stock_video - INFO - Searching Pexels for: audio
+2025-11-24 20:04:50,740 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/1793534/1793534-hd_1920_1080_30fps.mp4
+2025-11-24 20:04:51,344 - download_stock_video - INFO - Downloaded: videos/stock_audio_20251124_200450_0.mp4 (17.02 MB)
+2025-11-24 20:04:51,850 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4380097/4380097-hd_1920_1080_30fps.mp4
+2025-11-24 20:04:52,108 - download_stock_video - INFO - Downloaded: videos/stock_audio_20251124_200451_1.mp4 (13.96 MB)

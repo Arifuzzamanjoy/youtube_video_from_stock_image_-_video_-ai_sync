@@ -1,0 +1,150 @@
+2025-11-24 21:25:37,276 - __main__ - INFO - ================================================================================
+2025-11-24 21:25:37,276 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-24 21:25:37,276 - __main__ - INFO - ================================================================================
+2025-11-24 21:25:37,276 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-24 21:25:37,277 - scrape_product - INFO - Fetching product data for: Gaming Mouse
+2025-11-24 21:25:37,277 - scrape_product - WARNING - No products found, generating mock data
+2025-11-24 21:25:37,277 - scrape_product - INFO - Generating mock product data
+2025-11-24 21:25:37,650 - scrape_product - ERROR - Failed to download image: HTTPSConnectionPool(host='via.placeholder.com', port=443): Max retries exceeded with url: /400x400.png?text=Product+Image (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fbd127f3f40>: Failed to resolve 'via.placeholder.com' ([Errno -3] Temporary failure in name resolution)"))
+2025-11-24 21:25:37,651 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-24 21:25:37,651 - __main__ - INFO - Fetched data for 3 products
+2025-11-24 21:25:37,651 - __main__ - INFO - Comparison data available for alternatives
+2025-11-24 21:25:37,651 - __main__ - INFO - Step 1/10: Generating content with product features...
+2025-11-24 21:25:37,651 - generate_content - INFO - Generating content for product: Gaming Mouse
+2025-11-24 21:25:37,651 - generate_content - INFO - Using Groq API for content generation
+2025-11-24 21:25:38,318 - generate_content - INFO - Groq generated 1327 characters
+2025-11-24 21:25:38,320 - __main__ - INFO - Enhanced content generated: 1327 characters
+2025-11-24 21:25:38,320 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-24 21:25:38,321 - generate_description - INFO - Generating video description
+2025-11-24 21:25:38,321 - generate_description - INFO - Description generated: 1086 characters
+2025-11-24 21:25:38,321 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• [Upbeat background...
+2025-11-24 21:25:38,321 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-24 21:25:38,321 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-24 21:25:38,321 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-24 21:25:38,544 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-24 21:25:38,545 - generate_audio - INFO - Falling back to gTTS
+2025-11-24 21:25:46,120 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251124_212538.mp3
+2025-11-24 21:25:46,122 - generate_audio - INFO - Audio generated successfully: audios/narration_20251124_212538.mp3
+2025-11-24 21:25:46,123 - __main__ - INFO - Audio saved to: audios/narration_20251124_212538.mp3
+2025-11-24 21:25:46,124 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-24 21:25:46,124 - video_engagement - INFO - Creating hook segment
+2025-11-24 21:25:46,235 - video_engagement - ERROR - Failed to create hook: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0xFF6B35:s=1920x1080:d=3.0', '-vf', "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Watch This First!':fontsize=100:fontcolor=white:x='(w-text_w)/2':y='(h-text_h)/2':enable='between(t,0,3.0)':alpha='if(lt(t,0.3),t/0.3,if(lt(t,2.7),1,(3.0-t)/0.3))',scale='w*if(lt(t,0.5),1+0.3*t/0.5,1.15):h*if(lt(t,0.5),1+0.3*t/0.5,1.15)',setpts=PTS-STARTPTS", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '30', '-t', '3.0', '-y', 'videos/hook_20251124_212546.mp4']' returned non-zero exit status 1.
+2025-11-24 21:25:49,295 - __main__ - INFO - Hook created: videos/hook_20251124_212546.mp4
+2025-11-24 21:25:49,295 - __main__ - INFO - Step 5/10: Generating images...
+2025-11-24 21:25:49,295 - generate_image - INFO - Generating 2 images for: Gaming Mouse
+2025-11-24 21:25:49,296 - generate_image - INFO - Downloading from Unsplash: [upbeat background music
+2025-11-24 21:25:49,599 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%5Bupbeat,background,music,technology
+2025-11-24 21:25:49,600 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%5Bupbeat,back
+2025-11-24 21:25:49,601 - generate_image - INFO - Generating image with Hugging Face: [Upbeat background music starts]
+
+Host: "Are you t...
+2025-11-24 21:25:49,776 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-24 21:25:49,776 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-24 21:25:49,777 - generate_image - INFO - Using placeholder image generation
+2025-11-24 21:25:49,909 - generate_image - INFO - Generated placeholder image: assets/image_20251124_212549_1.png
+2025-11-24 21:25:49,910 - generate_image - INFO - Generated image 1/2: assets/image_20251124_212549_1.png
+2025-11-24 21:25:49,910 - generate_image - INFO - Downloading from Unsplash: [upbeat background music
+2025-11-24 21:25:50,203 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%5Bupbeat,background,music,technology
+2025-11-24 21:25:50,204 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%5Bupbeat,back
+2025-11-24 21:25:50,205 - generate_image - INFO - Generating image with Hugging Face: [Upbeat background music starts]
+
+Host: "Are you t...
+2025-11-24 21:25:50,368 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-24 21:25:50,370 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-24 21:25:50,372 - generate_image - INFO - Using placeholder image generation
+2025-11-24 21:25:50,512 - generate_image - INFO - Generated placeholder image: assets/image_20251124_212549_2.png
+2025-11-24 21:25:50,512 - generate_image - INFO - Generated image 2/2: assets/image_20251124_212549_2.png
+2025-11-24 21:25:50,513 - generate_image - INFO - Successfully generated 2 images
+2025-11-24 21:25:50,513 - __main__ - INFO - Generated 2 images
+2025-11-24 21:25:50,513 - __main__ - INFO - Step 6/10: Downloading stock videos...
+2025-11-24 21:25:50,513 - download_stock_video - INFO - Downloading 10 stock videos from pexels for keywords: ['precision', 'RGB', 'wireless', 'gaming', 'mouse', 'ergonomic', 'design']
+2025-11-24 21:25:50,514 - download_stock_video - INFO - Searching Pexels with combined query: precision RGB wireless
+2025-11-24 21:25:51,027 - download_stock_video - INFO - Downloading video 1/10: https://videos.pexels.com/video-files/853985/853985-hd_1920_1080_25fps.mp4
+2025-11-24 21:25:51,396 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212551_0.mp4 (5.12 MB)
+2025-11-24 21:25:51,899 - download_stock_video - INFO - Downloading video 2/10: https://videos.pexels.com/video-files/7196106/7196106-hd_1920_1080_25fps.mp4
+2025-11-24 21:25:52,042 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212551_1.mp4 (3.18 MB)
+2025-11-24 21:25:52,545 - download_stock_video - INFO - Downloading video 3/10: https://videos.pexels.com/video-files/9940809/9940809-uhd_4096_2160_25fps.mp4
+2025-11-24 21:25:53,314 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212552_2.mp4 (80.11 MB)
+2025-11-24 21:25:53,818 - download_stock_video - INFO - Downloading video 4/10: https://videos.pexels.com/video-files/7047600/7047600-hd_1920_1080_25fps.mp4
+2025-11-24 21:25:54,502 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212553_3.mp4 (3.08 MB)
+2025-11-24 21:25:55,005 - download_stock_video - INFO - Downloading video 5/10: https://videos.pexels.com/video-files/4443264/4443264-hd_1920_1080_25fps.mp4
+2025-11-24 21:25:55,171 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212555_4.mp4 (2.35 MB)
+2025-11-24 21:25:55,673 - download_stock_video - INFO - Downloading video 6/10: https://videos.pexels.com/video-files/7999451/7999451-hd_1920_1080_25fps.mp4
+2025-11-24 21:25:56,039 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212555_5.mp4 (1.62 MB)
+2025-11-24 21:25:56,543 - download_stock_video - INFO - Downloading video 7/10: https://videos.pexels.com/video-files/7123185/7123185-hd_1920_1080_30fps.mp4
+2025-11-24 21:25:57,710 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212556_6.mp4 (17.29 MB)
+2025-11-24 21:25:58,213 - download_stock_video - INFO - Downloading video 8/10: https://videos.pexels.com/video-files/7668113/7668113-hd_1920_1080_25fps.mp4
+2025-11-24 21:25:58,434 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212558_7.mp4 (13.54 MB)
+2025-11-24 21:25:58,937 - download_stock_video - INFO - Downloading video 9/10: https://videos.pexels.com/video-files/19276083/19276083-hd_1920_1080_24fps.mp4
+2025-11-24 21:25:59,191 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212558_8.mp4 (7.77 MB)
+2025-11-24 21:25:59,693 - download_stock_video - INFO - Downloading video 10/10: https://videos.pexels.com/video-files/17461592/17461592-hd_1920_1080_30fps.mp4
+2025-11-24 21:26:00,233 - download_stock_video - INFO - Downloaded: videos/stock_precision_RGB_wirele_20251124_212559_9.mp4 (1.92 MB)
+2025-11-24 21:26:00,736 - download_stock_video - INFO - Successfully downloaded 10 videos
+2025-11-24 21:26:00,737 - __main__ - INFO - Downloaded 10 stock videos
+2025-11-24 21:26:00,737 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-24 21:26:00,738 - generate_product_intro_video - INFO - Generating product intro for: Gaming Mouse
+2025-11-24 21:26:00,738 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-24 21:26:00,817 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1920x1080:d=5.0', '-vf', "color=c=0x1a1a2e:s=1920x1080:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Gaming Mouse':fontsize=120:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-100:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we're featu':fontsize=40:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+100:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Gaming_Mouse_20251124_212600.mp4']' returned non-zero exit status 1.
+2025-11-24 21:26:00,817 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-24 21:26:03,274 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Gaming_Mouse_20251124_212600.mp4
+2025-11-24 21:26:03,274 - generate_product_intro_video - INFO - Product intro created: videos/intro_Gaming_Mouse_20251124_212600.mp4
+2025-11-24 21:26:03,274 - __main__ - INFO - Intro video created: videos/intro_Gaming_Mouse_20251124_212600.mp4
+2025-11-24 21:26:03,275 - __main__ - INFO - Step 8/10: Generating video segments with engagement optimization...
+2025-11-24 21:26:03,275 - generate_video_single - INFO - Generating video segments: 10 stock videos, 2 images
+2025-11-24 21:26:03,412 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212603_0.mp4
+2025-11-24 21:26:03,412 - generate_video_single - INFO - Added stock video segment 1/10
+2025-11-24 21:26:03,515 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212603_1.mp4
+2025-11-24 21:26:03,515 - generate_video_single - INFO - Added stock video segment 2/10
+2025-11-24 21:26:03,705 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212603_2.mp4
+2025-11-24 21:26:03,706 - generate_video_single - INFO - Added stock video segment 3/10
+2025-11-24 21:26:03,799 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212603_3.mp4
+2025-11-24 21:26:03,799 - generate_video_single - INFO - Added stock video segment 4/10
+2025-11-24 21:26:03,913 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212603_4.mp4
+2025-11-24 21:26:03,913 - generate_video_single - INFO - Added stock video segment 5/10
+2025-11-24 21:26:04,001 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212603_5.mp4
+2025-11-24 21:26:04,001 - generate_video_single - INFO - Added stock video segment 6/10
+2025-11-24 21:26:04,097 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212604_6.mp4
+2025-11-24 21:26:04,097 - generate_video_single - INFO - Added stock video segment 7/10
+2025-11-24 21:26:04,192 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212604_7.mp4
+2025-11-24 21:26:04,192 - generate_video_single - INFO - Added stock video segment 8/10
+2025-11-24 21:26:04,298 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212604_8.mp4
+2025-11-24 21:26:04,298 - generate_video_single - INFO - Added stock video segment 9/10
+2025-11-24 21:26:04,398 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_212604_9.mp4
+2025-11-24 21:26:04,398 - generate_video_single - INFO - Added stock video segment 10/10
+2025-11-24 21:26:04,398 - generate_video_single - INFO - Creating video from image: assets/image_20251124_212549_1.png
+2025-11-24 21:26:07,724 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_212604_0.mp4
+2025-11-24 21:26:07,724 - generate_video_single - INFO - Added image segment 1/2
+2025-11-24 21:26:07,724 - generate_video_single - INFO - Creating video from image: assets/image_20251124_212549_2.png
+2025-11-24 21:26:11,069 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_212607_1.mp4
+2025-11-24 21:26:11,069 - generate_video_single - INFO - Added image segment 2/2
+2025-11-24 21:26:11,070 - generate_video_single - INFO - Generated 12 video segments (10 videos, 2 images)
+2025-11-24 21:26:11,070 - video_engagement - INFO - Optimizing video pacing
+2025-11-24 21:28:01,332 - __main__ - INFO - Created 12 optimized video segments
+2025-11-24 21:28:01,332 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-24 21:28:01,395 - __main__ - INFO - Generated 5 engagement points
+2025-11-24 21:28:01,396 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-24 21:28:01,396 - generate_video_final - INFO - Compiling final video
+2025-11-24 21:28:01,396 - generate_video_final - INFO - Total segments to compile: 15
+2025-11-24 21:28:01,396 - generate_video_final - INFO - Concatenating 15 videos
+2025-11-24 21:28:01,397 - generate_video_final - INFO - Concatenating with transitions
+2025-11-24 21:29:49,032 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251124_212801.mp4
+2025-11-24 21:29:49,032 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-24 21:29:49,870 - generate_video_final - INFO - Audio added to video: videos/final_video_20251124_212801.mp4
+2025-11-24 21:29:49,871 - generate_video_final - INFO - Final video created: videos/final_video_20251124_212801.mp4
+2025-11-24 21:29:49,872 - video_engagement - INFO - Adding 5 text overlays
+2025-11-24 21:29:50,006 - video_engagement - ERROR - Text overlays failed: Command '['ffmpeg', '-i', 'videos/final_video_20251124_212801.mp4', '-vf', 'drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text=\'[Upbeat background music starts]\n\nHost: "Are you t\':fontsize=60:fontcolor=white:box=1:boxcolor=black@0.7:boxborderw=10:x=(w-text_w)/2:y=h-150:enable=\'between(t,17.788,19.788)\',drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text=\'But that\\\\\'s not all - the X7 also features precisio\':fontsize=60:fontcolor=white:box=1:boxcolor=black@0.7:boxborderw=10:x=(w-text_w)/2:y=h-150:enable=\'between(t,35.576,37.576)\',drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text=\'"\n\n[Cut back to the host]\n\nHost: "But what really \':fontsize=60:fontcolor=white:box=1:boxcolor=black@0.7:boxborderw=10:x=(w-text_w)/2:y=h-150:enable=\'between(t,53.364000000000004,55.364000000000004)\',drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text=\'Say goodbye to tangled cords and hello to seamless\':fontsize=60:fontcolor=white:box=1:boxcolor=black@0.7:boxborderw=10:x=(w-text_w)/2:y=h-150:enable=\'between(t,71.152,73.152)\',drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text=\'And with up to 24 hours of battery life, you\\\\\'ll ne\':fontsize=60:fontcolor=white:box=1:boxcolor=black@0.7:boxborderw=10:x=(w-text_w)/2:y=h-150:enable=\'between(t,88.94,90.94)\'', '-c:v', 'libx264', '-c:a', 'copy', '-y', 'videos/final_video_20251124_212801_engaged.mp4']' returned non-zero exit status 1.
+2025-11-24 21:29:50,007 - video_engagement - INFO - Adding call-to-action
+2025-11-24 21:31:24,478 - video_engagement - INFO - CTA added: videos/final_video_20251124_212801_cta.mp4
+2025-11-24 21:31:24,478 - __main__ - INFO - Final engaged video created: videos/final_video_20251124_212801_cta.mp4
+2025-11-24 21:31:24,478 - __main__ - INFO - Converting video format...
+2025-11-24 21:31:24,478 - convert_video - INFO - Converting videos/final_video_20251124_212801_cta.mp4 to mp4
+2025-11-24 21:31:24,478 - convert_video - INFO - File already in mp4 format, skipping conversion: videos/final_video_20251124_212801_cta.mp4
+2025-11-24 21:31:24,478 - __main__ - INFO - Converted video: videos/final_video_20251124_212801_cta.mp4
+2025-11-24 21:31:24,478 - __main__ - INFO - ================================================================================
+2025-11-24 21:31:24,479 - __main__ - INFO - Pipeline completed successfully!
+2025-11-24 21:31:24,479 - __main__ - INFO - Final output: videos/final_video_20251124_212801_cta.mp4
+2025-11-24 21:31:24,479 - __main__ - INFO - ================================================================================

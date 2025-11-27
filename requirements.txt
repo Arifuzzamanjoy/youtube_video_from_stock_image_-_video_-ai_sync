@@ -1,0 +1,61 @@
+# Automated Video Content Generation System
+# Python dependencies for video creation, content generation, and media processing
+
+# Core video processing
+ffmpeg-python==0.2.0
+imageio==2.31.1
+imageio-ffmpeg==0.4.9
+
+# Image processing and generation
+Pillow==10.0.0
+opencv-python==4.8.0.76
+
+# Audio generation (Text-to-Speech)
+gTTS==2.3.2
+pyttsx3==2.90
+pydub==0.25.1
+
+# AI/ML libraries for content generation
+google-generativeai>=0.3.0
+openai==0.28.0
+anthropic==0.3.11
+
+# Image generation APIs
+stability-sdk==0.8.3
+replicate==0.15.0
+
+# Azure services (optional)
+azure-cognitiveservices-speech==1.31.0
+
+# Web scraping and API requests
+requests==2.31.0
+beautifulsoup4==4.12.2
+selenium==4.12.0
+
+# Google Cloud services (optional)
+google-cloud-texttospeech==2.14.1
+google-cloud-speech==2.21.0
+google-auth==2.23.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+coloredlogs==15.0.1
+
+# Data handling
+pandas==2.0.3
+numpy==1.24.3
+
+# Configuration and logging
+PyYAML==6.0.1
+python-json-logger==2.0.7
+
+# Optional: Natural Language Processing
+nltk==3.8.1
+spacy==3.6.1
+
+# Optional: Video metadata
+mutagen==1.47.0
+
+# Optional: Advanced video editing
+moviepy==1.0.3

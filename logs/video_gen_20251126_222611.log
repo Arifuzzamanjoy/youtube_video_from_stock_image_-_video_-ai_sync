@@ -1,0 +1,212 @@
+2025-11-26 22:26:11,272 - __main__ - INFO - ================================================================================
+2025-11-26 22:26:11,272 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-26 22:26:11,273 - __main__ - INFO - ================================================================================
+2025-11-26 22:26:11,273 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-26 22:26:11,273 - scrape_product - INFO - Fetching product data for: Smart Watch
+2025-11-26 22:26:11,273 - scrape_product - INFO - Searching Google Shopping for: Smart Watch
+2025-11-26 22:26:11,383 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-26 22:26:11,546 - scrape_product - INFO - Downloaded product image: assets/product_Smart_Watch_20251126_222611.jpg
+2025-11-26 22:26:11,549 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-26 22:26:11,550 - __main__ - INFO - Fetched data for 3 products
+2025-11-26 22:26:11,550 - __main__ - INFO - Comparison data available for alternatives
+2025-11-26 22:26:11,550 - __main__ - INFO - Step 1/10: Generating review keywords from product data...
+2025-11-26 22:26:11,550 - generate_content - INFO - Generating keywords from product data using LLM
+2025-11-26 22:26:11,791 - generate_content - INFO - Generated 22 keywords: ['speed', 'efficiency', 'responsiveness', 'build quality', 'aesthetics', 'ergonomics', 'comfortable', 'intuitive', 'reliable', 'connectivity', 'battery life', 'materials', 'water resistance', 'durability', 'affordable', 'premium', 'worth it', 'seamless integration', 'long-lasting', 'fitness tracking', 'health monitoring', 'user-friendly interface.']
+2025-11-26 22:26:11,792 - __main__ - INFO - Generated keywords: ['ergonomics', 'comfortable', 'durability', 'materials', 'health', 'speed', 'tracking', 'efficiency', 'fitness', 'responsiveness', 'build quality', 'aesthetics', 'connectivity', 'battery life', 'intuitive']
+2025-11-26 22:26:11,793 - __main__ - INFO - Step 2/10: Generating product reviewer script...
+2025-11-26 22:26:11,794 - generate_content - INFO - Generating content for product: Smart Watch
+2025-11-26 22:26:11,794 - generate_content - INFO - Using Groq API for content generation
+2025-11-26 22:26:12,655 - generate_content - INFO - Groq generated 1234 characters
+2025-11-26 22:26:12,657 - __main__ - INFO - Product reviewer script generated: 1234 characters (target: 800-1200 words for 60-90s)
+2025-11-26 22:26:12,658 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-26 22:26:12,658 - generate_description - INFO - Generating video description
+2025-11-26 22:26:12,658 - generate_description - INFO - Description generated: 687 characters
+2025-11-26 22:26:12,658 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• Here's a natural, ...
+2025-11-26 22:26:12,659 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-26 22:26:12,659 - generate_audio - INFO - Generating audio using gemini engine for 1234 characters
+2025-11-26 22:26:12,659 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-26 22:26:12,861 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-26 22:26:12,862 - generate_audio - INFO - Falling back to gTTS
+2025-11-26 22:26:20,669 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251126_222612.mp3
+2025-11-26 22:26:20,670 - generate_audio - INFO - Audio generated successfully: audios/narration_20251126_222612.mp3
+2025-11-26 22:26:20,671 - __main__ - INFO - Audio saved to: audios/narration_20251126_222612.mp3
+2025-11-26 22:26:20,672 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-26 22:26:20,672 - video_engagement - INFO - Creating hook segment
+2025-11-26 22:26:22,731 - video_engagement - INFO - Hook segment created: videos/hook_20251126_222620.mp4
+2025-11-26 22:26:22,732 - __main__ - INFO - Hook created: videos/hook_20251126_222620.mp4
+2025-11-26 22:26:22,732 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-26 22:26:22,843 - scrape_product - INFO - Downloaded product image: assets/product_Smart_Watch_20251126_222622.jpg
+2025-11-26 22:26:22,928 - scrape_product - INFO - Downloaded product image: assets/product_Smart_Watch_20251126_222622.jpg
+2025-11-26 22:26:23,198 - scrape_product - INFO - Downloaded product image: assets/product_Smart_Watch_20251126_222622.jpg
+2025-11-26 22:26:23,201 - generate_image - INFO - Generating 5 images for: Smart Watch
+2025-11-26 22:26:23,202 - generate_image - INFO - Searching Pexels for: here's a natural, conversational 60-90
+2025-11-26 22:26:23,921 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_222623_1.png (369.3 KB)
+2025-11-26 22:26:23,923 - generate_image - INFO - Generated image 1/5: assets/image_20251126_222623_1.png
+2025-11-26 22:26:23,924 - generate_image - INFO - Searching Pexels for: here's a natural, conversational 60-90
+2025-11-26 22:26:24,521 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_222623_2.png (369.3 KB)
+2025-11-26 22:26:24,523 - generate_image - INFO - Generated image 2/5: assets/image_20251126_222623_2.png
+2025-11-26 22:26:24,524 - generate_image - INFO - Searching Pexels for: here's a natural, conversational 60-90
+2025-11-26 22:26:24,998 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_222624_3.png (369.3 KB)
+2025-11-26 22:26:25,001 - generate_image - INFO - Generated image 3/5: assets/image_20251126_222624_3.png
+2025-11-26 22:26:25,002 - generate_image - INFO - Searching Pexels for: here's a natural, conversational 60-90
+2025-11-26 22:26:25,541 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_222625_4.png (369.3 KB)
+2025-11-26 22:26:25,544 - generate_image - INFO - Generated image 4/5: assets/image_20251126_222625_4.png
+2025-11-26 22:26:25,544 - generate_image - INFO - Searching Pexels for: here's a natural, conversational 60-90
+2025-11-26 22:26:26,047 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_222625_5.png (369.3 KB)
+2025-11-26 22:26:26,051 - generate_image - INFO - Generated image 5/5: assets/image_20251126_222625_5.png
+2025-11-26 22:26:26,052 - generate_image - INFO - Successfully generated 5 images
+2025-11-26 22:26:26,052 - __main__ - INFO - Using 5 unique product image segments
+2025-11-26 22:26:26,052 - __main__ - INFO - Step 6/10: Downloading contextual stock videos...
+2025-11-26 22:26:26,053 - download_stock_video - INFO - Downloading 20 stock videos from pexels for keywords: ['design', 'fitness', 'health', 'tracking', 'ergonomic', 'design', 'comfort']
+2025-11-26 22:26:26,054 - download_stock_video - INFO - Searching Pexels with combined query: design fitness health
+2025-11-26 22:26:26,431 - download_stock_video - INFO - Downloading video 1/20: https://videos.pexels.com/video-files/5726624/5726624-uhd_2160_4096_25fps.mp4
+2025-11-26 22:26:26,729 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222626_0.mp4 (27.21 MB)
+2025-11-26 22:26:27,231 - download_stock_video - INFO - Downloading video 2/20: https://videos.pexels.com/video-files/6967536/6967536-hd_1080_1920_25fps.mp4
+2025-11-26 22:26:27,377 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222627_1.mp4 (4.90 MB)
+2025-11-26 22:26:27,880 - download_stock_video - INFO - Downloading video 3/20: https://videos.pexels.com/video-files/8027978/8027978-uhd_2160_4096_25fps.mp4
+2025-11-26 22:26:28,195 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222627_2.mp4 (30.23 MB)
+2025-11-26 22:26:28,698 - download_stock_video - INFO - Downloading video 4/20: https://videos.pexels.com/video-files/7590827/7590827-hd_1080_1920_25fps.mp4
+2025-11-26 22:26:28,834 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222628_3.mp4 (2.89 MB)
+2025-11-26 22:26:29,337 - download_stock_video - INFO - Downloading video 5/20: https://videos.pexels.com/video-files/7017847/7017847-hd_1080_1920_30fps.mp4
+2025-11-26 22:26:29,484 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222629_4.mp4 (6.22 MB)
+2025-11-26 22:26:29,987 - download_stock_video - INFO - Downloading video 6/20: https://videos.pexels.com/video-files/8050068/8050068-hd_1080_1920_25fps.mp4
+2025-11-26 22:26:30,139 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222629_5.mp4 (5.59 MB)
+2025-11-26 22:26:30,642 - download_stock_video - INFO - Downloading video 7/20: https://videos.pexels.com/video-files/6153723/6153723-uhd_2160_4096_25fps.mp4
+2025-11-26 22:26:30,939 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222630_6.mp4 (25.98 MB)
+2025-11-26 22:26:31,444 - download_stock_video - INFO - Downloading video 8/20: https://videos.pexels.com/video-files/29138315/12587119_1080_1920_60fps.mp4
+2025-11-26 22:26:31,744 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222631_7.mp4 (18.67 MB)
+2025-11-26 22:26:32,249 - download_stock_video - INFO - Downloading video 9/20: https://videos.pexels.com/video-files/29352586/12649643_1080_1920_50fps.mp4
+2025-11-26 22:26:32,389 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222632_8.mp4 (5.32 MB)
+2025-11-26 22:26:32,892 - download_stock_video - INFO - Downloading video 10/20: https://videos.pexels.com/video-files/34865087/14775393_1080_1920_30fps.mp4
+2025-11-26 22:26:33,094 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222632_9.mp4 (10.44 MB)
+2025-11-26 22:26:33,612 - download_stock_video - INFO - Downloading video 11/20: https://videos.pexels.com/video-files/6696210/6696210-hd_1080_1920_24fps.mp4
+2025-11-26 22:26:33,808 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222633_10.mp4 (4.31 MB)
+2025-11-26 22:26:34,311 - download_stock_video - INFO - Downloading video 12/20: https://videos.pexels.com/video-files/8431551/8431551-uhd_2160_4096_25fps.mp4
+2025-11-26 22:26:34,484 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222634_11.mp4 (9.06 MB)
+2025-11-26 22:26:34,987 - download_stock_video - INFO - Downloading video 13/20: https://videos.pexels.com/video-files/6967416/6967416-hd_1080_1920_25fps.mp4
+2025-11-26 22:26:35,166 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222634_12.mp4 (7.68 MB)
+2025-11-26 22:26:35,669 - download_stock_video - INFO - Downloading video 14/20: https://videos.pexels.com/video-files/6696222/6696222-hd_1080_1920_24fps.mp4
+2025-11-26 22:26:35,813 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222635_13.mp4 (5.08 MB)
+2025-11-26 22:26:36,315 - download_stock_video - INFO - Downloading video 15/20: https://videos.pexels.com/video-files/6688049/6688049-hd_1080_1920_24fps.mp4
+2025-11-26 22:26:36,527 - download_stock_video - INFO - Downloaded: videos/stock_design_fitness_healt_20251126_222636_14.mp4 (4.46 MB)
+2025-11-26 22:26:37,029 - download_stock_video - INFO - Searching Pexels for: design
+2025-11-26 22:26:37,355 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/3843427/3843427-uhd_2160_4096_25fps.mp4
+2025-11-26 22:26:37,534 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_222637_15.mp4 (16.19 MB)
+2025-11-26 22:26:38,037 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4622990/4622990-uhd_2160_3840_30fps.mp4
+2025-11-26 22:26:38,208 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_222638_16.mp4 (14.51 MB)
+2025-11-26 22:26:38,711 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/2828876/2828876-hd_1080_1920_24fps.mp4
+2025-11-26 22:26:38,850 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_222638_17.mp4 (5.71 MB)
+2025-11-26 22:26:39,354 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/3139873/3139873-hd_720_1280_30fps.mp4
+2025-11-26 22:26:39,486 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_222639_18.mp4 (3.56 MB)
+2025-11-26 22:26:39,989 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4884244/4884244-uhd_2160_3840_30fps.mp4
+2025-11-26 22:26:40,163 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_222639_19.mp4 (6.83 MB)
+2025-11-26 22:26:40,669 - download_stock_video - INFO - Successfully downloaded 20 videos
+2025-11-26 22:26:40,669 - __main__ - INFO - Downloaded 20 contextual stock videos
+2025-11-26 22:26:40,669 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-26 22:26:40,669 - generate_product_intro_video - INFO - Generating product intro for: Smart Watch
+2025-11-26 22:26:40,670 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-26 22:26:40,762 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1080x1920:d=0.8', '-vf', "color=c=0x1a1a2e:s=1080x1920:d=0.8[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Smart Watch':fontsize=90:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2:alpha='if(lt(t,0.2),t*5,if(lt(t,0.6000000000000001),1,(1-t+0.6000000000000001)*5))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Smart_Watch_20251126_222640.mp4']' returned non-zero exit status 1.
+2025-11-26 22:26:40,764 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-26 22:26:41,493 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Smart_Watch_20251126_222640.mp4
+2025-11-26 22:26:41,494 - generate_product_intro_video - INFO - Product intro created: videos/intro_Smart_Watch_20251126_222640.mp4
+2025-11-26 22:26:41,494 - __main__ - INFO - Intro video created: videos/intro_Smart_Watch_20251126_222640.mp4
+2025-11-26 22:26:41,494 - __main__ - INFO - Step 8/10: Generating video segments...
+2025-11-26 22:26:41,574 - generate_video_single - INFO - Audio: 92.6s -> Segment duration: 2.5s (25 segments)
+2025-11-26 22:26:41,574 - generate_video_single - INFO - Creating 25 segments: 20 videos + 5 images
+2025-11-26 22:26:41,574 - generate_video_single - INFO - Target duration: 62.5s = 25 segments x 2.5s each
+2025-11-26 22:26:49,797 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_222641_0.mp4
+2025-11-26 22:26:49,797 - generate_video_single - INFO - Added stock video segment 1/20
+2025-11-26 22:26:53,244 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_222649_1.mp4
+2025-11-26 22:26:53,244 - generate_video_single - INFO - Added stock video segment 2/20
+2025-11-26 22:27:01,635 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_222653_2.mp4
+2025-11-26 22:27:01,636 - generate_video_single - INFO - Added stock video segment 3/20
+2025-11-26 22:27:06,698 - generate_video_single - INFO - Video trimmed to 2.2s: videos/segment_stock_20251126_222701_3.mp4
+2025-11-26 22:27:06,698 - generate_video_single - INFO - Added stock video segment 4/20
+2025-11-26 22:27:06,698 - generate_video_single - INFO - Creating video from image: assets/product_Smart_Watch_20251126_222622.jpg
+2025-11-26 22:27:11,587 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222706_4.mp4
+2025-11-26 22:27:11,588 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222706_4.mp4
+2025-11-26 22:27:11,588 - generate_video_single - INFO - Added image segment 1/5
+2025-11-26 22:27:17,822 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_222711_5.mp4
+2025-11-26 22:27:17,823 - generate_video_single - INFO - Added stock video segment 5/20
+2025-11-26 22:27:21,993 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_222717_6.mp4
+2025-11-26 22:27:21,993 - generate_video_single - INFO - Added stock video segment 6/20
+2025-11-26 22:27:29,328 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_222721_7.mp4
+2025-11-26 22:27:29,329 - generate_video_single - INFO - Added stock video segment 7/20
+2025-11-26 22:27:45,212 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_222729_8.mp4
+2025-11-26 22:27:45,213 - generate_video_single - INFO - Added stock video segment 8/20
+2025-11-26 22:27:45,213 - generate_video_single - INFO - Creating video from image: assets/image_20251126_222623_1.png
+2025-11-26 22:27:51,402 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222745_9.mp4
+2025-11-26 22:27:51,403 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222745_9.mp4
+2025-11-26 22:27:51,403 - generate_video_single - INFO - Added image segment 2/5
+2025-11-26 22:28:02,578 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_222751_10.mp4
+2025-11-26 22:28:02,578 - generate_video_single - INFO - Added stock video segment 9/20
+2025-11-26 22:28:10,227 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_222802_11.mp4
+2025-11-26 22:28:10,228 - generate_video_single - INFO - Added stock video segment 10/20
+2025-11-26 22:28:15,936 - generate_video_single - INFO - Video trimmed to 2.2s: videos/segment_stock_20251126_222810_12.mp4
+2025-11-26 22:28:15,937 - generate_video_single - INFO - Added stock video segment 11/20
+2025-11-26 22:28:22,604 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_222815_13.mp4
+2025-11-26 22:28:22,604 - generate_video_single - INFO - Added stock video segment 12/20
+2025-11-26 22:28:22,605 - generate_video_single - INFO - Creating video from image: assets/image_20251126_222623_2.png
+2025-11-26 22:28:28,718 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222822_14.mp4
+2025-11-26 22:28:28,718 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222822_14.mp4
+2025-11-26 22:28:28,718 - generate_video_single - INFO - Added image segment 3/5
+2025-11-26 22:28:33,826 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_222828_15.mp4
+2025-11-26 22:28:33,826 - generate_video_single - INFO - Added stock video segment 13/20
+2025-11-26 22:28:40,521 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_222833_16.mp4
+2025-11-26 22:28:40,521 - generate_video_single - INFO - Added stock video segment 14/20
+2025-11-26 22:28:46,630 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_222840_17.mp4
+2025-11-26 22:28:46,630 - generate_video_single - INFO - Added stock video segment 15/20
+2025-11-26 22:28:54,436 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_222846_18.mp4
+2025-11-26 22:28:54,437 - generate_video_single - INFO - Added stock video segment 16/20
+2025-11-26 22:28:54,438 - generate_video_single - INFO - Creating video from image: assets/image_20251126_222624_3.png
+2025-11-26 22:29:00,864 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222854_19.mp4
+2025-11-26 22:29:00,865 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222854_19.mp4
+2025-11-26 22:29:00,865 - generate_video_single - INFO - Added image segment 4/5
+2025-11-26 22:29:07,459 - generate_video_single - INFO - Video trimmed to 2.2s: videos/segment_stock_20251126_222900_20.mp4
+2025-11-26 22:29:07,459 - generate_video_single - INFO - Added stock video segment 17/20
+2025-11-26 22:29:14,706 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_222907_21.mp4
+2025-11-26 22:29:14,707 - generate_video_single - INFO - Added stock video segment 18/20
+2025-11-26 22:29:21,299 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_222914_22.mp4
+2025-11-26 22:29:21,299 - generate_video_single - INFO - Added stock video segment 19/20
+2025-11-26 22:29:27,382 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_222921_23.mp4
+2025-11-26 22:29:27,382 - generate_video_single - INFO - Added stock video segment 20/20
+2025-11-26 22:29:27,382 - generate_video_single - INFO - Creating video from image: assets/image_20251126_222625_4.png
+2025-11-26 22:29:33,182 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222927_24.mp4
+2025-11-26 22:29:33,182 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_222927_24.mp4
+2025-11-26 22:29:33,183 - generate_video_single - INFO - Added image segment 5/5
+2025-11-26 22:29:33,183 - generate_video_single - INFO - Generated 25 video segments (20 videos, 5 images)
+2025-11-26 22:29:33,183 - __main__ - INFO - Created 25 video segments
+2025-11-26 22:29:33,183 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-26 22:29:33,242 - __main__ - INFO - Generated 3 engagement points
+2025-11-26 22:29:33,243 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-26 22:29:33,243 - generate_video_final - INFO - Compiling final video
+2025-11-26 22:29:33,243 - generate_video_final - INFO - Total segments to compile: 27
+2025-11-26 22:29:33,243 - generate_video_final - INFO - Concatenating 27 videos with transitions=True
+2025-11-26 22:31:47,073 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251126_222933.mp4
+2025-11-26 22:31:47,074 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-26 22:31:47,217 - generate_video_final - INFO - Video duration: 119.0s, Audio duration: 92.64s
+2025-11-26 22:31:47,218 - generate_video_final - INFO - Syncing video to audio (119.0s → 92.6s, speed=1.285)
+2025-11-26 22:33:29,642 - generate_video_final - INFO - Audio added to video: videos/final_video_20251126_222933.mp4
+2025-11-26 22:33:29,645 - generate_video_final - INFO - Final video created: videos/final_video_20251126_222933.mp4
+2025-11-26 22:33:29,645 - video_engagement - INFO - Adding 3 text overlays
+2025-11-26 22:35:18,371 - video_engagement - INFO - Text overlays added: videos/final_video_20251126_222933_engaged.mp4
+2025-11-26 22:35:18,371 - video_engagement - INFO - Adding call-to-action
+2025-11-26 22:36:57,532 - video_engagement - INFO - CTA added: videos/final_video_20251126_222933_engaged_cta.mp4
+2025-11-26 22:36:57,532 - __main__ - INFO - Final engaged video created: videos/final_video_20251126_222933_engaged_cta.mp4
+2025-11-26 22:36:57,533 - __main__ - INFO - Skipping subtitles (disabled)
+2025-11-26 22:36:57,542 - __main__ - INFO - Final video saved to: final_videos/final_video_20251126_222933_engaged_cta.mp4
+2025-11-26 22:36:57,542 - __main__ - INFO - Cleaning up temporary files...
+2025-11-26 22:36:57,600 - __main__ - INFO - Cleanup complete
+2025-11-26 22:36:57,601 - __main__ - INFO - Converting video format...
+2025-11-26 22:36:57,601 - convert_video - INFO - Converting final_videos/final_video_20251126_222933_engaged_cta.mp4 to mp4
+2025-11-26 22:36:57,601 - convert_video - INFO - File already in mp4 format, skipping conversion: final_videos/final_video_20251126_222933_engaged_cta.mp4
+2025-11-26 22:36:57,601 - __main__ - INFO - Converted video: final_videos/final_video_20251126_222933_engaged_cta.mp4
+2025-11-26 22:36:57,602 - __main__ - INFO - ================================================================================
+2025-11-26 22:36:57,602 - __main__ - INFO - ✅ VIDEO GENERATION COMPLETE!
+2025-11-26 22:36:57,602 - __main__ - INFO - 📹 Final Video: final_videos/final_video_20251126_222933_engaged_cta.mp4
+2025-11-26 22:36:57,602 - __main__ - INFO - 🎯 Enhanced with: Product comparison, Real product photos, 15 stock videos, Subtitles, Engagement hooks, Fast cuts, CTA
+2025-11-26 22:36:57,602 - __main__ - INFO - ================================================================================

@@ -1,0 +1,162 @@
+{
+  "product_name": "USB Cable",
+  "products": [
+    {
+      "title": "USB Cable - Premium Edition",
+      "price": "$79.99",
+      "rating": 4.7,
+      "reviews": 2450,
+      "source": "Amazon",
+      "link": "#",
+      "image": "https://via.placeholder.com/400x400.png?text=Product+Image",
+      "features": [
+        "charging",
+        "fast",
+        "data",
+        "Wireless",
+        "RGB",
+        "Ergonomic"
+      ],
+      "comparison_score": 95
+    },
+    {
+      "title": "USB Cable - Standard Model",
+      "price": "$59.99",
+      "rating": 4.3,
+      "reviews": 1823,
+      "source": "Best Buy",
+      "link": "#",
+      "image": "https://via.placeholder.com/400x400.png?text=Alternative",
+      "features": [
+        "charging",
+        "fast",
+        "Durable",
+        "USB"
+      ],
+      "comparison_score": 82
+    },
+    {
+      "title": "USB Cable - Budget Option",
+      "price": "$39.99",
+      "rating": 4.0,
+      "reviews": 956,
+      "source": "Walmart",
+      "link": "#",
+      "image": "https://via.placeholder.com/400x400.png?text=Budget",
+      "features": [
+        "Basic",
+        "Reliable"
+      ],
+      "comparison_score": 70
+    }
+  ],
+  "images": [],
+  "features": [
+    "charging",
+    "fast",
+    "data",
+    "Wireless",
+    "RGB",
+    "Ergonomic"
+  ],
+  "comparison": {
+    "main_product": {
+      "title": "USB Cable - Premium Edition",
+      "price": "$79.99",
+      "rating": 4.7,
+      "reviews": 2450,
+      "source": "Amazon",
+      "link": "#",
+      "image": "https://via.placeholder.com/400x400.png?text=Product+Image",
+      "features": [
+        "charging",
+        "fast",
+        "data",
+        "Wireless",
+        "RGB",
+        "Ergonomic"
+      ],
+      "comparison_score": 95
+    },
+    "alternatives": [
+      {
+        "product": {
+          "title": "USB Cable - Standard Model",
+          "price": "$59.99",
+          "rating": 4.3,
+          "reviews": 1823,
+          "source": "Best Buy",
+          "link": "#",
+          "image": "https://via.placeholder.com/400x400.png?text=Alternative",
+          "features": [
+            "charging",
+            "fast",
+            "Durable",
+            "USB"
+          ],
+          "comparison_score": 82
+        },
+        "price_difference": 19.999999999999993,
+        "rating_difference": 0.40000000000000036,
+        "feature_comparison": {
+          "unique_features": [
+            "Wireless",
+            "Ergonomic",
+            "RGB",
+            "data"
+          ],
+          "competitor_unique": [
+            "Durable",
+            "USB"
+          ],
+          "shared_features": [
+            "charging",
+            "fast"
+          ]
+        },
+        "recommendation": "Comparable alternative"
+      },
+      {
+        "product": {
+          "title": "USB Cable - Budget Option",
+          "price": "$39.99",
+          "rating": 4.0,
+          "reviews": 956,
+          "source": "Walmart",
+          "link": "#",
+          "image": "https://via.placeholder.com/400x400.png?text=Budget",
+          "features": [
+            "Basic",
+            "Reliable"
+          ],
+          "comparison_score": 70
+        },
+        "price_difference": 39.99999999999999,
+        "rating_difference": 0.7000000000000002,
+        "feature_comparison": {
+          "unique_features": [
+            "RGB",
+            "Wireless",
+            "Ergonomic",
+            "data",
+            "charging",
+            "fast"
+          ],
+          "competitor_unique": [
+            "Reliable",
+            "Basic"
+          ],
+          "shared_features": []
+        },
+        "recommendation": "Higher rated - worth the premium"
+      }
+    ],
+    "winner_features": [
+      "RGB",
+      "Wireless",
+      "Ergonomic"
+    ],
+    "value_proposition": "USB Cable - Premium Edition stands out with RGB, Wireless, backed by a 4.7-star rating."
+  },
+  "timestamp": "2025-11-26T23:37:19.054983"
+}

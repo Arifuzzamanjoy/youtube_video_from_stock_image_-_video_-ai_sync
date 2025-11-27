@@ -1,0 +1,17 @@
+2025-11-24 21:22:06,051 - __main__ - INFO - ================================================================================
+2025-11-24 21:22:06,052 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-24 21:22:06,052 - __main__ - INFO - ================================================================================
+2025-11-24 21:22:06,052 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-24 21:22:06,052 - scrape_product - INFO - Fetching product data for: Gaming Mouse
+2025-11-24 21:22:06,052 - scrape_product - WARNING - No products found, generating mock data
+2025-11-24 21:22:06,052 - scrape_product - INFO - Generating mock product data
+2025-11-24 21:22:09,372 - scrape_product - ERROR - Failed to download image: HTTPSConnectionPool(host='via.placeholder.com', port=443): Max retries exceeded with url: /400x400.png?text=Product+Image (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe5182c66b0>: Failed to resolve 'via.placeholder.com' ([Errno -3] Temporary failure in name resolution)"))
+2025-11-24 21:22:09,373 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-24 21:22:09,373 - __main__ - INFO - Fetched data for 3 products
+2025-11-24 21:22:09,374 - __main__ - INFO - Comparison data available for alternatives
+2025-11-24 21:22:09,374 - __main__ - INFO - Step 1/10: Generating content with product features...
+2025-11-24 21:22:09,374 - __main__ - ERROR - Pipeline failed: generate_content() got an unexpected keyword argument 'custom_prompt'
+Traceback (most recent call last):
+  File "/root/Agent/content/main.py", line 138, in run_full_pipeline
+    content = generate_content(product_name, enhanced_keywords, custom_prompt=content_prompt)
+TypeError: generate_content() got an unexpected keyword argument 'custom_prompt'

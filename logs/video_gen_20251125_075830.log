@@ -1,0 +1,154 @@
+2025-11-25 07:58:30,071 - __main__ - INFO - ================================================================================
+2025-11-25 07:58:30,071 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-25 07:58:30,071 - __main__ - INFO - ================================================================================
+2025-11-25 07:58:30,072 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-25 07:58:30,072 - scrape_product - INFO - Fetching product data for: Wireless Mouse
+2025-11-25 07:58:30,072 - scrape_product - INFO - Searching Google Shopping for: Wireless Mouse
+2025-11-25 07:58:30,228 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-25 07:58:30,333 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Mouse_20251125_075830.jpg
+2025-11-25 07:58:30,336 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-25 07:58:30,336 - __main__ - INFO - Fetched data for 3 products
+2025-11-25 07:58:30,337 - __main__ - INFO - Comparison data available for alternatives
+2025-11-25 07:58:30,338 - __main__ - INFO - Step 1/10: Generating content with product features...
+2025-11-25 07:58:30,338 - generate_content - INFO - Generating content for product: Wireless Mouse
+2025-11-25 07:58:30,338 - generate_content - INFO - Using Groq API for content generation
+2025-11-25 07:58:30,941 - generate_content - INFO - Groq generated 1375 characters
+2025-11-25 07:58:30,942 - __main__ - INFO - Enhanced content generated: 1375 characters
+2025-11-25 07:58:30,943 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-25 07:58:30,944 - generate_description - INFO - Generating video description
+2025-11-25 07:58:30,944 - generate_description - INFO - Description generated: 1540 characters
+2025-11-25 07:58:30,945 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• [Upbeat background...
+2025-11-25 07:58:30,946 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-25 07:58:30,946 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-25 07:58:30,946 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-25 07:58:31,106 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-25 07:58:31,106 - generate_audio - INFO - Falling back to gTTS
+2025-11-25 07:58:38,511 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251125_075830.mp3
+2025-11-25 07:58:38,513 - generate_audio - INFO - Audio generated successfully: audios/narration_20251125_075830.mp3
+2025-11-25 07:58:38,513 - __main__ - INFO - Audio saved to: audios/narration_20251125_075830.mp3
+2025-11-25 07:58:38,514 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-25 07:58:38,515 - video_engagement - INFO - Creating hook segment
+2025-11-25 07:58:38,668 - video_engagement - ERROR - Failed to create hook: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0xFF6B35:s=1920x1080:d=3.0', '-vf', "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='You Won't Believe This!':fontsize=100:fontcolor=white:x='(w-text_w)/2':y='(h-text_h)/2':enable='between(t,0,3.0)':alpha='if(lt(t,0.3),t/0.3,if(lt(t,2.7),1,(3.0-t)/0.3))',scale='w*if(lt(t,0.5),1+0.3*t/0.5,1.15):h*if(lt(t,0.5),1+0.3*t/0.5,1.15)',setpts=PTS-STARTPTS", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '30', '-t', '3.0', '-y', 'videos/hook_20251125_075838.mp4']' returned non-zero exit status 1.
+2025-11-25 07:58:41,459 - __main__ - INFO - Hook created: videos/hook_20251125_075838.mp4
+2025-11-25 07:58:41,459 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-25 07:58:41,459 - __main__ - INFO - Using 1 product images
+2025-11-25 07:58:41,459 - __main__ - INFO - Step 6/10: Downloading stock videos...
+2025-11-25 07:58:41,460 - download_stock_video - INFO - Downloading 15 stock videos from pexels for keywords: ['gaming', 'mouse', 'precision', 'ergonomic', 'wireless', 'design', 'performance']
+2025-11-25 07:58:41,460 - download_stock_video - INFO - Searching Pexels with combined query: gaming mouse precision
+2025-11-25 07:58:42,079 - download_stock_video - INFO - Downloading video 1/15: https://videos.pexels.com/video-files/31183721/13321670_4096_2160_50fps.mp4
+2025-11-25 07:58:42,881 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075842_0.mp4 (20.41 MB)
+2025-11-25 07:58:43,385 - download_stock_video - INFO - Downloading video 2/15: https://videos.pexels.com/video-files/31183722/13321685_4096_2160_50fps.mp4
+2025-11-25 07:58:43,712 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075843_1.mp4 (31.77 MB)
+2025-11-25 07:58:44,214 - download_stock_video - INFO - Downloading video 3/15: https://videos.pexels.com/video-files/15922792/15922792-hd_1920_1080_60fps.mp4
+2025-11-25 07:58:44,330 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075844_2.mp4 (1.29 MB)
+2025-11-25 07:58:44,833 - download_stock_video - INFO - Downloading video 4/15: https://videos.pexels.com/video-files/10620278/10620278-hd_1920_1080_25fps.mp4
+2025-11-25 07:58:45,005 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075844_3.mp4 (5.63 MB)
+2025-11-25 07:58:45,508 - download_stock_video - INFO - Downloading video 5/15: https://videos.pexels.com/video-files/30470981/13057091_1920_1080_24fps.mp4
+2025-11-25 07:58:45,702 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075845_4.mp4 (9.14 MB)
+2025-11-25 07:58:46,204 - download_stock_video - INFO - Downloading video 6/15: https://videos.pexels.com/video-files/8174315/8174315-hd_1920_1080_25fps.mp4
+2025-11-25 07:58:46,365 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075846_5.mp4 (4.67 MB)
+2025-11-25 07:58:46,867 - download_stock_video - INFO - Downloading video 7/15: https://videos.pexels.com/video-files/979689/979689-hd_1920_1080_30fps.mp4
+2025-11-25 07:58:47,530 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075846_6.mp4 (31.35 MB)
+2025-11-25 07:58:48,034 - download_stock_video - INFO - Downloading video 8/15: https://videos.pexels.com/video-files/7914804/7914804-hd_1920_1080_30fps.mp4
+2025-11-25 07:58:48,199 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075848_7.mp4 (5.87 MB)
+2025-11-25 07:58:48,701 - download_stock_video - INFO - Downloading video 9/15: https://videos.pexels.com/video-files/6685367/6685367-hd_1920_1080_30fps.mp4
+2025-11-25 07:58:48,991 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075848_8.mp4 (26.21 MB)
+2025-11-25 07:58:49,494 - download_stock_video - INFO - Downloading video 10/15: https://videos.pexels.com/video-files/9070180/9070180-hd_1920_1080_25fps.mp4
+2025-11-25 07:58:49,754 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075849_9.mp4 (8.84 MB)
+2025-11-25 07:58:50,256 - download_stock_video - INFO - Downloading video 11/15: https://videos.pexels.com/video-files/7914770/7914770-hd_1920_1080_30fps.mp4
+2025-11-25 07:58:50,414 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075850_10.mp4 (4.67 MB)
+2025-11-25 07:58:50,917 - download_stock_video - INFO - Downloading video 12/15: https://videos.pexels.com/video-files/8128311/8128311-hd_1920_1080_25fps.mp4
+2025-11-25 07:58:51,402 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075850_11.mp4 (1.82 MB)
+2025-11-25 07:58:51,904 - download_stock_video - INFO - Downloading video 13/15: https://videos.pexels.com/video-files/7849219/7849219-uhd_4096_2160_25fps.mp4
+2025-11-25 07:58:53,873 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075851_12.mp4 (33.65 MB)
+2025-11-25 07:58:54,375 - download_stock_video - INFO - Downloading video 14/15: https://videos.pexels.com/video-files/7914786/7914786-hd_1920_1080_30fps.mp4
+2025-11-25 07:58:54,521 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075854_13.mp4 (5.77 MB)
+2025-11-25 07:58:55,025 - download_stock_video - INFO - Downloading video 15/15: https://videos.pexels.com/video-files/8128414/8128414-hd_1920_1080_25fps.mp4
+2025-11-25 07:58:55,800 - download_stock_video - INFO - Downloaded: videos/stock_gaming_mouse_precisi_20251125_075855_14.mp4 (7.05 MB)
+2025-11-25 07:58:56,304 - download_stock_video - INFO - Successfully downloaded 15 videos
+2025-11-25 07:58:56,305 - __main__ - INFO - Downloaded 15 stock videos
+2025-11-25 07:58:56,305 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-25 07:58:56,305 - generate_product_intro_video - INFO - Generating product intro for: Wireless Mouse
+2025-11-25 07:58:56,306 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-25 07:58:56,382 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1920x1080:d=5.0', '-vf', "color=c=0x1a1a2e:s=1920x1080:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Wireless Mouse':fontsize=120:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-100:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we\\'re featu':fontsize=40:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+100:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Wireless_Mouse_20251125_075856.mp4']' returned non-zero exit status 1.
+2025-11-25 07:58:56,383 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-25 07:58:58,502 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Wireless_Mouse_20251125_075856.mp4
+2025-11-25 07:58:58,503 - generate_product_intro_video - INFO - Product intro created: videos/intro_Wireless_Mouse_20251125_075856.mp4
+2025-11-25 07:58:58,504 - __main__ - INFO - Intro video created: videos/intro_Wireless_Mouse_20251125_075856.mp4
+2025-11-25 07:58:58,504 - __main__ - INFO - Step 8/10: Generating video segments with engagement optimization...
+2025-11-25 07:58:58,504 - generate_video_single - INFO - Generating video segments: 15 stock videos, 1 images
+2025-11-25 07:58:58,738 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075858_0.mp4
+2025-11-25 07:58:58,739 - generate_video_single - INFO - Added stock video segment 1/15
+2025-11-25 07:58:58,895 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075858_1.mp4
+2025-11-25 07:58:58,896 - generate_video_single - INFO - Added stock video segment 2/15
+2025-11-25 07:58:58,965 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075858_2.mp4
+2025-11-25 07:58:58,965 - generate_video_single - INFO - Added stock video segment 3/15
+2025-11-25 07:58:59,037 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075858_3.mp4
+2025-11-25 07:58:59,038 - generate_video_single - INFO - Added stock video segment 4/15
+2025-11-25 07:58:59,129 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_4.mp4
+2025-11-25 07:58:59,130 - generate_video_single - INFO - Added stock video segment 5/15
+2025-11-25 07:58:59,226 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_5.mp4
+2025-11-25 07:58:59,227 - generate_video_single - INFO - Added stock video segment 6/15
+2025-11-25 07:58:59,334 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_6.mp4
+2025-11-25 07:58:59,335 - generate_video_single - INFO - Added stock video segment 7/15
+2025-11-25 07:58:59,419 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_7.mp4
+2025-11-25 07:58:59,420 - generate_video_single - INFO - Added stock video segment 8/15
+2025-11-25 07:58:59,509 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_8.mp4
+2025-11-25 07:58:59,509 - generate_video_single - INFO - Added stock video segment 9/15
+2025-11-25 07:58:59,605 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_9.mp4
+2025-11-25 07:58:59,606 - generate_video_single - INFO - Added stock video segment 10/15
+2025-11-25 07:58:59,693 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_10.mp4
+2025-11-25 07:58:59,694 - generate_video_single - INFO - Added stock video segment 11/15
+2025-11-25 07:58:59,774 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_11.mp4
+2025-11-25 07:58:59,774 - generate_video_single - INFO - Added stock video segment 12/15
+2025-11-25 07:58:59,937 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_12.mp4
+2025-11-25 07:58:59,937 - generate_video_single - INFO - Added stock video segment 13/15
+2025-11-25 07:59:00,033 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075859_13.mp4
+2025-11-25 07:59:00,033 - generate_video_single - INFO - Added stock video segment 14/15
+2025-11-25 07:59:00,122 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251125_075900_14.mp4
+2025-11-25 07:59:00,122 - generate_video_single - INFO - Added stock video segment 15/15
+2025-11-25 07:59:00,122 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Mouse_20251125_075830.jpg
+2025-11-25 07:59:04,695 - generate_video_single - INFO - Video created from image: videos/segment_image_20251125_075900_0.mp4
+2025-11-25 07:59:04,696 - generate_video_single - INFO - Added image segment 1/1
+2025-11-25 07:59:04,696 - generate_video_single - INFO - Generated 16 video segments (15 videos, 1 images)
+2025-11-25 07:59:04,696 - video_engagement - INFO - Optimizing video pacing
+2025-11-25 08:00:49,163 - __main__ - INFO - Created 16 optimized video segments
+2025-11-25 08:00:49,164 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-25 08:00:49,221 - __main__ - INFO - Generated 5 engagement points
+2025-11-25 08:00:49,221 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-25 08:00:49,221 - generate_video_final - INFO - Compiling final video
+2025-11-25 08:00:49,222 - generate_video_final - INFO - Total segments to compile: 19
+2025-11-25 08:00:49,222 - generate_video_final - INFO - Concatenating 19 videos
+2025-11-25 08:00:49,223 - generate_video_final - INFO - Concatenating with transitions
+2025-11-25 08:02:40,999 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251125_080049.mp4
+2025-11-25 08:02:41,000 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-25 08:02:42,003 - generate_video_final - INFO - Audio added to video: videos/final_video_20251125_080049.mp4
+2025-11-25 08:02:42,005 - generate_video_final - INFO - Final video created: videos/final_video_20251125_080049.mp4
+2025-11-25 08:02:42,006 - video_engagement - INFO - Adding 5 text overlays
+2025-11-25 08:04:02,767 - video_engagement - INFO - Text overlays added: videos/final_video_20251125_080049_engaged.mp4
+2025-11-25 08:04:02,768 - video_engagement - INFO - Adding call-to-action
+2025-11-25 08:05:17,830 - video_engagement - INFO - CTA added: videos/final_video_20251125_080049_engaged_cta.mp4
+2025-11-25 08:05:17,830 - __main__ - INFO - Final engaged video created: videos/final_video_20251125_080049_engaged_cta.mp4
+2025-11-25 08:05:17,830 - __main__ - INFO - Adding subtitles to video...
+2025-11-25 08:05:18,123 - generate_audio - INFO - Audio duration: 108.84 seconds
+2025-11-25 08:05:18,124 - generate_subtitles - INFO - Generating subtitles from text
+2025-11-25 08:05:18,125 - generate_subtitles - INFO - Generated SRT with 26 subtitle segments: videos/subtitles_20251125_080518.srt
+2025-11-25 08:05:18,125 - generate_subtitles - INFO - Adding subtitles to video: videos/final_video_20251125_080049_engaged_cta.mp4
+2025-11-25 08:06:47,476 - generate_subtitles - INFO - Subtitles added successfully: videos/final_subtitled_20251125_080518.mp4
+2025-11-25 08:06:47,476 - __main__ - INFO - Subtitles added successfully
+2025-11-25 08:06:47,483 - __main__ - INFO - Final video saved to: final_videos/final_subtitled_20251125_080518.mp4
+2025-11-25 08:06:47,483 - __main__ - INFO - Cleaning up temporary files...
+2025-11-25 08:06:47,531 - __main__ - INFO - Cleanup complete
+2025-11-25 08:06:47,531 - __main__ - INFO - Converting video format...
+2025-11-25 08:06:47,531 - convert_video - INFO - Converting final_videos/final_subtitled_20251125_080518.mp4 to mp4
+2025-11-25 08:06:47,531 - convert_video - INFO - File already in mp4 format, skipping conversion: final_videos/final_subtitled_20251125_080518.mp4
+2025-11-25 08:06:47,531 - __main__ - INFO - Converted video: final_videos/final_subtitled_20251125_080518.mp4
+2025-11-25 08:06:47,531 - __main__ - INFO - ================================================================================
+2025-11-25 08:06:47,531 - __main__ - INFO - ✅ VIDEO GENERATION COMPLETE!
+2025-11-25 08:06:47,531 - __main__ - INFO - 📹 Final Video: final_videos/final_subtitled_20251125_080518.mp4
+2025-11-25 08:06:47,531 - __main__ - INFO - 🎯 Enhanced with: Product comparison, Real product photos, 15 stock videos, Subtitles, Engagement hooks, Fast cuts, CTA
+2025-11-25 08:06:47,531 - __main__ - INFO - ================================================================================

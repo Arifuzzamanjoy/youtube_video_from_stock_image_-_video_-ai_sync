@@ -1,0 +1,273 @@
+2025-11-26 16:33:25,360 - __main__ - INFO - ================================================================================
+2025-11-26 16:33:25,360 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-26 16:33:25,360 - __main__ - INFO - ================================================================================
+2025-11-26 16:33:25,360 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-26 16:33:25,360 - scrape_product - INFO - Fetching product data for: Wireless Gaming Mouse
+2025-11-26 16:33:25,361 - scrape_product - INFO - Searching Google Shopping for: Wireless Gaming Mouse
+2025-11-26 16:33:27,480 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-26 16:33:27,592 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Gaming_Mouse_20251126_163327.jpg
+2025-11-26 16:33:27,595 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-26 16:33:27,596 - __main__ - INFO - Fetched data for 3 products
+2025-11-26 16:33:27,596 - __main__ - INFO - Comparison data available for alternatives
+2025-11-26 16:33:27,596 - __main__ - INFO - Step 1/10: Generating content with product features...
+2025-11-26 16:33:27,597 - generate_content - INFO - Generating content for product: Wireless Gaming Mouse
+2025-11-26 16:33:27,597 - generate_content - INFO - Using Groq API for content generation
+2025-11-26 16:33:28,145 - generate_content - INFO - Groq generated 1344 characters
+2025-11-26 16:33:28,147 - __main__ - INFO - Enhanced content generated: 1344 characters
+2025-11-26 16:33:28,149 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-26 16:33:28,149 - generate_description - INFO - Generating video description
+2025-11-26 16:33:28,149 - generate_description - INFO - Description generated: 1730 characters
+2025-11-26 16:33:28,150 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• Here's a 30-45 sec...
+2025-11-26 16:33:28,150 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-26 16:33:28,150 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-26 16:33:28,150 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-26 16:33:28,312 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-26 16:33:28,312 - generate_audio - INFO - Falling back to gTTS
+2025-11-26 16:33:36,368 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251126_163328.mp3
+2025-11-26 16:33:36,369 - generate_audio - INFO - Audio generated successfully: audios/narration_20251126_163328.mp3
+2025-11-26 16:33:36,370 - __main__ - INFO - Audio saved to: audios/narration_20251126_163328.mp3
+2025-11-26 16:33:36,370 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-26 16:33:36,370 - video_engagement - INFO - Creating hook segment
+2025-11-26 16:33:39,293 - video_engagement - INFO - Hook segment created: videos/hook_20251126_163336.mp4
+2025-11-26 16:33:39,293 - __main__ - INFO - Hook created: videos/hook_20251126_163336.mp4
+2025-11-26 16:33:39,293 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-26 16:33:39,376 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:33:39,461 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:33:39,577 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:33:39,578 - __main__ - INFO - Using 6 product image segments
+2025-11-26 16:33:39,579 - __main__ - INFO - Step 6/10: Downloading stock videos...
+2025-11-26 16:33:39,579 - download_stock_video - INFO - Downloading 6 stock videos from pexels for keywords: ['gaming', 'precision', 'RGB', 'ergonomic', 'mouse', 'wireless', 'design']
+2025-11-26 16:33:39,579 - download_stock_video - INFO - Searching Pexels with combined query: gaming precision RGB
+2025-11-26 16:33:39,906 - download_stock_video - INFO - Downloading video 1/6: https://videos.pexels.com/video-files/7859363/7859363-uhd_2160_4096_25fps.mp4
+2025-11-26 16:33:40,132 - download_stock_video - INFO - Downloaded: videos/stock_gaming_precision_RGB_20251126_163339_0.mp4 (21.06 MB)
+2025-11-26 16:33:40,635 - download_stock_video - INFO - Downloading video 2/6: https://videos.pexels.com/video-files/1821832/1821832-hd_720_1280_60fps.mp4
+2025-11-26 16:33:40,810 - download_stock_video - INFO - Downloaded: videos/stock_gaming_precision_RGB_20251126_163340_1.mp4 (1.28 MB)
+2025-11-26 16:33:41,313 - download_stock_video - INFO - Downloading video 3/6: https://videos.pexels.com/video-files/8128344/8128344-hd_1080_1920_25fps.mp4
+2025-11-26 16:33:41,445 - download_stock_video - INFO - Downloaded: videos/stock_gaming_precision_RGB_20251126_163341_2.mp4 (5.32 MB)
+2025-11-26 16:33:41,949 - download_stock_video - INFO - Downloading video 4/6: https://videos.pexels.com/video-files/7279074/7279074-hd_1080_1920_25fps.mp4
+2025-11-26 16:33:42,166 - download_stock_video - INFO - Downloaded: videos/stock_gaming_precision_RGB_20251126_163341_3.mp4 (8.87 MB)
+2025-11-26 16:33:42,669 - download_stock_video - INFO - Downloading video 5/6: https://videos.pexels.com/video-files/7855849/7855849-uhd_2160_4096_25fps.mp4
+2025-11-26 16:33:43,043 - download_stock_video - INFO - Downloaded: videos/stock_gaming_precision_RGB_20251126_163342_4.mp4 (44.51 MB)
+2025-11-26 16:33:43,545 - download_stock_video - INFO - Downloading video 6/6: https://videos.pexels.com/video-files/6254521/6254521-hd_1080_1920_25fps.mp4
+2025-11-26 16:33:44,145 - download_stock_video - INFO - Downloaded: videos/stock_gaming_precision_RGB_20251126_163343_5.mp4 (2.59 MB)
+2025-11-26 16:33:44,649 - download_stock_video - INFO - Successfully downloaded 6 videos
+2025-11-26 16:33:44,650 - __main__ - INFO - Downloaded 6 stock videos
+2025-11-26 16:33:44,650 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-26 16:33:44,650 - generate_product_intro_video - INFO - Generating product intro for: Wireless Gaming Mouse
+2025-11-26 16:33:44,651 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-26 16:33:44,731 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1080x1920:d=5.0', '-vf', "color=c=0x1a1a2e:s=1080x1920:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Wireless Gaming Mouse':fontsize=90:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-200:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we\\'re featu':fontsize=35:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+200:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Wireless_Gaming_Mouse_20251126_163344.mp4']' returned non-zero exit status 1.
+2025-11-26 16:33:44,732 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-26 16:33:47,012 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Wireless_Gaming_Mouse_20251126_163344.mp4
+2025-11-26 16:33:47,013 - generate_product_intro_video - INFO - Product intro created: videos/intro_Wireless_Gaming_Mouse_20251126_163344.mp4
+2025-11-26 16:33:47,013 - __main__ - INFO - Intro video created: videos/intro_Wireless_Gaming_Mouse_20251126_163344.mp4
+2025-11-26 16:33:47,014 - __main__ - INFO - Step 8/10: Generating video segments...
+2025-11-26 16:33:47,014 - generate_video_single - INFO - Generating video segments: 6 stock videos, 6 images
+2025-11-26 16:33:55,901 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251126_163347_0.mp4
+2025-11-26 16:33:55,902 - generate_video_single - INFO - Added stock video segment 1/6
+2025-11-26 16:34:07,093 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251126_163355_1.mp4
+2025-11-26 16:34:07,093 - generate_video_single - INFO - Added stock video segment 2/6
+2025-11-26 16:34:07,093 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:34:07,181 - generate_video_single - ERROR - Failed to create video from image: ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, webp_pipe, from 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: webp, yuv420p(tv, bt470bg/unknown/unknown), 438x614, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (webp (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[Parsed_crop_1 @ 0x560b03ec8a00] [Eval @ 0x7fffdff7a1a0] Invalid chars 'x1920' at the end of expression '1080x1920'
+    Last message repeated 1 times
+[Parsed_crop_1 @ 0x560b03ec8a00] Error when evaluating the expression '1080x1920'
+[Parsed_crop_1 @ 0x560b03ec8a00] Failed to configure input pad on Parsed_crop_1
+Error reinitializing filters!
+Failed to inject frame into filter network: Invalid argument
+Error while processing the decoded data for stream #0:0
+Conversion failed!
+
+2025-11-26 16:34:07,182 - generate_video_single - ERROR - Failed to create video from image assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg: Command '['ffmpeg', '-loop', '1', '-i', 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg', '-vf', "scale=1080x1920:force_original_aspect_ratio=increase,crop=1080x1920,zoompan=z='min(zoom+0.002,1.3)':d=90:s=1080x1920,fade=t=in:st=0:d=0.3,fade=t=out:st=2.7:d=0.3", '-t', '3.0', '-c:v', 'libx264', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-r', '30', '-y', 'videos/segment_image_20251126_163407_2.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:15,196 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251126_163407_2.mp4
+2025-11-26 16:34:15,196 - generate_video_single - INFO - Added stock video segment 3/6
+2025-11-26 16:34:21,369 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251126_163415_3.mp4
+2025-11-26 16:34:21,369 - generate_video_single - INFO - Added stock video segment 4/6
+2025-11-26 16:34:21,369 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:34:21,446 - generate_video_single - ERROR - Failed to create video from image: ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, webp_pipe, from 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: webp, yuv420p(tv, bt470bg/unknown/unknown), 438x614, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (webp (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[Parsed_crop_1 @ 0x5586cd0f4a00] [Eval @ 0x7fff8fc8b7d0] Invalid chars 'x1920' at the end of expression '1080x1920'
+    Last message repeated 1 times
+[Parsed_crop_1 @ 0x5586cd0f4a00] Error when evaluating the expression '1080x1920'
+[Parsed_crop_1 @ 0x5586cd0f4a00] Failed to configure input pad on Parsed_crop_1
+Error reinitializing filters!
+Failed to inject frame into filter network: Invalid argument
+Error while processing the decoded data for stream #0:0
+Conversion failed!
+
+2025-11-26 16:34:21,447 - generate_video_single - ERROR - Failed to create video from image assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg: Command '['ffmpeg', '-loop', '1', '-i', 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg', '-vf', "scale=1080x1920:force_original_aspect_ratio=increase,crop=1080x1920,zoompan=z='min(zoom+0.002,1.3)':d=90:s=1080x1920,fade=t=in:st=0:d=0.3,fade=t=out:st=2.7:d=0.3", '-t', '3.0', '-c:v', 'libx264', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-r', '30', '-y', 'videos/segment_image_20251126_163421_4.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:30,672 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251126_163421_4.mp4
+2025-11-26 16:34:30,672 - generate_video_single - INFO - Added stock video segment 5/6
+2025-11-26 16:34:36,674 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251126_163430_5.mp4
+2025-11-26 16:34:36,674 - generate_video_single - INFO - Added stock video segment 6/6
+2025-11-26 16:34:36,674 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:34:36,750 - generate_video_single - ERROR - Failed to create video from image: ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, webp_pipe, from 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: webp, yuv420p(tv, bt470bg/unknown/unknown), 438x614, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (webp (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[Parsed_crop_1 @ 0x5631941dca00] [Eval @ 0x7ffda8300480] Invalid chars 'x1920' at the end of expression '1080x1920'
+    Last message repeated 1 times
+[Parsed_crop_1 @ 0x5631941dca00] Error when evaluating the expression '1080x1920'
+[Parsed_crop_1 @ 0x5631941dca00] Failed to configure input pad on Parsed_crop_1
+Error reinitializing filters!
+Failed to inject frame into filter network: Invalid argument
+Error while processing the decoded data for stream #0:0
+Conversion failed!
+
+2025-11-26 16:34:36,750 - generate_video_single - ERROR - Failed to create video from image assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg: Command '['ffmpeg', '-loop', '1', '-i', 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg', '-vf', "scale=1080x1920:force_original_aspect_ratio=increase,crop=1080x1920,zoompan=z='min(zoom+0.002,1.3)':d=90:s=1080x1920,fade=t=in:st=0:d=0.3,fade=t=out:st=2.7:d=0.3", '-t', '3.0', '-c:v', 'libx264', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-r', '30', '-y', 'videos/segment_image_20251126_163436_6.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:36,750 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:34:36,828 - generate_video_single - ERROR - Failed to create video from image: ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, webp_pipe, from 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: webp, yuv420p(tv, bt470bg/unknown/unknown), 438x614, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (webp (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[Parsed_crop_1 @ 0x55d8a2ffda00] [Eval @ 0x7ffedfa6a5a0] Invalid chars 'x1920' at the end of expression '1080x1920'
+    Last message repeated 1 times
+[Parsed_crop_1 @ 0x55d8a2ffda00] Error when evaluating the expression '1080x1920'
+[Parsed_crop_1 @ 0x55d8a2ffda00] Failed to configure input pad on Parsed_crop_1
+Error reinitializing filters!
+Failed to inject frame into filter network: Invalid argument
+Error while processing the decoded data for stream #0:0
+Conversion failed!
+
+2025-11-26 16:34:36,828 - generate_video_single - ERROR - Failed to create video from image assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg: Command '['ffmpeg', '-loop', '1', '-i', 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg', '-vf', "scale=1080x1920:force_original_aspect_ratio=increase,crop=1080x1920,zoompan=z='min(zoom+0.002,1.3)':d=90:s=1080x1920,fade=t=in:st=0:d=0.3,fade=t=out:st=2.7:d=0.3", '-t', '3.0', '-c:v', 'libx264', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-r', '30', '-y', 'videos/segment_image_20251126_163436_6.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:36,829 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:34:36,904 - generate_video_single - ERROR - Failed to create video from image: ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, webp_pipe, from 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: webp, yuv420p(tv, bt470bg/unknown/unknown), 438x614, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (webp (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[Parsed_crop_1 @ 0x563d76494a00] [Eval @ 0x7ffdb13da940] Invalid chars 'x1920' at the end of expression '1080x1920'
+    Last message repeated 1 times
+[Parsed_crop_1 @ 0x563d76494a00] Error when evaluating the expression '1080x1920'
+[Parsed_crop_1 @ 0x563d76494a00] Failed to configure input pad on Parsed_crop_1
+Error reinitializing filters!
+Failed to inject frame into filter network: Invalid argument
+Error while processing the decoded data for stream #0:0
+Conversion failed!
+
+2025-11-26 16:34:36,904 - generate_video_single - ERROR - Failed to create video from image assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg: Command '['ffmpeg', '-loop', '1', '-i', 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg', '-vf', "scale=1080x1920:force_original_aspect_ratio=increase,crop=1080x1920,zoompan=z='min(zoom+0.002,1.3)':d=90:s=1080x1920,fade=t=in:st=0:d=0.3,fade=t=out:st=2.7:d=0.3", '-t', '3.0', '-c:v', 'libx264', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-r', '30', '-y', 'videos/segment_image_20251126_163436_6.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:36,904 - generate_video_single - INFO - Creating video from image: assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg
+2025-11-26 16:34:36,997 - generate_video_single - ERROR - Failed to create video from image: ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, webp_pipe, from 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: webp, yuv420p(tv, bt470bg/unknown/unknown), 438x614, 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (webp (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[Parsed_crop_1 @ 0x558162d88a00] [Eval @ 0x7ffd48d30110] Invalid chars 'x1920' at the end of expression '1080x1920'
+    Last message repeated 1 times
+[Parsed_crop_1 @ 0x558162d88a00] Error when evaluating the expression '1080x1920'
+[Parsed_crop_1 @ 0x558162d88a00] Failed to configure input pad on Parsed_crop_1
+Error reinitializing filters!
+Failed to inject frame into filter network: Invalid argument
+Error while processing the decoded data for stream #0:0
+Conversion failed!
+
+2025-11-26 16:34:36,997 - generate_video_single - ERROR - Failed to create video from image assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg: Command '['ffmpeg', '-loop', '1', '-i', 'assets/product_Wireless_Gaming_Mouse_20251126_163339.jpg', '-vf', "scale=1080x1920:force_original_aspect_ratio=increase,crop=1080x1920,zoompan=z='min(zoom+0.002,1.3)':d=90:s=1080x1920,fade=t=in:st=0:d=0.3,fade=t=out:st=2.7:d=0.3", '-t', '3.0', '-c:v', 'libx264', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-r', '30', '-y', 'videos/segment_image_20251126_163436_6.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:36,998 - generate_video_single - INFO - Generated 6 video segments (6 videos, 0 images)
+2025-11-26 16:34:36,998 - __main__ - INFO - Created 6 video segments
+2025-11-26 16:34:36,998 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-26 16:34:37,075 - __main__ - INFO - Generated 5 engagement points
+2025-11-26 16:34:37,075 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-26 16:34:37,075 - generate_video_final - INFO - Compiling final video
+2025-11-26 16:34:37,075 - generate_video_final - INFO - Total segments to compile: 8
+2025-11-26 16:34:37,076 - generate_video_final - INFO - Concatenating 8 videos with transitions=True
+2025-11-26 16:34:37,076 - generate_video_final - INFO - Concatenating with smooth transitions
+2025-11-26 16:34:37,135 - generate_video_final - ERROR - Transition concatenation failed: Command '['ffmpeg', '-f', 'concat', '-safe', '0', '-i', 'videos/concat_list.txt', '-c:v', 'libx264', '-preset', 'fast', '-crf', '23', '-c:a', 'aac', '-y', 'videos/temp_concat_20251126_163437.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:37,135 - generate_video_final - ERROR - Concatenation failed: Command '['ffmpeg', '-f', 'concat', '-safe', '0', '-i', 'videos/concat_list.txt', '-c:v', 'libx264', '-preset', 'fast', '-crf', '23', '-c:a', 'aac', '-y', 'videos/temp_concat_20251126_163437.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:37,135 - generate_video_final - ERROR - Failed to compile final video: Command '['ffmpeg', '-f', 'concat', '-safe', '0', '-i', 'videos/concat_list.txt', '-c:v', 'libx264', '-preset', 'fast', '-crf', '23', '-c:a', 'aac', '-y', 'videos/temp_concat_20251126_163437.mp4']' returned non-zero exit status 1.
+2025-11-26 16:34:37,135 - __main__ - ERROR - Pipeline failed: Command '['ffmpeg', '-f', 'concat', '-safe', '0', '-i', 'videos/concat_list.txt', '-c:v', 'libx264', '-preset', 'fast', '-crf', '23', '-c:a', 'aac', '-y', 'videos/temp_concat_20251126_163437.mp4']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/root/Agent/content/main.py", line 216, in run_full_pipeline
+    final_video = generate_final_video(None, all_segments, audio_path)
+  File "/root/Agent/content/generate_video_final.py", line 61, in generate_final_video
+    concatenate_videos(all_segments, concat_video)
+  File "/root/Agent/content/generate_video_final.py", line 117, in concatenate_videos
+    return concatenate_with_smooth_transitions(video_paths, output_path)
+  File "/root/Agent/content/generate_video_final.py", line 229, in concatenate_with_smooth_transitions
+    subprocess.run(cmd, capture_output=True, text=True, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ffmpeg', '-f', 'concat', '-safe', '0', '-i', 'videos/concat_list.txt', '-c:v', 'libx264', '-preset', 'fast', '-crf', '23', '-c:a', 'aac', '-y', 'videos/temp_concat_20251126_163437.mp4']' returned non-zero exit status 1.

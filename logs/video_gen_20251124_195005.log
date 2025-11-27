@@ -1,0 +1,157 @@
+2025-11-24 19:50:05,933 - __main__ - INFO - ================================================================================
+2025-11-24 19:50:05,934 - __main__ - INFO - Starting Video Content Generation Pipeline
+2025-11-24 19:50:05,934 - __main__ - INFO - ================================================================================
+2025-11-24 19:50:05,934 - __main__ - INFO - Step 1/8: Generating content...
+2025-11-24 19:50:05,934 - generate_content - INFO - Generating content for product: Mechanical Keyboard
+2025-11-24 19:50:06,301 - generate_content - ERROR - Gemini content generation failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-24 19:50:06,303 - generate_content - WARNING - Gemini content generation failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods., using template
+2025-11-24 19:50:06,303 - generate_content - INFO - Content generated: 883 characters
+2025-11-24 19:50:06,304 - __main__ - INFO - Content generated: 883 characters
+2025-11-24 19:50:06,304 - __main__ - INFO - Step 2/8: Generating description...
+2025-11-24 19:50:06,304 - generate_description - INFO - Generating video description
+2025-11-24 19:50:06,304 - generate_description - INFO - Description generated: 623 characters
+2025-11-24 19:50:06,304 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• Welcome to our com...
+2025-11-24 19:50:06,305 - __main__ - INFO - Step 3/8: Generating audio narration...
+2025-11-24 19:50:06,305 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-24 19:50:06,305 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-24 19:50:06,469 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-24 19:50:06,469 - generate_audio - INFO - Falling back to gTTS
+2025-11-24 19:50:10,091 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251124_195006.mp3
+2025-11-24 19:50:10,093 - generate_audio - INFO - Audio generated successfully: audios/narration_20251124_195006.mp3
+2025-11-24 19:50:10,094 - __main__ - INFO - Audio saved to: audios/narration_20251124_195006.mp3
+2025-11-24 19:50:10,094 - __main__ - INFO - Step 4/8: Generating images...
+2025-11-24 19:50:10,095 - generate_image - INFO - Generating 5 images for: Mechanical Keyboard
+2025-11-24 19:50:10,268 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:50:10,269 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 19:50:10,271 - generate_image - INFO - Using placeholder image generation
+2025-11-24 19:50:10,418 - generate_image - INFO - Generated placeholder image: assets/image_20251124_195010_1.png
+2025-11-24 19:50:10,419 - generate_image - INFO - Generated image 1/5: assets/image_20251124_195010_1.png
+2025-11-24 19:50:10,636 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:50:10,636 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 19:50:10,637 - generate_image - INFO - Using placeholder image generation
+2025-11-24 19:50:10,758 - generate_image - INFO - Generated placeholder image: assets/image_20251124_195010_2.png
+2025-11-24 19:50:10,758 - generate_image - INFO - Generated image 2/5: assets/image_20251124_195010_2.png
+2025-11-24 19:50:10,916 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:50:10,916 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 19:50:10,917 - generate_image - INFO - Using placeholder image generation
+2025-11-24 19:50:11,044 - generate_image - INFO - Generated placeholder image: assets/image_20251124_195010_3.png
+2025-11-24 19:50:11,044 - generate_image - INFO - Generated image 3/5: assets/image_20251124_195010_3.png
+2025-11-24 19:50:11,195 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:50:11,196 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 19:50:11,197 - generate_image - INFO - Using placeholder image generation
+2025-11-24 19:50:11,321 - generate_image - INFO - Generated placeholder image: assets/image_20251124_195011_4.png
+2025-11-24 19:50:11,322 - generate_image - INFO - Generated image 4/5: assets/image_20251124_195011_4.png
+2025-11-24 19:50:11,473 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:50:11,474 - generate_image - WARNING - Hugging Face failed, using placeholder: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 19:50:11,475 - generate_image - INFO - Using placeholder image generation
+2025-11-24 19:50:11,622 - generate_image - INFO - Generated placeholder image: assets/image_20251124_195011_5.png
+2025-11-24 19:50:11,623 - generate_image - INFO - Generated image 5/5: assets/image_20251124_195011_5.png
+2025-11-24 19:50:11,623 - generate_image - INFO - Successfully generated 5 images
+2025-11-24 19:50:11,623 - __main__ - INFO - Generated 5 images
+2025-11-24 19:50:11,623 - __main__ - INFO - Step 5/8: Downloading stock videos...
+2025-11-24 19:50:11,623 - download_stock_video - INFO - Downloading 5 stock videos from pexels
+2025-11-24 19:50:11,623 - download_stock_video - INFO - Searching Pexels for: features
+2025-11-24 19:50:12,054 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7322713/7322713-uhd_2880_2160_25fps.mp4
+2025-11-24 19:50:12,312 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_195012_0.mp4 (22.00 MB)
+2025-11-24 19:50:12,816 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4888376/4888376-hd_1920_1080_24fps.mp4
+2025-11-24 19:50:12,943 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_195012_1.mp4 (0.67 MB)
+2025-11-24 19:50:13,446 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/8091711/8091711-uhd_4096_2160_24fps.mp4
+2025-11-24 19:50:13,906 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_195013_2.mp4 (37.96 MB)
+2025-11-24 19:50:14,409 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7846673/7846673-uhd_4096_2160_25fps.mp4
+2025-11-24 19:50:18,464 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_195014_3.mp4 (84.96 MB)
+2025-11-24 19:50:18,967 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/6278143/6278143-uhd_3840_2160_25fps.mp4
+2025-11-24 19:50:19,233 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_195018_4.mp4 (8.36 MB)
+2025-11-24 19:50:19,737 - download_stock_video - INFO - Successfully downloaded 5 videos
+2025-11-24 19:50:19,737 - __main__ - INFO - Downloaded 5 stock videos
+2025-11-24 19:50:19,737 - __main__ - INFO - Step 6/8: Generating product intro video...
+2025-11-24 19:50:19,737 - generate_product_intro_video - INFO - Generating product intro for: Mechanical Keyboard
+2025-11-24 19:50:19,738 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-24 19:50:19,827 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1920x1080:d=5.0', '-vf', "color=c=0x1a1a2e:s=1920x1080:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Mechanical Keyboard':fontsize=120:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-100:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we're featu':fontsize=40:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+100:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Mechanical_Keyboard_20251124_195019.mp4']' returned non-zero exit status 1.
+2025-11-24 19:50:19,827 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-24 19:50:22,361 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Mechanical_Keyboard_20251124_195019.mp4
+2025-11-24 19:50:22,361 - generate_product_intro_video - INFO - Product intro created: videos/intro_Mechanical_Keyboard_20251124_195019.mp4
+2025-11-24 19:50:22,362 - __main__ - INFO - Intro video created: videos/intro_Mechanical_Keyboard_20251124_195019.mp4
+2025-11-24 19:50:22,362 - __main__ - INFO - Step 7/8: Generating video segments...
+2025-11-24 19:50:22,362 - generate_video_single - INFO - Generating video segments from 5 images and 5 videos
+2025-11-24 19:50:22,362 - generate_video_single - INFO - Creating video from image: assets/image_20251124_195010_1.png
+2025-11-24 19:50:25,952 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_195022_0.mp4
+2025-11-24 19:50:25,953 - generate_video_single - INFO - Created video segment 1/5: videos/segment_image_20251124_195022_0.mp4
+2025-11-24 19:50:25,953 - generate_video_single - INFO - Creating video from image: assets/image_20251124_195010_2.png
+2025-11-24 19:50:29,086 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_195025_1.mp4
+2025-11-24 19:50:29,086 - generate_video_single - INFO - Created video segment 2/5: videos/segment_image_20251124_195025_1.mp4
+2025-11-24 19:50:29,087 - generate_video_single - INFO - Creating video from image: assets/image_20251124_195010_3.png
+2025-11-24 19:50:32,129 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_195029_2.mp4
+2025-11-24 19:50:32,130 - generate_video_single - INFO - Created video segment 3/5: videos/segment_image_20251124_195029_2.mp4
+2025-11-24 19:50:32,130 - generate_video_single - INFO - Creating video from image: assets/image_20251124_195011_4.png
+2025-11-24 19:50:35,415 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_195032_3.mp4
+2025-11-24 19:50:35,415 - generate_video_single - INFO - Created video segment 4/5: videos/segment_image_20251124_195032_3.mp4
+2025-11-24 19:50:35,415 - generate_video_single - INFO - Creating video from image: assets/image_20251124_195011_5.png
+2025-11-24 19:50:38,624 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_195035_4.mp4
+2025-11-24 19:50:38,625 - generate_video_single - INFO - Created video segment 5/5: videos/segment_image_20251124_195035_4.mp4
+2025-11-24 19:50:38,815 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_195038_0.mp4
+2025-11-24 19:50:38,816 - generate_video_single - INFO - Added stock video segment 1/5
+2025-11-24 19:50:38,906 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_195038_1.mp4
+2025-11-24 19:50:38,907 - generate_video_single - INFO - Added stock video segment 2/5
+2025-11-24 19:50:39,058 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_195038_2.mp4
+2025-11-24 19:50:39,058 - generate_video_single - INFO - Added stock video segment 3/5
+2025-11-24 19:50:39,188 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_195039_3.mp4
+2025-11-24 19:50:39,188 - generate_video_single - INFO - Added stock video segment 4/5
+2025-11-24 19:50:39,318 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_195039_4.mp4
+2025-11-24 19:50:39,318 - generate_video_single - INFO - Added stock video segment 5/5
+2025-11-24 19:50:39,318 - generate_video_single - INFO - Generated 10 video segments
+2025-11-24 19:50:39,318 - __main__ - INFO - Created 10 video segments
+2025-11-24 19:50:39,318 - __main__ - INFO - Step 8/8: Compiling final video...
+2025-11-24 19:50:39,318 - generate_video_final - INFO - Compiling final video
+2025-11-24 19:50:39,319 - generate_video_final - INFO - Total segments to compile: 11
+2025-11-24 19:50:39,319 - generate_video_final - INFO - Concatenating 11 videos
+2025-11-24 19:50:39,319 - generate_video_final - INFO - Concatenating with transitions
+2025-11-24 19:51:32,015 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251124_195039.mp4
+2025-11-24 19:51:32,015 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-24 19:51:32,475 - generate_video_final - INFO - Audio added to video: videos/final_video_20251124_195039.mp4
+2025-11-24 19:51:32,476 - generate_video_final - INFO - Final video created: videos/final_video_20251124_195039.mp4
+2025-11-24 19:51:32,476 - __main__ - INFO - Final video created: videos/final_video_20251124_195039.mp4
+2025-11-24 19:51:32,476 - __main__ - INFO - Converting video format...
+2025-11-24 19:51:32,476 - convert_video - INFO - Converting videos/final_video_20251124_195039.mp4 to mp4
+2025-11-24 19:51:32,476 - convert_video - INFO - Running ffmpeg command: ffmpeg -i videos/final_video_20251124_195039.mp4 -c:v libx264 -crf 23 -preset medium -c:a aac -b:a 192k -y videos/final_video_20251124_195039.mp4
+2025-11-24 19:51:32,553 - convert_video - ERROR - ffmpeg conversion failed: ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'videos/final_video_20251124_195039.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:35.40, start: 0.000000, bitrate: 1190 kb/s
+  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 1107 kb/s, 25 fps, 25 tbr, 12800 tbn, 50 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 24000 Hz, mono, fltp, 77 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Output videos/final_video_20251124_195039.mp4 same as Input #0 - exiting
+FFmpeg cannot edit existing files in-place.
+
+2025-11-24 19:51:32,553 - __main__ - ERROR - Pipeline failed: Command '['ffmpeg', '-i', 'videos/final_video_20251124_195039.mp4', '-c:v', 'libx264', '-crf', '23', '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-y', 'videos/final_video_20251124_195039.mp4']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/root/Agent/content/main.py", line 109, in run_full_pipeline
+    converted = convert_video_format(final_video, self.config.get('output_format', 'mp4'))
+  File "/root/Agent/content/convert_video.py", line 63, in convert_video_format
+    result = subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ffmpeg', '-i', 'videos/final_video_20251124_195039.mp4', '-c:v', 'libx264', '-crf', '23', '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-y', 'videos/final_video_20251124_195039.mp4']' returned non-zero exit status 1.

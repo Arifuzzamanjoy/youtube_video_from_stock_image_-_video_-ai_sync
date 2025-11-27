@@ -1,0 +1,34 @@
+2025-11-25 08:38:05,509 - __main__ - INFO - ================================================================================
+2025-11-25 08:38:05,509 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-25 08:38:05,510 - __main__ - INFO - ================================================================================
+2025-11-25 08:38:05,510 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-25 08:38:05,510 - scrape_product - INFO - Fetching product data for: Wireless Mouse
+2025-11-25 08:38:05,510 - scrape_product - INFO - Searching Google Shopping for: Wireless Mouse
+2025-11-25 08:38:05,631 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-25 08:38:05,740 - scrape_product - INFO - Downloaded product image: assets/product_Wireless_Mouse_20251125_083805.jpg
+2025-11-25 08:38:05,744 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-25 08:38:05,744 - __main__ - INFO - Fetched data for 3 products
+2025-11-25 08:38:05,745 - __main__ - INFO - Comparison data available for alternatives
+2025-11-25 08:38:05,745 - __main__ - INFO - Step 1/10: Generating content with product features...
+2025-11-25 08:38:05,745 - generate_content - INFO - Generating content for product: Wireless Mouse
+2025-11-25 08:38:05,745 - generate_content - INFO - Using Groq API for content generation
+2025-11-25 08:38:06,415 - generate_content - INFO - Groq generated 1216 characters
+2025-11-25 08:38:06,416 - __main__ - INFO - Enhanced content generated: 1216 characters
+2025-11-25 08:38:06,417 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-25 08:38:06,417 - generate_description - INFO - Generating video description
+2025-11-25 08:38:06,418 - generate_description - INFO - Description generated: 1193 characters
+2025-11-25 08:38:06,418 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• [Energetic backgro...
+2025-11-25 08:38:06,418 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-25 08:38:06,418 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-25 08:38:06,418 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-25 08:38:06,597 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-25 08:38:06,597 - generate_audio - INFO - Falling back to gTTS
+2025-11-25 08:38:12,887 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251125_083806.mp3
+2025-11-25 08:38:12,889 - generate_audio - INFO - Audio generated successfully: audios/narration_20251125_083806.mp3
+2025-11-25 08:38:12,889 - __main__ - INFO - Audio saved to: audios/narration_20251125_083806.mp3
+2025-11-25 08:38:12,889 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-25 08:38:12,889 - video_engagement - INFO - Creating hook segment

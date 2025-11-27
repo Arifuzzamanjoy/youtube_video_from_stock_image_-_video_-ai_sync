@@ -1,0 +1,91 @@
+2025-11-24 19:46:09,847 - __main__ - INFO - ================================================================================
+2025-11-24 19:46:09,848 - __main__ - INFO - Starting Video Content Generation Pipeline
+2025-11-24 19:46:09,848 - __main__ - INFO - ================================================================================
+2025-11-24 19:46:09,848 - __main__ - INFO - Step 1/8: Generating content...
+2025-11-24 19:46:09,848 - generate_content - INFO - Generating content for product: Mechanical Keyboard
+2025-11-24 19:46:10,122 - generate_content - ERROR - Gemini content generation failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-11-24 19:46:10,122 - generate_content - WARNING - Gemini content generation failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods., using template
+2025-11-24 19:46:10,123 - generate_content - INFO - Content generated: 883 characters
+2025-11-24 19:46:10,123 - __main__ - INFO - Content generated: 883 characters
+2025-11-24 19:46:10,123 - __main__ - INFO - Step 2/8: Generating description...
+2025-11-24 19:46:10,123 - generate_description - INFO - Generating video description
+2025-11-24 19:46:10,123 - generate_description - INFO - Description generated: 623 characters
+2025-11-24 19:46:10,123 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• Welcome to our com...
+2025-11-24 19:46:10,123 - __main__ - INFO - Step 3/8: Generating audio narration...
+2025-11-24 19:46:10,123 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-24 19:46:10,123 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-24 19:46:10,288 - generate_audio - WARNING - HuggingFace TTS failed: 410
+2025-11-24 19:46:10,288 - generate_audio - INFO - Falling back to gTTS
+2025-11-24 19:46:14,611 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251124_194610.mp3
+2025-11-24 19:46:14,612 - generate_audio - INFO - Audio generated successfully: audios/narration_20251124_194610.mp3
+2025-11-24 19:46:14,613 - __main__ - INFO - Audio saved to: audios/narration_20251124_194610.mp3
+2025-11-24 19:46:14,613 - __main__ - INFO - Step 4/8: Generating images...
+2025-11-24 19:46:14,613 - generate_image - INFO - Generating 5 images for: Mechanical Keyboard
+2025-11-24 19:46:14,773 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:14,773 - generate_image - ERROR - Failed to generate image 1: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:14,958 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:14,958 - generate_image - ERROR - Failed to generate image 2: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:15,133 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:15,133 - generate_image - ERROR - Failed to generate image 3: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:15,293 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:15,294 - generate_image - ERROR - Failed to generate image 4: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:15,473 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:15,473 - generate_image - ERROR - Failed to generate image 5: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 19:46:15,474 - generate_image - INFO - Successfully generated 0 images
+2025-11-24 19:46:15,475 - __main__ - INFO - Generated 0 images
+2025-11-24 19:46:15,475 - __main__ - INFO - Step 5/8: Downloading stock videos...
+2025-11-24 19:46:15,475 - download_stock_video - INFO - Downloading 5 stock videos from pexels
+2025-11-24 19:46:15,475 - download_stock_video - INFO - Searching Pexels for: features
+2025-11-24 19:46:15,969 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7322713/7322713-uhd_2880_2160_25fps.mp4
+2025-11-24 19:46:16,468 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_194615_0.mp4 (22.00 MB)
+2025-11-24 19:46:16,970 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4888376/4888376-hd_1920_1080_24fps.mp4
+2025-11-24 19:46:17,113 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_194616_1.mp4 (0.67 MB)
+2025-11-24 19:46:17,616 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/8091711/8091711-uhd_4096_2160_24fps.mp4
+2025-11-24 19:46:18,187 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_194617_2.mp4 (37.96 MB)
+2025-11-24 19:46:18,691 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7846673/7846673-uhd_4096_2160_25fps.mp4
+2025-11-24 19:46:22,983 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_194618_3.mp4 (84.96 MB)
+2025-11-24 19:46:23,486 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/6278143/6278143-uhd_3840_2160_25fps.mp4
+2025-11-24 19:46:24,829 - download_stock_video - INFO - Downloaded: videos/stock_features_20251124_194623_4.mp4 (8.36 MB)
+2025-11-24 19:46:25,333 - download_stock_video - INFO - Successfully downloaded 5 videos
+2025-11-24 19:46:25,334 - __main__ - INFO - Downloaded 5 stock videos
+2025-11-24 19:46:25,334 - __main__ - INFO - Step 6/8: Generating product intro video...
+2025-11-24 19:46:25,334 - generate_product_intro_video - INFO - Generating product intro for: Mechanical Keyboard
+2025-11-24 19:46:25,335 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-24 19:46:25,338 - generate_product_intro_video - ERROR - Failed to create animated intro: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-24 19:46:25,338 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-24 19:46:25,339 - generate_product_intro_video - ERROR - Failed to create simple intro: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-24 19:46:25,340 - generate_product_intro_video - ERROR - Failed to create product intro: [Errno 2] No such file or directory: 'ffmpeg'
+2025-11-24 19:46:25,340 - __main__ - ERROR - Pipeline failed: [Errno 2] No such file or directory: 'ffmpeg'
+Traceback (most recent call last):
+  File "/root/Agent/content/generate_product_intro_video.py", line 125, in create_animated_intro
+    result = subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/Agent/content/main.py", line 93, in run_full_pipeline
+    intro_video = generate_product_intro(product_name)
+  File "/root/Agent/content/generate_product_intro_video.py", line 62, in generate_product_intro
+    intro_path = create_animated_intro(
+  File "/root/Agent/content/generate_product_intro_video.py", line 138, in create_animated_intro
+    return create_simple_intro(product_name, output_path, duration)
+  File "/root/Agent/content/generate_product_intro_video.py", line 255, in create_simple_intro
+    subprocess.run(cmd, capture_output=True, text=True, check=True)
+  File "/usr/lib/python3.10/subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'

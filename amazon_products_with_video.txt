@@ -1,0 +1,2 @@
+# Amazon Products Database
+# Format: Product Name | ASIN | Category | Has Video

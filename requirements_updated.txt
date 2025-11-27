@@ -1,0 +1,36 @@
+# Automated Video Content Generation System
+# Python dependencies for video creation, content generation, and media processing
+
+# Core video processing
+ffmpeg-python==0.2.0
+imageio==2.31.1
+imageio-ffmpeg==0.4.9
+
+# Image processing and generation
+Pillow==10.0.0
+opencv-python==4.8.0.76
+
+# Audio generation (Text-to-Speech)
+gTTS==2.3.2
+pyttsx3==2.90
+pydub==0.25.1
+
+# Google Gemini API for content generation
+google-generativeai>=0.3.0
+
+# Hugging Face for image and audio generation
+huggingface-hub>=0.19.0
+
+# Web scraping and API requests
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Utilities
+tqdm==4.66.1
+
+# Data handling
+pandas==2.0.3
+numpy==1.24.3

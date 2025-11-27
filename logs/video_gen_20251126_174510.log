@@ -1,0 +1,210 @@
+2025-11-26 17:45:10,201 - __main__ - INFO - ================================================================================
+2025-11-26 17:45:10,202 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-26 17:45:10,202 - __main__ - INFO - ================================================================================
+2025-11-26 17:45:10,206 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-26 17:45:10,207 - scrape_product - INFO - Fetching product data for: Gaming Mechanical Keyboard
+2025-11-26 17:45:10,208 - scrape_product - INFO - Searching Google Shopping for: Gaming Mechanical Keyboard
+2025-11-26 17:45:13,966 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-26 17:45:14,079 - scrape_product - INFO - Downloaded product image: assets/product_Gaming_Mechanical_Keyboard_20251126_174513.jpg
+2025-11-26 17:45:14,082 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-26 17:45:14,082 - __main__ - INFO - Fetched data for 3 products
+2025-11-26 17:45:14,082 - __main__ - INFO - Comparison data available for alternatives
+2025-11-26 17:45:14,082 - __main__ - INFO - Step 1/10: Generating review keywords from product data...
+2025-11-26 17:45:14,082 - generate_content - INFO - Generating keywords from product data using LLM
+2025-11-26 17:45:14,457 - generate_content - INFO - Generated 35 keywords: ['mechanical', 'switches', 'performance', 'speed', 'efficiency', 'responsiveness', 'build quality', 'aesthetics', 'ergonomics', 'comfortable', 'intuitive', 'reliable', 'connectivity', 'battery', 'materials', 'affordable', 'premium', 'worth it', 'tactile', 'clicky', 'durable', 'long-lasting', 'lag-free', 'customizable', 'key travel', 'actuation force', 'keycap quality', 'backlighting', 'macro keys', 'gaming-grade', 'responsive keys', 'lag reduction', 'key rollover', 'switch type', 'N-key rollover.']
+2025-11-26 17:45:14,458 - __main__ - INFO - Generated keywords: ['materials', 'switches', 'battery', 'speed', 'Mechanical', 'ergonomics', 'comfortable', 'responsiveness', 'reliable', 'build quality', 'aesthetics', 'mechanical', 'performance', 'intuitive', 'efficiency']
+2025-11-26 17:45:14,459 - __main__ - INFO - Step 2/10: Generating product reviewer script...
+2025-11-26 17:45:14,459 - generate_content - INFO - Generating content for product: Gaming Mechanical Keyboard
+2025-11-26 17:45:14,459 - generate_content - INFO - Using Groq API for content generation
+2025-11-26 17:45:15,068 - generate_content - INFO - Groq generated 1298 characters
+2025-11-26 17:45:15,069 - __main__ - INFO - Product reviewer script generated: 1298 characters (target: 800-1200 words for 60-90s)
+2025-11-26 17:45:15,070 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-26 17:45:15,070 - generate_description - INFO - Generating video description
+2025-11-26 17:45:15,070 - generate_description - INFO - Description generated: 664 characters
+2025-11-26 17:45:15,071 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• **0-5 seconds - Ho...
+2025-11-26 17:45:15,071 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-26 17:45:15,071 - generate_audio - INFO - Generating audio using gemini engine for 1298 characters
+2025-11-26 17:45:15,071 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-26 17:45:15,235 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-26 17:45:15,236 - generate_audio - INFO - Falling back to gTTS
+2025-11-26 17:45:23,030 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251126_174515.mp3
+2025-11-26 17:45:23,033 - generate_audio - INFO - Audio generated successfully: audios/narration_20251126_174515.mp3
+2025-11-26 17:45:23,033 - __main__ - INFO - Audio saved to: audios/narration_20251126_174515.mp3
+2025-11-26 17:45:23,034 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-26 17:45:23,034 - video_engagement - INFO - Creating hook segment
+2025-11-26 17:45:24,942 - video_engagement - INFO - Hook segment created: videos/hook_20251126_174523.mp4
+2025-11-26 17:45:24,943 - __main__ - INFO - Hook created: videos/hook_20251126_174523.mp4
+2025-11-26 17:45:24,943 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-26 17:45:25,048 - scrape_product - INFO - Downloaded product image: assets/product_Gaming_Mechanical_Keyboard_20251126_174524.jpg
+2025-11-26 17:45:25,144 - scrape_product - INFO - Downloaded product image: assets/product_Gaming_Mechanical_Keyboard_20251126_174525.jpg
+2025-11-26 17:45:25,238 - scrape_product - INFO - Downloaded product image: assets/product_Gaming_Mechanical_Keyboard_20251126_174525.jpg
+2025-11-26 17:45:25,240 - generate_image - INFO - Generating 5 images for: Gaming Mechanical Keyboard
+2025-11-26 17:45:25,241 - generate_image - INFO - Searching Pexels for: **0-5 seconds - hook** hey
+2025-11-26 17:45:25,749 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_174525_1.png (196.5 KB)
+2025-11-26 17:45:25,752 - generate_image - INFO - Generated image 1/5: assets/image_20251126_174525_1.png
+2025-11-26 17:45:25,753 - generate_image - INFO - Searching Pexels for: **0-5 seconds - hook** hey
+2025-11-26 17:45:26,196 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_174525_2.png (196.5 KB)
+2025-11-26 17:45:26,199 - generate_image - INFO - Generated image 2/5: assets/image_20251126_174525_2.png
+2025-11-26 17:45:26,201 - generate_image - INFO - Searching Pexels for: **0-5 seconds - hook** hey
+2025-11-26 17:45:26,633 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_174526_3.png (196.5 KB)
+2025-11-26 17:45:26,636 - generate_image - INFO - Generated image 3/5: assets/image_20251126_174526_3.png
+2025-11-26 17:45:26,638 - generate_image - INFO - Searching Pexels for: **0-5 seconds - hook** hey
+2025-11-26 17:45:27,102 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_174526_4.png (196.5 KB)
+2025-11-26 17:45:27,107 - generate_image - INFO - Generated image 4/5: assets/image_20251126_174526_4.png
+2025-11-26 17:45:27,109 - generate_image - INFO - Searching Pexels for: **0-5 seconds - hook** hey
+2025-11-26 17:45:27,533 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_174527_5.png (196.5 KB)
+2025-11-26 17:45:27,536 - generate_image - INFO - Generated image 5/5: assets/image_20251126_174527_5.png
+2025-11-26 17:45:27,536 - generate_image - INFO - Successfully generated 5 images
+2025-11-26 17:45:27,536 - __main__ - INFO - Using 5 unique product image segments
+2025-11-26 17:45:27,537 - __main__ - INFO - Step 6/10: Downloading stock videos...
+2025-11-26 17:45:27,537 - download_stock_video - INFO - Downloading 20 stock videos from pexels for keywords: ['mechanical', 'switches', 'gaming', 'keyboard', 'design', 'quality', 'speed']
+2025-11-26 17:45:27,537 - download_stock_video - INFO - Searching Pexels with combined query: mechanical switches gaming
+2025-11-26 17:45:27,913 - download_stock_video - INFO - Downloading video 1/20: https://videos.pexels.com/video-files/8328102/8328102-hd_1080_1920_25fps.mp4
+2025-11-26 17:45:28,087 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174527_0.mp4 (5.23 MB)
+2025-11-26 17:45:28,590 - download_stock_video - INFO - Downloading video 2/20: https://videos.pexels.com/video-files/3139878/3139878-hd_720_1280_30fps.mp4
+2025-11-26 17:45:29,116 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174528_1.mp4 (3.41 MB)
+2025-11-26 17:45:29,619 - download_stock_video - INFO - Downloading video 3/20: https://videos.pexels.com/video-files/3139886/3139886-hd_720_1280_30fps.mp4
+2025-11-26 17:45:29,750 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174529_2.mp4 (1.73 MB)
+2025-11-26 17:45:30,253 - download_stock_video - INFO - Downloading video 4/20: https://videos.pexels.com/video-files/4841217/4841217-uhd_2160_4096_25fps.mp4
+2025-11-26 17:45:32,392 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174530_3.mp4 (71.62 MB)
+2025-11-26 17:45:32,895 - download_stock_video - INFO - Downloading video 5/20: https://videos.pexels.com/video-files/4172112/4172112-hd_1080_1920_18fps.mp4
+2025-11-26 17:45:33,706 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174532_4.mp4 (1.92 MB)
+2025-11-26 17:45:34,234 - download_stock_video - INFO - Downloading video 6/20: https://videos.pexels.com/video-files/5097124/5097124-hd_1080_1920_30fps.mp4
+2025-11-26 17:45:34,383 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174534_5.mp4 (5.84 MB)
+2025-11-26 17:45:34,886 - download_stock_video - INFO - Downloading video 7/20: https://videos.pexels.com/video-files/5377268/5377268-hd_1080_1920_25fps.mp4
+2025-11-26 17:45:35,043 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174534_6.mp4 (6.85 MB)
+2025-11-26 17:45:35,546 - download_stock_video - INFO - Downloading video 8/20: https://videos.pexels.com/video-files/4836575/4836575-uhd_2160_4096_25fps.mp4
+2025-11-26 17:45:35,798 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174535_7.mp4 (24.09 MB)
+2025-11-26 17:45:36,301 - download_stock_video - INFO - Downloading video 9/20: https://videos.pexels.com/video-files/1821832/1821832-hd_720_1280_60fps.mp4
+2025-11-26 17:45:36,427 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174536_8.mp4 (1.28 MB)
+2025-11-26 17:45:36,931 - download_stock_video - INFO - Downloading video 10/20: https://videos.pexels.com/video-files/3139873/3139873-hd_720_1280_30fps.mp4
+2025-11-26 17:45:37,083 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174536_9.mp4 (3.56 MB)
+2025-11-26 17:45:37,586 - download_stock_video - INFO - Downloading video 11/20: https://videos.pexels.com/video-files/7382287/7382287-hd_1080_1920_21fps.mp4
+2025-11-26 17:45:37,701 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174537_10.mp4 (1.04 MB)
+2025-11-26 17:45:38,204 - download_stock_video - INFO - Downloading video 12/20: https://videos.pexels.com/video-files/4836902/4836902-uhd_2160_4096_25fps.mp4
+2025-11-26 17:45:42,245 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174538_11.mp4 (48.12 MB)
+2025-11-26 17:45:42,748 - download_stock_video - INFO - Downloading video 13/20: https://videos.pexels.com/video-files/5805641/5805641-hd_1080_1920_30fps.mp4
+2025-11-26 17:45:43,012 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174542_12.mp4 (20.53 MB)
+2025-11-26 17:45:43,516 - download_stock_video - INFO - Downloading video 14/20: https://videos.pexels.com/video-files/8127922/8127922-hd_1080_1920_25fps.mp4
+2025-11-26 17:45:44,271 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174543_13.mp4 (2.99 MB)
+2025-11-26 17:45:44,774 - download_stock_video - INFO - Downloading video 15/20: https://videos.pexels.com/video-files/5930433/5930433-hd_1080_1920_30fps.mp4
+2025-11-26 17:45:44,916 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_switches__20251126_174544_14.mp4 (4.79 MB)
+2025-11-26 17:45:45,418 - download_stock_video - INFO - Searching Pexels for: mechanical
+2025-11-26 17:45:45,747 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34829966/14764666_2160_3840_30fps.mp4
+2025-11-26 17:45:45,976 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_20251126_174545_15.mp4 (16.06 MB)
+2025-11-26 17:45:46,480 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34907992/14788117_2160_3840_30fps.mp4
+2025-11-26 17:45:47,363 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_20251126_174546_16.mp4 (40.83 MB)
+2025-11-26 17:45:47,866 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34893393/14782649_2160_3840_30fps.mp4
+2025-11-26 17:45:48,703 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_20251126_174547_17.mp4 (30.53 MB)
+2025-11-26 17:45:49,205 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4622443/4622443-uhd_2160_4096_25fps.mp4
+2025-11-26 17:45:49,634 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_20251126_174549_18.mp4 (53.73 MB)
+2025-11-26 17:45:50,136 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7776735/7776735-uhd_2160_4096_25fps.mp4
+2025-11-26 17:45:50,426 - download_stock_video - INFO - Downloaded: videos/stock_mechanical_20251126_174550_19.mp4 (19.62 MB)
+2025-11-26 17:45:50,931 - download_stock_video - INFO - Successfully downloaded 20 videos
+2025-11-26 17:45:50,931 - __main__ - INFO - Downloaded 20 stock videos
+2025-11-26 17:45:50,931 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-26 17:45:50,931 - generate_product_intro_video - INFO - Generating product intro for: Gaming Mechanical Keyboard
+2025-11-26 17:45:50,931 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-26 17:45:51,000 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1080x1920:d=5.0', '-vf', "color=c=0x1a1a2e:s=1080x1920:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Gaming Mechanical Keyboard':fontsize=90:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-200:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we\\'re featu':fontsize=35:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+200:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Gaming_Mechanical_Keyboard_20251126_174550.mp4']' returned non-zero exit status 1.
+2025-11-26 17:45:51,000 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-26 17:45:53,452 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Gaming_Mechanical_Keyboard_20251126_174550.mp4
+2025-11-26 17:45:53,453 - generate_product_intro_video - INFO - Product intro created: videos/intro_Gaming_Mechanical_Keyboard_20251126_174550.mp4
+2025-11-26 17:45:53,454 - __main__ - INFO - Intro video created: videos/intro_Gaming_Mechanical_Keyboard_20251126_174550.mp4
+2025-11-26 17:45:53,454 - __main__ - INFO - Step 8/10: Generating video segments...
+2025-11-26 17:45:53,454 - generate_video_single - INFO - Generating video segments: 20 stock videos, 5 images
+2025-11-26 17:46:01,797 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174553_0.mp4
+2025-11-26 17:46:01,797 - generate_video_single - INFO - Added stock video segment 1/20
+2025-11-26 17:46:10,578 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174601_1.mp4
+2025-11-26 17:46:10,579 - generate_video_single - INFO - Added stock video segment 2/20
+2025-11-26 17:46:10,579 - generate_video_single - INFO - Creating video from image: assets/product_Gaming_Mechanical_Keyboard_20251126_174524.jpg
+2025-11-26 17:46:15,915 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174610_2.mp4
+2025-11-26 17:46:15,915 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174610_2.mp4
+2025-11-26 17:46:15,915 - generate_video_single - INFO - Added image segment 1/5
+2025-11-26 17:46:24,482 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174615_3.mp4
+2025-11-26 17:46:24,482 - generate_video_single - INFO - Added stock video segment 3/20
+2025-11-26 17:46:35,044 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174624_4.mp4
+2025-11-26 17:46:35,045 - generate_video_single - INFO - Added stock video segment 4/20
+2025-11-26 17:46:35,046 - generate_video_single - INFO - Creating video from image: assets/product_Gaming_Mechanical_Keyboard_20251126_174525.jpg
+2025-11-26 17:46:41,063 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174635_5.mp4
+2025-11-26 17:46:41,063 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174635_5.mp4
+2025-11-26 17:46:41,063 - generate_video_single - INFO - Added image segment 2/5
+2025-11-26 17:46:49,471 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174641_6.mp4
+2025-11-26 17:46:49,471 - generate_video_single - INFO - Added stock video segment 5/20
+2025-11-26 17:47:00,870 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174649_7.mp4
+2025-11-26 17:47:00,871 - generate_video_single - INFO - Added stock video segment 6/20
+2025-11-26 17:47:00,871 - generate_video_single - INFO - Creating video from image: assets/image_20251126_174525_1.png
+2025-11-26 17:47:09,689 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174700_8.mp4
+2025-11-26 17:47:09,690 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174700_8.mp4
+2025-11-26 17:47:09,691 - generate_video_single - INFO - Added image segment 3/5
+2025-11-26 17:47:17,284 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174709_9.mp4
+2025-11-26 17:47:17,285 - generate_video_single - INFO - Added stock video segment 7/20
+2025-11-26 17:47:27,678 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174717_10.mp4
+2025-11-26 17:47:27,678 - generate_video_single - INFO - Added stock video segment 8/20
+2025-11-26 17:47:27,679 - generate_video_single - INFO - Creating video from image: assets/image_20251126_174525_2.png
+2025-11-26 17:47:36,293 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174727_11.mp4
+2025-11-26 17:47:36,293 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174727_11.mp4
+2025-11-26 17:47:36,294 - generate_video_single - INFO - Added image segment 4/5
+2025-11-26 17:47:48,709 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174736_12.mp4
+2025-11-26 17:47:48,710 - generate_video_single - INFO - Added stock video segment 9/20
+2025-11-26 17:47:59,188 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174748_13.mp4
+2025-11-26 17:47:59,188 - generate_video_single - INFO - Added stock video segment 10/20
+2025-11-26 17:47:59,188 - generate_video_single - INFO - Creating video from image: assets/image_20251126_174526_3.png
+2025-11-26 17:48:08,081 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174759_14.mp4
+2025-11-26 17:48:08,081 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_174759_14.mp4
+2025-11-26 17:48:08,081 - generate_video_single - INFO - Added image segment 5/5
+2025-11-26 17:48:11,396 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174808_15.mp4
+2025-11-26 17:48:11,396 - generate_video_single - INFO - Added stock video segment 11/20
+2025-11-26 17:48:21,918 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174811_16.mp4
+2025-11-26 17:48:21,918 - generate_video_single - INFO - Added stock video segment 12/20
+2025-11-26 17:48:34,087 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174821_17.mp4
+2025-11-26 17:48:34,087 - generate_video_single - INFO - Added stock video segment 13/20
+2025-11-26 17:48:43,770 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174834_18.mp4
+2025-11-26 17:48:43,770 - generate_video_single - INFO - Added stock video segment 14/20
+2025-11-26 17:48:50,559 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174843_19.mp4
+2025-11-26 17:48:50,559 - generate_video_single - INFO - Added stock video segment 15/20
+2025-11-26 17:49:02,506 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174850_20.mp4
+2025-11-26 17:49:02,506 - generate_video_single - INFO - Added stock video segment 16/20
+2025-11-26 17:49:22,869 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174902_21.mp4
+2025-11-26 17:49:22,870 - generate_video_single - INFO - Added stock video segment 17/20
+2025-11-26 17:49:35,604 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174922_22.mp4
+2025-11-26 17:49:35,604 - generate_video_single - INFO - Added stock video segment 18/20
+2025-11-26 17:49:47,466 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174935_23.mp4
+2025-11-26 17:49:47,466 - generate_video_single - INFO - Added stock video segment 19/20
+2025-11-26 17:49:58,065 - generate_video_single - INFO - Video trimmed to 3.5s: videos/segment_stock_20251126_174947_24.mp4
+2025-11-26 17:49:58,065 - generate_video_single - INFO - Added stock video segment 20/20
+2025-11-26 17:49:58,066 - generate_video_single - INFO - Generated 25 video segments (20 videos, 5 images)
+2025-11-26 17:49:58,066 - __main__ - INFO - Created 25 video segments
+2025-11-26 17:49:58,066 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-26 17:49:58,143 - __main__ - INFO - Generated 5 engagement points
+2025-11-26 17:49:58,144 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-26 17:49:58,144 - generate_video_final - INFO - Compiling final video
+2025-11-26 17:49:58,144 - generate_video_final - INFO - Total segments to compile: 27
+2025-11-26 17:49:58,144 - generate_video_final - INFO - Concatenating 27 videos with transitions=True
+2025-11-26 17:53:09,949 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251126_174958.mp4
+2025-11-26 17:53:09,950 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-26 17:53:10,088 - generate_video_final - INFO - Video duration: 168.334s, Audio duration: 107.064s
+2025-11-26 17:53:10,089 - generate_video_final - INFO - Syncing video to audio (168.3s → 107.1s, speed=1.572)
+2025-11-26 17:55:08,758 - generate_video_final - INFO - Audio added to video: videos/final_video_20251126_174958.mp4
+2025-11-26 17:55:08,761 - generate_video_final - INFO - Final video created: videos/final_video_20251126_174958.mp4
+2025-11-26 17:55:08,761 - video_engagement - INFO - Adding 5 text overlays
+2025-11-26 17:57:17,487 - video_engagement - INFO - Text overlays added: videos/final_video_20251126_174958_engaged.mp4
+2025-11-26 17:57:17,487 - video_engagement - INFO - Adding call-to-action
+2025-11-26 17:59:16,237 - video_engagement - INFO - CTA added: videos/final_video_20251126_174958_engaged_cta.mp4
+2025-11-26 17:59:16,238 - __main__ - INFO - Final engaged video created: videos/final_video_20251126_174958_engaged_cta.mp4
+2025-11-26 17:59:16,238 - __main__ - INFO - Skipping subtitles (disabled)
+2025-11-26 17:59:16,251 - __main__ - INFO - Final video saved to: final_videos/final_video_20251126_174958_engaged_cta.mp4
+2025-11-26 17:59:16,251 - __main__ - INFO - Cleaning up temporary files...
+2025-11-26 17:59:16,303 - __main__ - INFO - Cleanup complete
+2025-11-26 17:59:16,304 - __main__ - INFO - Converting video format...
+2025-11-26 17:59:16,304 - convert_video - INFO - Converting final_videos/final_video_20251126_174958_engaged_cta.mp4 to mp4
+2025-11-26 17:59:16,304 - convert_video - INFO - File already in mp4 format, skipping conversion: final_videos/final_video_20251126_174958_engaged_cta.mp4
+2025-11-26 17:59:16,304 - __main__ - INFO - Converted video: final_videos/final_video_20251126_174958_engaged_cta.mp4
+2025-11-26 17:59:16,305 - __main__ - INFO - ================================================================================
+2025-11-26 17:59:16,305 - __main__ - INFO - ✅ VIDEO GENERATION COMPLETE!
+2025-11-26 17:59:16,305 - __main__ - INFO - 📹 Final Video: final_videos/final_video_20251126_174958_engaged_cta.mp4
+2025-11-26 17:59:16,305 - __main__ - INFO - 🎯 Enhanced with: Product comparison, Real product photos, 15 stock videos, Subtitles, Engagement hooks, Fast cuts, CTA
+2025-11-26 17:59:16,306 - __main__ - INFO - ================================================================================

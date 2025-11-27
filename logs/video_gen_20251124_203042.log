@@ -1,0 +1,138 @@
+2025-11-24 20:30:42,008 - __main__ - INFO - ================================================================================
+2025-11-24 20:30:42,009 - __main__ - INFO - Starting Video Content Generation Pipeline
+2025-11-24 20:30:42,009 - __main__ - INFO - ================================================================================
+2025-11-24 20:30:42,009 - __main__ - INFO - Step 1/8: Generating content...
+2025-11-24 20:30:42,009 - generate_content - INFO - Generating content for product: Gaming Mouse
+2025-11-24 20:30:42,009 - generate_content - INFO - Using Groq API for content generation
+2025-11-24 20:30:42,527 - generate_content - INFO - Groq generated 912 characters
+2025-11-24 20:30:42,529 - __main__ - INFO - Content generated: 912 characters
+2025-11-24 20:30:42,529 - __main__ - INFO - Step 2/8: Generating description...
+2025-11-24 20:30:42,529 - generate_description - INFO - Generating video description
+2025-11-24 20:30:42,530 - generate_description - INFO - Description generated: 757 characters
+2025-11-24 20:30:42,530 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• "Get ready to take...
+2025-11-24 20:30:42,530 - __main__ - INFO - Step 3/8: Generating audio narration...
+2025-11-24 20:30:42,530 - generate_audio - INFO - Generating audio using gemini engine
+2025-11-24 20:30:42,530 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-24 20:30:42,767 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-24 20:30:42,767 - generate_audio - INFO - Falling back to gTTS
+2025-11-24 20:30:47,635 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251124_203042.mp3
+2025-11-24 20:30:47,636 - generate_audio - INFO - Audio generated successfully: audios/narration_20251124_203042.mp3
+2025-11-24 20:30:47,637 - __main__ - INFO - Audio saved to: audios/narration_20251124_203042.mp3
+2025-11-24 20:30:47,637 - __main__ - INFO - Step 4/8: Generating images...
+2025-11-24 20:30:47,637 - generate_image - INFO - Generating 5 images for: Gaming Mouse
+2025-11-24 20:30:47,637 - generate_image - INFO - Downloading from Unsplash: "get ready to
+2025-11-24 20:30:47,907 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,to,technology
+2025-11-24 20:30:47,907 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,t
+2025-11-24 20:30:48,063 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:30:48,063 - generate_image - WARNING - Hugging Face failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:30:48,064 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:30:48,218 - generate_image - INFO - Generated placeholder image: assets/image_20251124_203047_1.png
+2025-11-24 20:30:48,218 - generate_image - INFO - Generated image 1/5: assets/image_20251124_203047_1.png
+2025-11-24 20:30:48,219 - generate_image - INFO - Downloading from Unsplash: "get ready to
+2025-11-24 20:30:48,496 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,to,technology
+2025-11-24 20:30:48,496 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,t
+2025-11-24 20:30:48,676 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:30:48,676 - generate_image - WARNING - Hugging Face failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:30:48,677 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:30:48,840 - generate_image - INFO - Generated placeholder image: assets/image_20251124_203048_2.png
+2025-11-24 20:30:48,840 - generate_image - INFO - Generated image 2/5: assets/image_20251124_203048_2.png
+2025-11-24 20:30:48,841 - generate_image - INFO - Downloading from Unsplash: "get ready to
+2025-11-24 20:30:49,139 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,to,technology
+2025-11-24 20:30:49,140 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,t
+2025-11-24 20:30:49,314 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:30:49,314 - generate_image - WARNING - Hugging Face failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:30:49,315 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:30:49,434 - generate_image - INFO - Generated placeholder image: assets/image_20251124_203048_3.png
+2025-11-24 20:30:49,435 - generate_image - INFO - Generated image 3/5: assets/image_20251124_203048_3.png
+2025-11-24 20:30:49,435 - generate_image - INFO - Downloading from Unsplash: "get ready to
+2025-11-24 20:30:49,709 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,to,technology
+2025-11-24 20:30:49,710 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,t
+2025-11-24 20:30:49,870 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:30:49,871 - generate_image - WARNING - Hugging Face failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:30:49,873 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:30:50,043 - generate_image - INFO - Generated placeholder image: assets/image_20251124_203049_4.png
+2025-11-24 20:30:50,044 - generate_image - INFO - Generated image 4/5: assets/image_20251124_203049_4.png
+2025-11-24 20:30:50,044 - generate_image - INFO - Downloading from Unsplash: "get ready to
+2025-11-24 20:30:50,360 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,to,technology
+2025-11-24 20:30:50,361 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?%22get,ready,t
+2025-11-24 20:30:50,516 - generate_image - ERROR - Hugging Face generation failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead."}
+2025-11-24 20:30:50,516 - generate_image - WARNING - Hugging Face failed: API returned status code 410: {"error":"https://api-inference.huggingface.co is no longer supported.
+2025-11-24 20:30:50,517 - generate_image - INFO - Using placeholder image generation
+2025-11-24 20:30:50,640 - generate_image - INFO - Generated placeholder image: assets/image_20251124_203050_5.png
+2025-11-24 20:30:50,640 - generate_image - INFO - Generated image 5/5: assets/image_20251124_203050_5.png
+2025-11-24 20:30:50,640 - generate_image - INFO - Successfully generated 5 images
+2025-11-24 20:30:50,641 - __main__ - INFO - Generated 5 images
+2025-11-24 20:30:50,641 - __main__ - INFO - Step 5/8: Downloading stock videos...
+2025-11-24 20:30:50,641 - download_stock_video - INFO - Downloading 5 stock videos from pexels
+2025-11-24 20:30:50,641 - download_stock_video - INFO - Searching Pexels for: precision
+2025-11-24 20:30:51,099 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34802913/14756402_3840_2160_30fps.mp4
+2025-11-24 20:30:51,517 - download_stock_video - INFO - Downloaded: videos/stock_precision_20251124_203051_0.mp4 (29.89 MB)
+2025-11-24 20:30:52,020 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34845723/14770058_3840_2160_60fps.mp4
+2025-11-24 20:30:52,762 - download_stock_video - INFO - Downloaded: videos/stock_precision_20251124_203052_1.mp4 (32.06 MB)
+2025-11-24 20:30:53,265 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34801809/14756118_3840_2160_30fps.mp4
+2025-11-24 20:31:15,428 - download_stock_video - INFO - Downloaded: videos/stock_precision_20251124_203053_2.mp4 (1788.35 MB)
+2025-11-24 20:31:15,938 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34812250/14759704_1920_1080_50fps.mp4
+2025-11-24 20:31:16,113 - download_stock_video - INFO - Downloaded: videos/stock_precision_20251124_203115_3.mp4 (5.82 MB)
+2025-11-24 20:31:16,616 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/34812249/14759672_1920_1080_50fps.mp4
+2025-11-24 20:31:16,885 - download_stock_video - INFO - Downloaded: videos/stock_precision_20251124_203116_4.mp4 (4.49 MB)
+2025-11-24 20:31:17,389 - download_stock_video - INFO - Successfully downloaded 5 videos
+2025-11-24 20:31:17,389 - __main__ - INFO - Downloaded 5 stock videos
+2025-11-24 20:31:17,389 - __main__ - INFO - Step 6/8: Generating product intro video...
+2025-11-24 20:31:17,389 - generate_product_intro_video - INFO - Generating product intro for: Gaming Mouse
+2025-11-24 20:31:17,390 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-24 20:31:17,484 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1920x1080:d=5.0', '-vf', "color=c=0x1a1a2e:s=1920x1080:d=5.0[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Gaming Mouse':fontsize=120:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2-100:alpha='if(lt(t,1),t,if(lt(t,4.0),1,5.0-t))'[text1];[text1]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Welcome to our product showcase! Today we're featu':fontsize=40:fontcolor=0xcccccc:x=(w-text_w)/2:y=(h-text_h)/2+100:alpha='if(lt(t,1.5),0,if(lt(t,2.5),t-1.5,if(lt(t,4.0),1,5.0-t)))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Gaming_Mouse_20251124_203117.mp4']' returned non-zero exit status 1.
+2025-11-24 20:31:17,484 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-24 20:31:19,862 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Gaming_Mouse_20251124_203117.mp4
+2025-11-24 20:31:19,862 - generate_product_intro_video - INFO - Product intro created: videos/intro_Gaming_Mouse_20251124_203117.mp4
+2025-11-24 20:31:19,862 - __main__ - INFO - Intro video created: videos/intro_Gaming_Mouse_20251124_203117.mp4
+2025-11-24 20:31:19,862 - __main__ - INFO - Step 7/8: Generating video segments...
+2025-11-24 20:31:19,862 - generate_video_single - INFO - Generating video segments from 5 images and 5 videos
+2025-11-24 20:31:19,862 - generate_video_single - INFO - Creating video from image: assets/image_20251124_203047_1.png
+2025-11-24 20:31:23,036 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_203119_0.mp4
+2025-11-24 20:31:23,037 - generate_video_single - INFO - Created video segment 1/5: videos/segment_image_20251124_203119_0.mp4
+2025-11-24 20:31:23,037 - generate_video_single - INFO - Creating video from image: assets/image_20251124_203048_2.png
+2025-11-24 20:31:25,963 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_203123_1.mp4
+2025-11-24 20:31:25,963 - generate_video_single - INFO - Created video segment 2/5: videos/segment_image_20251124_203123_1.mp4
+2025-11-24 20:31:25,963 - generate_video_single - INFO - Creating video from image: assets/image_20251124_203048_3.png
+2025-11-24 20:31:28,841 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_203125_2.mp4
+2025-11-24 20:31:28,842 - generate_video_single - INFO - Created video segment 3/5: videos/segment_image_20251124_203125_2.mp4
+2025-11-24 20:31:28,842 - generate_video_single - INFO - Creating video from image: assets/image_20251124_203049_4.png
+2025-11-24 20:31:31,765 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_203128_3.mp4
+2025-11-24 20:31:31,766 - generate_video_single - INFO - Created video segment 4/5: videos/segment_image_20251124_203128_3.mp4
+2025-11-24 20:31:31,766 - generate_video_single - INFO - Creating video from image: assets/image_20251124_203050_5.png
+2025-11-24 20:31:34,761 - generate_video_single - INFO - Video created from image: videos/segment_image_20251124_203131_4.mp4
+2025-11-24 20:31:34,762 - generate_video_single - INFO - Created video segment 5/5: videos/segment_image_20251124_203131_4.mp4
+2025-11-24 20:31:34,889 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_203134_0.mp4
+2025-11-24 20:31:34,890 - generate_video_single - INFO - Added stock video segment 1/5
+2025-11-24 20:31:35,047 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_203134_1.mp4
+2025-11-24 20:31:35,047 - generate_video_single - INFO - Added stock video segment 2/5
+2025-11-24 20:31:35,521 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_203135_2.mp4
+2025-11-24 20:31:35,521 - generate_video_single - INFO - Added stock video segment 3/5
+2025-11-24 20:31:35,597 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_203135_3.mp4
+2025-11-24 20:31:35,597 - generate_video_single - INFO - Added stock video segment 4/5
+2025-11-24 20:31:35,683 - generate_video_single - INFO - Video trimmed to 3.0s: videos/segment_stock_20251124_203135_4.mp4
+2025-11-24 20:31:35,683 - generate_video_single - INFO - Added stock video segment 5/5
+2025-11-24 20:31:35,683 - generate_video_single - INFO - Generated 10 video segments
+2025-11-24 20:31:35,683 - __main__ - INFO - Created 10 video segments
+2025-11-24 20:31:35,683 - __main__ - INFO - Step 8/8: Compiling final video...
+2025-11-24 20:31:35,683 - generate_video_final - INFO - Compiling final video
+2025-11-24 20:31:35,683 - generate_video_final - INFO - Total segments to compile: 11
+2025-11-24 20:31:35,683 - generate_video_final - INFO - Concatenating 11 videos
+2025-11-24 20:31:35,684 - generate_video_final - INFO - Concatenating with transitions
+2025-11-24 20:32:35,705 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251124_203135.mp4
+2025-11-24 20:32:35,705 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-24 20:32:36,366 - generate_video_final - INFO - Audio added to video: videos/final_video_20251124_203135.mp4
+2025-11-24 20:32:36,367 - generate_video_final - INFO - Final video created: videos/final_video_20251124_203135.mp4
+2025-11-24 20:32:36,368 - __main__ - INFO - Final video created: videos/final_video_20251124_203135.mp4
+2025-11-24 20:32:36,368 - __main__ - INFO - Converting video format...
+2025-11-24 20:32:36,368 - convert_video - INFO - Converting videos/final_video_20251124_203135.mp4 to mp4
+2025-11-24 20:32:36,368 - convert_video - INFO - File already in mp4 format, skipping conversion: videos/final_video_20251124_203135.mp4
+2025-11-24 20:32:36,368 - __main__ - INFO - Converted video: videos/final_video_20251124_203135.mp4
+2025-11-24 20:32:36,368 - __main__ - INFO - ================================================================================
+2025-11-24 20:32:36,368 - __main__ - INFO - Pipeline completed successfully!
+2025-11-24 20:32:36,368 - __main__ - INFO - Final output: videos/final_video_20251124_203135.mp4
+2025-11-24 20:32:36,368 - __main__ - INFO - ================================================================================

@@ -1,0 +1,192 @@
+2025-11-26 22:59:00,385 - __main__ - INFO - ================================================================================
+2025-11-26 22:59:00,386 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-26 22:59:00,386 - __main__ - INFO - ================================================================================
+2025-11-26 22:59:00,387 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-26 22:59:00,387 - scrape_product - INFO - Fetching product data for: Bluetooth Speaker
+2025-11-26 22:59:00,387 - scrape_product - INFO - Searching Google Shopping for: Bluetooth Speaker
+2025-11-26 22:59:03,375 - scrape_product - INFO - Found 3 products from Google Shopping
+2025-11-26 22:59:03,517 - scrape_product - INFO - Downloaded product image: assets/product_Bluetooth_Speaker_20251126_225903.jpg
+2025-11-26 22:59:03,519 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-26 22:59:03,520 - __main__ - INFO - Fetched data for 3 products
+2025-11-26 22:59:03,520 - __main__ - INFO - Comparison data available for alternatives
+2025-11-26 22:59:03,520 - __main__ - INFO - Step 1/10: Generating review keywords from product data...
+2025-11-26 22:59:03,524 - generate_content - INFO - Generating keywords from product data using LLM
+2025-11-26 22:59:03,801 - generate_content - INFO - Generated 25 keywords: ['wireless', 'portable', 'compact', 'durable', 'water-resistant', 'long-lasting', 'efficient', 'speedy', 'responsive', 'user-friendly', 'ergonomic', 'sleek', 'premium', 'affordable', 'reliable', 'battery-life', 'connectivity-stability', 'sound-quality', 'build-quality', 'intuitive', 'compact-design', 'lightweight', 'value-for-money', 'worth-it', 'seamless-connection.']
+2025-11-26 22:59:03,803 - __main__ - INFO - Generated keywords: ['sleek', 'durable', 'affordable', 'user-friendly', 'efficient', 'wireless', 'speedy', 'portable', 'long-lasting', 'Bluetooth', 'compact', 'water-resistant', 'ergonomic', 'reliable', 'responsive']
+2025-11-26 22:59:03,803 - __main__ - INFO - Step 2/10: Generating product reviewer script...
+2025-11-26 22:59:03,803 - generate_content - INFO - Generating content for product: Bluetooth Speaker
+2025-11-26 22:59:03,804 - generate_content - INFO - Using Groq API for content generation
+2025-11-26 22:59:04,565 - generate_content - INFO - Groq generated 1236 characters
+2025-11-26 22:59:04,566 - __main__ - INFO - Product reviewer script generated: 1236 characters (target: 800-1200 words for 60-90s)
+2025-11-26 22:59:04,567 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-26 22:59:04,567 - generate_description - INFO - Generating video description
+2025-11-26 22:59:04,567 - generate_description - INFO - Description generated: 619 characters
+2025-11-26 22:59:04,567 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• So I've been using...
+2025-11-26 22:59:04,567 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-26 22:59:04,568 - generate_audio - INFO - Generating audio using gemini engine for 1236 characters
+2025-11-26 22:59:04,568 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-26 22:59:04,739 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-26 22:59:04,739 - generate_audio - INFO - Falling back to gTTS
+2025-11-26 22:59:13,246 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251126_225904.mp3
+2025-11-26 22:59:13,263 - generate_audio - INFO - Audio generated successfully: audios/narration_20251126_225904.mp3
+2025-11-26 22:59:13,264 - __main__ - INFO - Audio saved to: audios/narration_20251126_225904.mp3
+2025-11-26 22:59:13,265 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-26 22:59:13,265 - video_engagement - INFO - Creating hook segment
+2025-11-26 22:59:15,921 - video_engagement - INFO - Hook segment created: videos/hook_20251126_225913.mp4
+2025-11-26 22:59:15,922 - __main__ - INFO - Hook created: videos/hook_20251126_225913.mp4
+2025-11-26 22:59:15,922 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-26 22:59:16,014 - scrape_product - INFO - Downloaded product image: assets/product_Bluetooth_Speaker_20251126_225915.jpg
+2025-11-26 22:59:16,126 - scrape_product - INFO - Downloaded product image: assets/product_Bluetooth_Speaker_20251126_225916.jpg
+2025-11-26 22:59:16,232 - scrape_product - INFO - Downloaded product image: assets/product_Bluetooth_Speaker_20251126_225916.jpg
+2025-11-26 22:59:16,233 - generate_image - INFO - Generating 5 images for: Bluetooth Speaker
+2025-11-26 22:59:16,234 - generate_image - INFO - Searching Pexels for: so i've been using this
+2025-11-26 22:59:16,677 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_225916_1.png (86.3 KB)
+2025-11-26 22:59:16,680 - generate_image - INFO - Generated image 1/5: assets/image_20251126_225916_1.png
+2025-11-26 22:59:16,681 - generate_image - INFO - Searching Pexels for: so i've been using this
+2025-11-26 22:59:17,130 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_225916_2.png (86.3 KB)
+2025-11-26 22:59:17,132 - generate_image - INFO - Generated image 2/5: assets/image_20251126_225916_2.png
+2025-11-26 22:59:17,132 - generate_image - INFO - Searching Pexels for: so i've been using this
+2025-11-26 22:59:17,569 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_225917_3.png (86.3 KB)
+2025-11-26 22:59:17,572 - generate_image - INFO - Generated image 3/5: assets/image_20251126_225917_3.png
+2025-11-26 22:59:17,573 - generate_image - INFO - Searching Pexels for: so i've been using this
+2025-11-26 22:59:18,021 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_225917_4.png (86.3 KB)
+2025-11-26 22:59:18,025 - generate_image - INFO - Generated image 4/5: assets/image_20251126_225917_4.png
+2025-11-26 22:59:18,025 - generate_image - INFO - Searching Pexels for: so i've been using this
+2025-11-26 22:59:18,482 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_225918_5.png (86.3 KB)
+2025-11-26 22:59:18,485 - generate_image - INFO - Generated image 5/5: assets/image_20251126_225918_5.png
+2025-11-26 22:59:18,485 - generate_image - INFO - Successfully generated 5 images
+2025-11-26 22:59:18,485 - __main__ - INFO - Using 5 unique product image segments
+2025-11-26 22:59:18,485 - __main__ - INFO - Step 6/10: Downloading contextual stock videos...
+2025-11-26 22:59:18,486 - download_stock_video - INFO - Downloading 20 stock videos from pexels for keywords: ['design', 'quality', 'wireless', 'portable', 'design', 'quality']
+2025-11-26 22:59:18,486 - download_stock_video - INFO - Searching Pexels with combined query: design quality wireless
+2025-11-26 22:59:18,845 - download_stock_video - INFO - Downloading video 1/20: https://videos.pexels.com/video-files/8005691/8005691-hd_1080_1920_25fps.mp4
+2025-11-26 22:59:18,980 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225918_0.mp4 (1.54 MB)
+2025-11-26 22:59:19,483 - download_stock_video - INFO - Downloading video 2/20: https://videos.pexels.com/video-files/4884244/4884244-hd_1080_1920_30fps.mp4
+2025-11-26 22:59:19,606 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225919_1.mp4 (1.60 MB)
+2025-11-26 22:59:20,109 - download_stock_video - INFO - Downloading video 3/20: https://videos.pexels.com/video-files/4884238/4884238-hd_1080_1920_30fps.mp4
+2025-11-26 22:59:20,244 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225920_2.mp4 (1.31 MB)
+2025-11-26 22:59:20,748 - download_stock_video - INFO - Downloading video 4/20: https://videos.pexels.com/video-files/7213862/7213862-hd_1080_1920_30fps.mp4
+2025-11-26 22:59:20,899 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225920_3.mp4 (6.04 MB)
+2025-11-26 22:59:21,402 - download_stock_video - INFO - Downloading video 5/20: https://videos.pexels.com/video-files/7936181/7936181-hd_1080_1920_25fps.mp4
+2025-11-26 22:59:21,535 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225921_4.mp4 (2.81 MB)
+2025-11-26 22:59:22,038 - download_stock_video - INFO - Downloading video 6/20: https://videos.pexels.com/video-files/5390854/5390854-uhd_2160_4096_30fps.mp4
+2025-11-26 22:59:22,323 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225922_5.mp4 (21.23 MB)
+2025-11-26 22:59:22,826 - download_stock_video - INFO - Downloading video 7/20: https://videos.pexels.com/video-files/6612199/6612199-hd_1080_1920_25fps.mp4
+2025-11-26 22:59:22,990 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225922_6.mp4 (2.45 MB)
+2025-11-26 22:59:23,493 - download_stock_video - INFO - Downloading video 8/20: https://videos.pexels.com/video-files/6377373/6377373-uhd_2160_4096_30fps.mp4
+2025-11-26 22:59:24,226 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225923_7.mp4 (13.11 MB)
+2025-11-26 22:59:24,730 - download_stock_video - INFO - Downloading video 9/20: https://videos.pexels.com/video-files/7428171/7428171-uhd_2160_4096_25fps.mp4
+2025-11-26 22:59:24,920 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225924_8.mp4 (5.25 MB)
+2025-11-26 22:59:25,424 - download_stock_video - INFO - Downloading video 10/20: https://videos.pexels.com/video-files/6279146/6279146-hd_1080_1920_30fps.mp4
+2025-11-26 22:59:25,558 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225925_9.mp4 (5.63 MB)
+2025-11-26 22:59:26,061 - download_stock_video - INFO - Downloading video 11/20: https://videos.pexels.com/video-files/6278821/6278821-hd_1080_1920_30fps.mp4
+2025-11-26 22:59:26,165 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225926_10.mp4 (0.94 MB)
+2025-11-26 22:59:26,668 - download_stock_video - INFO - Downloading video 12/20: https://videos.pexels.com/video-files/6278824/6278824-hd_1080_1920_30fps.mp4
+2025-11-26 22:59:26,849 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225926_11.mp4 (7.42 MB)
+2025-11-26 22:59:27,352 - download_stock_video - INFO - Downloading video 13/20: https://videos.pexels.com/video-files/4835063/4835063-hd_1080_1920_30fps.mp4
+2025-11-26 22:59:27,535 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225927_12.mp4 (7.15 MB)
+2025-11-26 22:59:28,039 - download_stock_video - INFO - Downloading video 14/20: https://videos.pexels.com/video-files/7605030/7605030-uhd_2160_4096_25fps.mp4
+2025-11-26 22:59:28,451 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225928_13.mp4 (41.69 MB)
+2025-11-26 22:59:28,954 - download_stock_video - INFO - Downloading video 15/20: https://videos.pexels.com/video-files/4828808/4828808-uhd_2160_4096_25fps.mp4
+2025-11-26 22:59:29,334 - download_stock_video - INFO - Downloaded: videos/stock_design_quality_wirel_20251126_225928_14.mp4 (46.52 MB)
+2025-11-26 22:59:29,836 - download_stock_video - INFO - Searching Pexels for: design
+2025-11-26 22:59:30,186 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/3843427/3843427-uhd_2160_4096_25fps.mp4
+2025-11-26 22:59:30,452 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_225930_15.mp4 (16.19 MB)
+2025-11-26 22:59:30,955 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4622990/4622990-uhd_2160_3840_30fps.mp4
+2025-11-26 22:59:31,217 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_225930_16.mp4 (14.51 MB)
+2025-11-26 22:59:31,721 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/2828876/2828876-hd_1080_1920_24fps.mp4
+2025-11-26 22:59:31,902 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_225931_17.mp4 (5.71 MB)
+2025-11-26 22:59:32,405 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/3139873/3139873-hd_720_1280_30fps.mp4
+2025-11-26 22:59:32,552 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_225932_18.mp4 (3.56 MB)
+2025-11-26 22:59:33,056 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4884244/4884244-uhd_2160_3840_30fps.mp4
+2025-11-26 22:59:33,245 - download_stock_video - INFO - Downloaded: videos/stock_design_20251126_225933_19.mp4 (6.83 MB)
+2025-11-26 22:59:33,748 - download_stock_video - INFO - Successfully downloaded 20 videos
+2025-11-26 22:59:33,749 - __main__ - INFO - Downloaded 20 contextual stock videos
+2025-11-26 22:59:33,749 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-26 22:59:33,749 - generate_product_intro_video - INFO - Generating product intro for: Bluetooth Speaker
+2025-11-26 22:59:33,750 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-26 22:59:33,819 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1080x1920:d=0.8', '-vf', "color=c=0x1a1a2e:s=1080x1920:d=0.8[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='Bluetooth Speaker':fontsize=90:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2:alpha='if(lt(t,0.2),t*5,if(lt(t,0.6000000000000001),1,(1-t+0.6000000000000001)*5))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_Bluetooth_Speaker_20251126_225933.mp4']' returned non-zero exit status 1.
+2025-11-26 22:59:33,819 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-26 22:59:34,490 - generate_product_intro_video - INFO - Simple intro created: videos/intro_Bluetooth_Speaker_20251126_225933.mp4
+2025-11-26 22:59:34,490 - generate_product_intro_video - INFO - Product intro created: videos/intro_Bluetooth_Speaker_20251126_225933.mp4
+2025-11-26 22:59:34,490 - __main__ - INFO - Intro video created: videos/intro_Bluetooth_Speaker_20251126_225933.mp4
+2025-11-26 22:59:34,490 - __main__ - INFO - Step 8/10: Generating video segments...
+2025-11-26 22:59:34,559 - generate_video_single - INFO - Audio: 92.6s -> Segment duration: 2.5s (25 segments)
+2025-11-26 22:59:34,560 - generate_video_single - INFO - Creating 25 segments: 20 videos + 5 images
+2025-11-26 22:59:34,560 - generate_video_single - INFO - Target duration: 62.5s = 25 segments x 2.5s each
+2025-11-26 22:59:40,267 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_225934_0.mp4
+2025-11-26 22:59:40,267 - generate_video_single - INFO - Added stock video segment 1/20
+2025-11-26 22:59:45,330 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_225940_1.mp4
+2025-11-26 22:59:45,330 - generate_video_single - INFO - Added stock video segment 2/20
+2025-11-26 22:59:50,334 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_225945_2.mp4
+2025-11-26 22:59:50,334 - generate_video_single - INFO - Added stock video segment 3/20
+2025-11-26 22:59:57,092 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_225950_3.mp4
+2025-11-26 22:59:57,093 - generate_video_single - INFO - Added stock video segment 4/20
+2025-11-26 22:59:57,093 - generate_video_single - INFO - Creating video from image: assets/product_Bluetooth_Speaker_20251126_225915.jpg
+2025-11-26 23:00:03,068 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_225957_4.mp4
+2025-11-26 23:00:03,069 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_225957_4.mp4
+2025-11-26 23:00:03,070 - generate_video_single - INFO - Added image segment 1/5
+2025-11-26 23:00:07,495 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_230003_5.mp4
+2025-11-26 23:00:07,495 - generate_video_single - INFO - Added stock video segment 5/20
+2025-11-26 23:00:17,811 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_230007_6.mp4
+2025-11-26 23:00:17,811 - generate_video_single - INFO - Added stock video segment 6/20
+2025-11-26 23:00:22,531 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_230017_7.mp4
+2025-11-26 23:00:22,532 - generate_video_single - INFO - Added stock video segment 7/20
+2025-11-26 23:00:28,223 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_230022_8.mp4
+2025-11-26 23:00:28,223 - generate_video_single - INFO - Added stock video segment 8/20
+2025-11-26 23:00:28,223 - generate_video_single - INFO - Creating video from image: assets/product_Bluetooth_Speaker_20251126_225916.jpg
+2025-11-26 23:00:34,226 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230028_9.mp4
+2025-11-26 23:00:34,226 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230028_9.mp4
+2025-11-26 23:00:34,227 - generate_video_single - INFO - Added image segment 2/5
+2025-11-26 23:00:38,126 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_230034_10.mp4
+2025-11-26 23:00:38,127 - generate_video_single - INFO - Added stock video segment 9/20
+2025-11-26 23:00:45,183 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_230038_11.mp4
+2025-11-26 23:00:45,183 - generate_video_single - INFO - Added stock video segment 10/20
+2025-11-26 23:00:49,714 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_230045_12.mp4
+2025-11-26 23:00:49,714 - generate_video_single - INFO - Added stock video segment 11/20
+2025-11-26 23:00:56,578 - generate_video_single - INFO - Video trimmed to 2.8s: videos/segment_stock_20251126_230049_13.mp4
+2025-11-26 23:00:56,579 - generate_video_single - INFO - Added stock video segment 12/20
+2025-11-26 23:00:56,579 - generate_video_single - INFO - Creating video from image: assets/image_20251126_225916_1.png
+2025-11-26 23:01:02,114 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230056_14.mp4
+2025-11-26 23:01:02,114 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230056_14.mp4
+2025-11-26 23:01:02,114 - generate_video_single - INFO - Added image segment 3/5
+2025-11-26 23:01:09,522 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_230102_15.mp4
+2025-11-26 23:01:09,522 - generate_video_single - INFO - Added stock video segment 13/20
+2025-11-26 23:01:17,543 - generate_video_single - INFO - Video trimmed to 2.8s: videos/segment_stock_20251126_230109_16.mp4
+2025-11-26 23:01:17,543 - generate_video_single - INFO - Added stock video segment 14/20
+2025-11-26 23:01:25,905 - generate_video_single - INFO - Video trimmed to 2.7s: videos/segment_stock_20251126_230117_17.mp4
+2025-11-26 23:01:25,906 - generate_video_single - INFO - Added stock video segment 15/20
+2025-11-26 23:01:34,081 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_230125_18.mp4
+2025-11-26 23:01:34,081 - generate_video_single - INFO - Added stock video segment 16/20
+2025-11-26 23:01:34,081 - generate_video_single - INFO - Creating video from image: assets/image_20251126_225916_2.png
+2025-11-26 23:01:39,573 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230134_19.mp4
+2025-11-26 23:01:39,574 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230134_19.mp4
+2025-11-26 23:01:39,574 - generate_video_single - INFO - Added image segment 4/5
+2025-11-26 23:01:46,012 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_230139_20.mp4
+2025-11-26 23:01:46,012 - generate_video_single - INFO - Added stock video segment 17/20
+2025-11-26 23:01:51,414 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_230146_21.mp4
+2025-11-26 23:01:51,414 - generate_video_single - INFO - Added stock video segment 18/20
+2025-11-26 23:01:58,148 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_230151_22.mp4
+2025-11-26 23:01:58,148 - generate_video_single - INFO - Added stock video segment 19/20
+2025-11-26 23:02:04,548 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_230158_23.mp4
+2025-11-26 23:02:04,548 - generate_video_single - INFO - Added stock video segment 20/20
+2025-11-26 23:02:04,548 - generate_video_single - INFO - Creating video from image: assets/image_20251126_225917_3.png
+2025-11-26 23:02:10,468 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230204_24.mp4
+2025-11-26 23:02:10,468 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_230204_24.mp4
+2025-11-26 23:02:10,468 - generate_video_single - INFO - Added image segment 5/5
+2025-11-26 23:02:10,468 - generate_video_single - INFO - Generated 25 video segments (20 videos, 5 images)
+2025-11-26 23:02:10,468 - __main__ - INFO - Created 25 video segments
+2025-11-26 23:02:10,468 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-26 23:02:10,535 - __main__ - INFO - Generated 5 engagement points
+2025-11-26 23:02:10,535 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-26 23:02:10,535 - generate_video_final - INFO - Compiling final video
+2025-11-26 23:02:10,535 - generate_video_final - INFO - Total segments to compile: 27
+2025-11-26 23:02:10,536 - generate_video_final - INFO - Concatenating 27 videos with transitions=True
+2025-11-26 23:04:29,652 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251126_230210.mp4
+2025-11-26 23:04:29,652 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-26 23:04:29,780 - generate_video_final - INFO - Video duration: 121.234s, Audio duration: 92.616s
+2025-11-26 23:04:29,781 - generate_video_final - INFO - Syncing video to audio (121.2s -> 92.6s, speed=1.309)

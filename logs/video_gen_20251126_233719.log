@@ -1,0 +1,250 @@
+2025-11-26 23:37:19,053 - __main__ - INFO - ================================================================================
+2025-11-26 23:37:19,054 - __main__ - INFO - Starting Enhanced Video Content Generation Pipeline
+2025-11-26 23:37:19,054 - __main__ - INFO - ================================================================================
+2025-11-26 23:37:19,054 - __main__ - INFO - Step 0/10: Fetching product data and comparisons...
+2025-11-26 23:37:19,054 - scrape_product - INFO - Fetching product data for: USB Cable
+2025-11-26 23:37:19,055 - scrape_product - INFO - Searching Google Shopping for: USB Cable
+2025-11-26 23:37:29,144 - scrape_product - ERROR - Google Shopping search failed: HTTPSConnectionPool(host='serpapi.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:37:29,144 - scrape_product - WARNING - No products found, generating mock data
+2025-11-26 23:37:29,145 - scrape_product - INFO - Generating mock product data
+2025-11-26 23:37:32,330 - scrape_product - ERROR - Failed to download image: HTTPSConnectionPool(host='via.placeholder.com', port=443): Max retries exceeded with url: /400x400.png?text=Product+Image (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8dd1436d70>: Failed to resolve 'via.placeholder.com' ([Errno -3] Temporary failure in name resolution)"))
+2025-11-26 23:37:32,331 - scrape_product - INFO - Product data saved to product_data.json
+2025-11-26 23:37:32,331 - __main__ - INFO - Fetched data for 3 products
+2025-11-26 23:37:32,331 - __main__ - INFO - Comparison data available for alternatives
+2025-11-26 23:37:32,331 - __main__ - INFO - Step 1/10: Generating review keywords from product data...
+2025-11-26 23:37:32,331 - generate_content - INFO - Generating keywords from product data using LLM
+2025-11-26 23:37:32,636 - generate_content - INFO - Generated 26 keywords: ['charging speed', 'fast charging', 'data transfer rate', 'wireless connectivity', 'ergonomic design', 'build quality', 'aesthetic appeal', 'comfort', 'intuitive interface', 'reliability', 'responsiveness', 'efficiency', 'connectivity options', 'battery life', 'durability', 'premium quality', 'affordable price', 'worth the investment', 'high-speed data transfer', 'low latency', 'long-lasting', 'user-friendly', 'sleek design', 'robust construction', 'value for money', 'excellent performance.']
+2025-11-26 23:37:32,639 - __main__ - INFO - Generated keywords: ['RGB', 'build quality', 'fast', 'fast charging', 'data transfer rate', 'ergonomic design', 'efficiency', 'wireless connectivity', 'aesthetic appeal', 'charging', 'comfort', 'charging speed', 'Wireless', 'Ergonomic', 'data']
+2025-11-26 23:37:32,640 - __main__ - INFO - Step 2/10: Generating product reviewer script...
+2025-11-26 23:37:32,640 - generate_content - INFO - Generating content for product: USB Cable
+2025-11-26 23:37:32,640 - generate_content - INFO - Using Groq API for content generation
+2025-11-26 23:37:33,377 - generate_content - INFO - Groq generated 1223 characters
+2025-11-26 23:37:33,379 - __main__ - INFO - Product reviewer script generated: 1223 characters (target: 800-1200 words for 60-90s)
+2025-11-26 23:37:33,380 - __main__ - INFO - Step 2/10: Generating description...
+2025-11-26 23:37:33,380 - generate_description - INFO - Generating video description
+2025-11-26 23:37:33,380 - generate_description - INFO - Description generated: 712 characters
+2025-11-26 23:37:33,380 - __main__ - INFO - Description generated: 🎥 Product Review & Overview
+
+📋 SUMMARY
+----------------------------------------
+• (Speaking with ent...
+2025-11-26 23:37:33,380 - __main__ - INFO - Step 3/10: Generating audio narration...
+2025-11-26 23:37:33,380 - generate_audio - INFO - Generating audio using gemini engine for 1223 characters
+2025-11-26 23:37:33,380 - generate_audio - INFO - Generating audio with Hugging Face TTS...
+2025-11-26 23:37:33,568 - generate_audio - WARNING - HuggingFace TTS failed: 404
+2025-11-26 23:37:33,568 - generate_audio - INFO - Falling back to gTTS
+2025-11-26 23:37:41,857 - generate_audio - INFO - Generated audio with gTTS: audios/narration_20251126_233733.mp3
+2025-11-26 23:37:41,859 - generate_audio - INFO - Audio generated successfully: audios/narration_20251126_233733.mp3
+2025-11-26 23:37:41,859 - __main__ - INFO - Audio saved to: audios/narration_20251126_233733.mp3
+2025-11-26 23:37:41,860 - __main__ - INFO - Step 4/10: Creating engagement hook...
+2025-11-26 23:37:41,860 - video_engagement - INFO - Creating hook segment
+2025-11-26 23:37:43,737 - video_engagement - INFO - Hook segment created: videos/hook_20251126_233741.mp4
+2025-11-26 23:37:43,737 - __main__ - INFO - Hook created: videos/hook_20251126_233741.mp4
+2025-11-26 23:37:43,737 - __main__ - INFO - Step 5/10: Getting product images...
+2025-11-26 23:37:43,993 - scrape_product - ERROR - Failed to download image: HTTPSConnectionPool(host='via.placeholder.com', port=443): Max retries exceeded with url: /400x400.png?text=Product+Image (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8dd1437c70>: Failed to resolve 'via.placeholder.com' ([Errno -3] Temporary failure in name resolution)"))
+2025-11-26 23:37:44,048 - scrape_product - ERROR - Failed to download image: HTTPSConnectionPool(host='via.placeholder.com', port=443): Max retries exceeded with url: /400x400.png?text=Alternative (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8dd14ab3a0>: Failed to resolve 'via.placeholder.com' ([Errno -3] Temporary failure in name resolution)"))
+2025-11-26 23:37:44,080 - scrape_product - ERROR - Failed to download image: HTTPSConnectionPool(host='via.placeholder.com', port=443): Max retries exceeded with url: /400x400.png?text=Budget (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8dd14a86d0>: Failed to resolve 'via.placeholder.com' ([Errno -3] Temporary failure in name resolution)"))
+2025-11-26 23:37:44,081 - generate_image - INFO - Generating 5 images for: USB Cable
+2025-11-26 23:37:44,084 - generate_image - INFO - Searching Pexels for: (speaking with enthusiasm) so i've
+2025-11-26 23:37:54,182 - generate_image - ERROR - Pexels generation failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:37:54,182 - generate_image - WARNING - Pexels failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:37:54,183 - generate_image - INFO - Downloading from Unsplash: (speaking with enthusiasm)
+2025-11-26 23:37:54,473 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with,enthusiasm),technology
+2025-11-26 23:37:54,473 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with
+2025-11-26 23:37:54,475 - generate_image - INFO - Generating image with Hugging Face: (Speaking with enthusiasm) So I've been using this...
+2025-11-26 23:37:54,635 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-26 23:37:54,636 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-26 23:37:54,637 - generate_image - INFO - Using placeholder image generation
+2025-11-26 23:37:54,811 - generate_image - INFO - Generated placeholder image: assets/image_20251126_233744_1.png
+2025-11-26 23:37:54,812 - generate_image - INFO - Generated image 1/5: assets/image_20251126_233744_1.png
+2025-11-26 23:37:54,812 - generate_image - INFO - Searching Pexels for: (speaking with enthusiasm) so i've
+2025-11-26 23:38:04,895 - generate_image - ERROR - Pexels generation failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:38:04,895 - generate_image - WARNING - Pexels failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:38:04,895 - generate_image - INFO - Downloading from Unsplash: (speaking with enthusiasm)
+2025-11-26 23:38:05,111 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with,enthusiasm),technology
+2025-11-26 23:38:05,111 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with
+2025-11-26 23:38:05,112 - generate_image - INFO - Generating image with Hugging Face: (Speaking with enthusiasm) So I've been using this...
+2025-11-26 23:38:05,270 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-26 23:38:05,270 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-26 23:38:05,271 - generate_image - INFO - Using placeholder image generation
+2025-11-26 23:38:05,402 - generate_image - INFO - Generated placeholder image: assets/image_20251126_233754_2.png
+2025-11-26 23:38:05,403 - generate_image - INFO - Generated image 2/5: assets/image_20251126_233754_2.png
+2025-11-26 23:38:05,403 - generate_image - INFO - Searching Pexels for: (speaking with enthusiasm) so i've
+2025-11-26 23:38:15,508 - generate_image - ERROR - Pexels generation failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:38:15,508 - generate_image - WARNING - Pexels failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:38:15,508 - generate_image - INFO - Downloading from Unsplash: (speaking with enthusiasm)
+2025-11-26 23:38:15,782 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with,enthusiasm),technology
+2025-11-26 23:38:15,782 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with
+2025-11-26 23:38:15,784 - generate_image - INFO - Generating image with Hugging Face: (Speaking with enthusiasm) So I've been using this...
+2025-11-26 23:38:15,943 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-26 23:38:15,943 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-26 23:38:15,945 - generate_image - INFO - Using placeholder image generation
+2025-11-26 23:38:16,078 - generate_image - INFO - Generated placeholder image: assets/image_20251126_233805_3.png
+2025-11-26 23:38:16,079 - generate_image - INFO - Generated image 3/5: assets/image_20251126_233805_3.png
+2025-11-26 23:38:16,079 - generate_image - INFO - Searching Pexels for: (speaking with enthusiasm) so i've
+2025-11-26 23:38:26,175 - generate_image - ERROR - Pexels generation failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:38:26,175 - generate_image - WARNING - Pexels failed: HTTPSConnectionPool(host='api.pexels.com', port=443): Read timed out. (read timeout=10)
+2025-11-26 23:38:26,175 - generate_image - INFO - Downloading from Unsplash: (speaking with enthusiasm)
+2025-11-26 23:38:26,447 - generate_image - ERROR - Unsplash generation failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with,enthusiasm),technology
+2025-11-26 23:38:26,447 - generate_image - WARNING - Unsplash failed: 503 Server Error: Service Unavailable for url: https://source.unsplash.com/1920x1080/?(speaking,with
+2025-11-26 23:38:26,448 - generate_image - INFO - Generating image with Hugging Face: (Speaking with enthusiasm) So I've been using this...
+2025-11-26 23:38:26,605 - generate_image - ERROR - Hugging Face image generation failed: API returned status code 404: Not Found
+2025-11-26 23:38:26,606 - generate_image - WARNING - Hugging Face failed: API returned status code 404: Not Found
+2025-11-26 23:38:26,607 - generate_image - INFO - Using placeholder image generation
+2025-11-26 23:38:26,728 - generate_image - INFO - Generated placeholder image: assets/image_20251126_233816_4.png
+2025-11-26 23:38:26,729 - generate_image - INFO - Generated image 4/5: assets/image_20251126_233816_4.png
+2025-11-26 23:38:26,729 - generate_image - INFO - Searching Pexels for: (speaking with enthusiasm) so i've
+2025-11-26 23:38:27,164 - generate_image - INFO - Downloaded from Pexels: assets/image_20251126_233826_5.png (165.4 KB)
+2025-11-26 23:38:27,166 - generate_image - INFO - Generated image 5/5: assets/image_20251126_233826_5.png
+2025-11-26 23:38:27,167 - generate_image - INFO - Successfully generated 5 images
+2025-11-26 23:38:27,167 - __main__ - INFO - Using 5 unique product image segments
+2025-11-26 23:38:27,167 - __main__ - INFO - Step 6/10: Downloading contextual stock videos...
+2025-11-26 23:38:27,167 - download_stock_video - INFO - Downloading 20 stock videos from pexels for keywords: ['quality', 'charging', 'fast', 'data', 'quality']
+2025-11-26 23:38:27,168 - download_stock_video - INFO - Searching Pexels with combined query: quality charging fast
+2025-11-26 23:38:47,019 - download_stock_video - INFO - Downloading video 1/20: https://videos.pexels.com/video-files/34924175/14793932_1080_1920_30fps.mp4
+2025-11-26 23:38:48,806 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233847_0.mp4 (6.02 MB)
+2025-11-26 23:38:49,309 - download_stock_video - INFO - Downloading video 2/20: https://videos.pexels.com/video-files/32220524/13741879_1080_1920_24fps.mp4
+2025-11-26 23:38:49,499 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233849_1.mp4 (11.66 MB)
+2025-11-26 23:38:50,002 - download_stock_video - INFO - Downloading video 3/20: https://videos.pexels.com/video-files/16743471/16743471-hd_1080_1920_30fps.mp4
+2025-11-26 23:38:50,128 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233850_2.mp4 (3.48 MB)
+2025-11-26 23:38:50,631 - download_stock_video - INFO - Downloading video 4/20: https://videos.pexels.com/video-files/5281520/5281520-hd_720_1280_30fps.mp4
+2025-11-26 23:38:50,790 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233850_3.mp4 (2.47 MB)
+2025-11-26 23:38:51,293 - download_stock_video - INFO - Downloading video 5/20: https://videos.pexels.com/video-files/20278246/20278246-hd_1080_1920_30fps.mp4
+2025-11-26 23:38:51,479 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233851_4.mp4 (8.19 MB)
+2025-11-26 23:38:51,983 - download_stock_video - INFO - Downloading video 6/20: https://videos.pexels.com/video-files/15552891/15552891-hd_1080_1920_24fps.mp4
+2025-11-26 23:38:52,139 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233851_5.mp4 (3.99 MB)
+2025-11-26 23:38:52,642 - download_stock_video - INFO - Downloading video 7/20: https://videos.pexels.com/video-files/6624927/6624927-hd_1080_1920_30fps.mp4
+2025-11-26 23:38:53,294 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233852_6.mp4 (3.79 MB)
+2025-11-26 23:38:53,797 - download_stock_video - INFO - Downloading video 8/20: https://videos.pexels.com/video-files/26690701/11987728_2160_3804_60fps.mp4
+2025-11-26 23:38:55,334 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233853_7.mp4 (220.41 MB)
+2025-11-26 23:38:55,838 - download_stock_video - INFO - Downloading video 9/20: https://videos.pexels.com/video-files/8233057/8233057-uhd_2160_4096_25fps.mp4
+2025-11-26 23:39:00,785 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233855_8.mp4 (72.06 MB)
+2025-11-26 23:39:01,289 - download_stock_video - INFO - Downloading video 10/20: https://videos.pexels.com/video-files/5198954/5198954-uhd_2160_4096_25fps.mp4
+2025-11-26 23:39:01,566 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233901_9.mp4 (23.53 MB)
+2025-11-26 23:39:02,069 - download_stock_video - INFO - Downloading video 11/20: https://videos.pexels.com/video-files/8064146/8064146-uhd_1440_1800_30fps.mp4
+2025-11-26 23:39:02,320 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233902_10.mp4 (13.58 MB)
+2025-11-26 23:39:02,823 - download_stock_video - INFO - Downloading video 12/20: https://videos.pexels.com/video-files/5281523/5281523-hd_720_1280_30fps.mp4
+2025-11-26 23:39:02,958 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233902_11.mp4 (2.64 MB)
+2025-11-26 23:39:03,463 - download_stock_video - INFO - Downloading video 13/20: https://videos.pexels.com/video-files/3664072/3664072-hd_1080_1920_30fps.mp4
+2025-11-26 23:39:03,661 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233903_12.mp4 (16.38 MB)
+2025-11-26 23:39:04,164 - download_stock_video - INFO - Downloading video 14/20: https://videos.pexels.com/video-files/5977018/5977018-hd_1080_1920_25fps.mp4
+2025-11-26 23:39:04,953 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233904_13.mp4 (8.69 MB)
+2025-11-26 23:39:05,459 - download_stock_video - INFO - Downloading video 15/20: https://videos.pexels.com/video-files/6556837/6556837-hd_1080_1920_30fps.mp4
+2025-11-26 23:39:05,697 - download_stock_video - INFO - Downloaded: videos/stock_quality_charging_fas_20251126_233905_14.mp4 (20.95 MB)
+2025-11-26 23:39:06,199 - download_stock_video - INFO - Searching Pexels for: quality
+2025-11-26 23:39:06,553 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/6624927/uhd_30fps.mp4
+2025-11-26 23:39:06,721 - download_stock_video - INFO - Downloaded: videos/stock_quality_20251126_233906_15.mp4 (9.20 MB)
+2025-11-26 23:39:07,224 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7936181/7936181-uhd_2160_3840_25fps.mp4
+2025-11-26 23:39:07,935 - download_stock_video - INFO - Downloaded: videos/stock_quality_20251126_233907_16.mp4 (12.80 MB)
+2025-11-26 23:39:08,438 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/4795015/4795015-uhd_2160_4096_25fps.mp4
+2025-11-26 23:39:08,910 - download_stock_video - INFO - Downloaded: videos/stock_quality_20251126_233908_17.mp4 (72.70 MB)
+2025-11-26 23:39:09,413 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/6377373/6377373-uhd_2160_4096_30fps.mp4
+2025-11-26 23:39:09,606 - download_stock_video - INFO - Downloaded: videos/stock_quality_20251126_233909_18.mp4 (13.11 MB)
+2025-11-26 23:39:10,109 - download_stock_video - INFO - Downloading: https://videos.pexels.com/video-files/7428171/7428171-uhd_2160_4096_25fps.mp4
+2025-11-26 23:39:10,236 - download_stock_video - INFO - Downloaded: videos/stock_quality_20251126_233910_19.mp4 (5.25 MB)
+2025-11-26 23:39:10,740 - download_stock_video - INFO - Successfully downloaded 20 videos
+2025-11-26 23:39:10,741 - __main__ - INFO - Downloaded 20 contextual stock videos
+2025-11-26 23:39:10,741 - __main__ - INFO - Step 7/10: Generating product intro video...
+2025-11-26 23:39:10,741 - generate_product_intro_video - INFO - Generating product intro for: USB Cable
+2025-11-26 23:39:10,741 - generate_product_intro_video - INFO - Creating animated intro
+2025-11-26 23:39:10,810 - generate_product_intro_video - ERROR - Failed to create animated intro: Command '['ffmpeg', '-f', 'lavfi', '-i', 'color=c=0x16213e:s=1080x1920:d=0.8', '-vf', "color=c=0x1a1a2e:s=1080x1920:d=0.8[bg];[bg]drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='USB Cable':fontsize=90:fontcolor=white:x=(w-text_w)/2:y=(h-text_h)/2:alpha='if(lt(t,0.2),t*5,if(lt(t,0.6000000000000001),1,(1-t+0.6000000000000001)*5))'", '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '25', '-y', 'videos/intro_USB_Cable_20251126_233910.mp4']' returned non-zero exit status 1.
+2025-11-26 23:39:10,811 - generate_product_intro_video - INFO - Creating simple intro (fallback)
+2025-11-26 23:39:11,621 - generate_product_intro_video - INFO - Simple intro created: videos/intro_USB_Cable_20251126_233910.mp4
+2025-11-26 23:39:11,622 - generate_product_intro_video - INFO - Product intro created: videos/intro_USB_Cable_20251126_233910.mp4
+2025-11-26 23:39:11,622 - __main__ - INFO - Intro video created: videos/intro_USB_Cable_20251126_233910.mp4
+2025-11-26 23:39:11,622 - __main__ - INFO - Step 8/10: Generating video segments...
+2025-11-26 23:39:11,775 - generate_video_single - INFO - Audio: 94.0s -> Segment duration: 2.5s (25 segments)
+2025-11-26 23:39:11,775 - generate_video_single - INFO - Creating 25 segments: 20 videos + 5 images
+2025-11-26 23:39:11,775 - generate_video_single - INFO - Target duration: 62.5s = 25 segments x 2.5s each
+2025-11-26 23:39:21,355 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_233911_0.mp4
+2025-11-26 23:39:21,355 - generate_video_single - INFO - Added stock video segment 1/20
+2025-11-26 23:39:26,549 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_233921_1.mp4
+2025-11-26 23:39:26,549 - generate_video_single - INFO - Added stock video segment 2/20
+2025-11-26 23:39:34,205 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_233926_2.mp4
+2025-11-26 23:39:34,206 - generate_video_single - INFO - Added stock video segment 3/20
+2025-11-26 23:39:39,083 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_233934_3.mp4
+2025-11-26 23:39:39,083 - generate_video_single - INFO - Added stock video segment 4/20
+2025-11-26 23:39:39,083 - generate_video_single - INFO - Creating video from image: assets/image_20251126_233744_1.png
+2025-11-26 23:39:42,270 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_233939_4.mp4
+2025-11-26 23:39:42,271 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_233939_4.mp4
+2025-11-26 23:39:42,271 - generate_video_single - INFO - Added image segment 1/5
+2025-11-26 23:39:53,739 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_233942_5.mp4
+2025-11-26 23:39:53,739 - generate_video_single - INFO - Added stock video segment 5/20
+2025-11-26 23:39:57,239 - generate_video_single - INFO - Video trimmed to 2.3s: videos/segment_stock_20251126_233953_6.mp4
+2025-11-26 23:39:57,239 - generate_video_single - INFO - Added stock video segment 6/20
+2025-11-26 23:40:05,930 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_233957_7.mp4
+2025-11-26 23:40:05,931 - generate_video_single - INFO - Added stock video segment 7/20
+2025-11-26 23:40:24,442 - generate_video_single - INFO - Video trimmed to 2.2s: videos/segment_stock_20251126_234005_8.mp4
+2025-11-26 23:40:24,442 - generate_video_single - INFO - Added stock video segment 8/20
+2025-11-26 23:40:24,442 - generate_video_single - INFO - Creating video from image: assets/image_20251126_233754_2.png
+2025-11-26 23:40:27,723 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234024_9.mp4
+2025-11-26 23:40:27,723 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234024_9.mp4
+2025-11-26 23:40:27,723 - generate_video_single - INFO - Added image segment 2/5
+2025-11-26 23:40:39,622 - generate_video_single - INFO - Video trimmed to 2.6s: videos/segment_stock_20251126_234027_10.mp4
+2025-11-26 23:40:39,622 - generate_video_single - INFO - Added stock video segment 9/20
+2025-11-26 23:40:47,963 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_234039_11.mp4
+2025-11-26 23:40:47,964 - generate_video_single - INFO - Added stock video segment 10/20
+2025-11-26 23:40:56,317 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_234047_12.mp4
+2025-11-26 23:40:56,317 - generate_video_single - INFO - Added stock video segment 11/20
+2025-11-26 23:41:01,793 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_234056_13.mp4
+2025-11-26 23:41:01,793 - generate_video_single - INFO - Added stock video segment 12/20
+2025-11-26 23:41:01,793 - generate_video_single - INFO - Creating video from image: assets/image_20251126_233805_3.png
+2025-11-26 23:41:05,543 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234101_14.mp4
+2025-11-26 23:41:05,543 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234101_14.mp4
+2025-11-26 23:41:05,543 - generate_video_single - INFO - Added image segment 3/5
+2025-11-26 23:41:12,116 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_234105_15.mp4
+2025-11-26 23:41:12,116 - generate_video_single - INFO - Added stock video segment 13/20
+2025-11-26 23:41:17,911 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_234112_16.mp4
+2025-11-26 23:41:17,912 - generate_video_single - INFO - Added stock video segment 14/20
+2025-11-26 23:41:26,555 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_234117_17.mp4
+2025-11-26 23:41:26,556 - generate_video_single - INFO - Added stock video segment 15/20
+2025-11-26 23:41:34,931 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_234126_18.mp4
+2025-11-26 23:41:34,931 - generate_video_single - INFO - Added stock video segment 16/20
+2025-11-26 23:41:34,931 - generate_video_single - INFO - Creating video from image: assets/image_20251126_233816_4.png
+2025-11-26 23:41:37,949 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234134_19.mp4
+2025-11-26 23:41:37,949 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234134_19.mp4
+2025-11-26 23:41:37,949 - generate_video_single - INFO - Added image segment 4/5
+2025-11-26 23:41:41,690 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_234137_20.mp4
+2025-11-26 23:41:41,691 - generate_video_single - INFO - Added stock video segment 17/20
+2025-11-26 23:41:49,510 - generate_video_single - INFO - Video trimmed to 2.5s: videos/segment_stock_20251126_234141_21.mp4
+2025-11-26 23:41:49,510 - generate_video_single - INFO - Added stock video segment 18/20
+2025-11-26 23:41:54,093 - generate_video_single - INFO - Video trimmed to 2.4s: videos/segment_stock_20251126_234149_22.mp4
+2025-11-26 23:41:54,093 - generate_video_single - INFO - Added stock video segment 19/20
+2025-11-26 23:41:58,935 - generate_video_single - INFO - Video trimmed to 2.8s: videos/segment_stock_20251126_234154_23.mp4
+2025-11-26 23:41:58,935 - generate_video_single - INFO - Added stock video segment 20/20
+2025-11-26 23:41:58,935 - generate_video_single - INFO - Creating video from image: assets/image_20251126_233826_5.png
+2025-11-26 23:42:04,630 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234158_24.mp4
+2025-11-26 23:42:04,630 - generate_video_single - INFO - Video created from image: videos/segment_image_20251126_234158_24.mp4
+2025-11-26 23:42:04,630 - generate_video_single - INFO - Added image segment 5/5
+2025-11-26 23:42:04,631 - generate_video_single - INFO - Generated 25 video segments (20 videos, 5 images)
+2025-11-26 23:42:04,631 - __main__ - INFO - Created 25 video segments
+2025-11-26 23:42:04,631 - __main__ - INFO - Step 9/10: Adding engagement elements...
+2025-11-26 23:42:04,706 - __main__ - INFO - Generated 5 engagement points
+2025-11-26 23:42:04,706 - __main__ - INFO - Step 10/10: Compiling final video with engagement optimizations...
+2025-11-26 23:42:04,706 - generate_video_final - INFO - Compiling final video
+2025-11-26 23:42:04,707 - generate_video_final - INFO - Total segments to compile: 27
+2025-11-26 23:42:04,707 - generate_video_final - INFO - Concatenating 27 videos with transitions=True
+2025-11-26 23:43:52,550 - generate_video_final - INFO - Videos concatenated: videos/temp_concat_20251126_234204.mp4
+2025-11-26 23:43:52,550 - generate_video_final - INFO - Adding audio to video (mode: replace)
+2025-11-26 23:43:52,674 - generate_video_final - INFO - Video duration: 93.334s, Audio duration: 94.032s
+2025-11-26 23:43:52,674 - generate_video_final - INFO - Video and audio durations aligned, no speed adjustment needed
+2025-11-26 23:43:53,889 - generate_video_final - INFO - Audio added to video: videos/final_video_20251126_234204.mp4
+2025-11-26 23:43:53,893 - generate_video_final - INFO - Final video created: videos/final_video_20251126_234204.mp4
+2025-11-26 23:43:53,893 - video_engagement - INFO - Adding 5 text overlays
+2025-11-26 23:45:40,668 - video_engagement - INFO - Text overlays added: videos/final_video_20251126_234204_engaged.mp4
+2025-11-26 23:45:40,668 - video_engagement - INFO - Adding call-to-action
+2025-11-26 23:47:20,912 - video_engagement - INFO - CTA added: videos/final_video_20251126_234204_engaged_cta.mp4
+2025-11-26 23:47:20,913 - __main__ - INFO - Final engaged video created: videos/final_video_20251126_234204_engaged_cta.mp4
+2025-11-26 23:47:20,913 - __main__ - INFO - Skipping subtitles (disabled)
+2025-11-26 23:47:20,926 - __main__ - INFO - Final video saved to: final_videos/final_video_20251126_234204_engaged_cta.mp4
+2025-11-26 23:47:20,926 - __main__ - INFO - Cleaning up temporary files...
+2025-11-26 23:47:21,009 - __main__ - INFO - Cleanup complete
+2025-11-26 23:47:21,009 - __main__ - INFO - Converting video format...
+2025-11-26 23:47:21,009 - convert_video - INFO - Converting final_videos/final_video_20251126_234204_engaged_cta.mp4 to mp4
+2025-11-26 23:47:21,009 - convert_video - INFO - File already in mp4 format, skipping conversion: final_videos/final_video_20251126_234204_engaged_cta.mp4
+2025-11-26 23:47:21,009 - __main__ - INFO - Converted video: final_videos/final_video_20251126_234204_engaged_cta.mp4
+2025-11-26 23:47:21,009 - __main__ - INFO - ================================================================================
+2025-11-26 23:47:21,009 - __main__ - INFO - ✅ VIDEO GENERATION COMPLETE!
+2025-11-26 23:47:21,009 - __main__ - INFO - 📹 Final Video: final_videos/final_video_20251126_234204_engaged_cta.mp4
+2025-11-26 23:47:21,009 - __main__ - INFO - 🎯 Enhanced with: Product comparison, Real product photos, 15 stock videos, Subtitles, Engagement hooks, Fast cuts, CTA
+2025-11-26 23:47:21,009 - __main__ - INFO - ================================================================================
