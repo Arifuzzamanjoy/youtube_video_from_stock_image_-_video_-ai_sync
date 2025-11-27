@@ -1,0 +1,49 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large directories and files
+chrome_user_data/
+ffmpeg/
+final_videos/*.mp4
+videos/*.mp4
+audios/*.mp3
+test_images/
+logs/*.log
+
+# Keep structure files but ignore content
+final_videos/*
+!final_videos/*.srt
+videos/*
+!videos/.gitkeep
+audios/*
+!audios/.gitkeep
+
+# API Keys and sensitive data
+.env
+*.key
+google-credentials.json
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+temp/
+tmp/
